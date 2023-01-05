@@ -96,7 +96,7 @@
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
+							<a href="index.html" class="nav-link ">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
@@ -106,7 +106,7 @@
 
 
 						<li class="nav-item">
-							<a href="pds_section_1.php" class="nav-link ">
+							<a href="index.html" class="nav-link active ">
 								<i class="icon-user"></i>
 								<span>
 									Personal Data Sheet page
@@ -128,9 +128,42 @@
 								
 							</div>
 
-							<div class="card-body py-0">
-								<div class="row">
-									
+							<div class="card-body">
+								<div class="d-md-flex">
+									<ul class="nav nav-tabs nav-tabs-vertical flex-column mr-md-3 wmin-md-200 mb-md-0 border-bottom-0">
+										<li class="nav-item"><a href="#vertical-left-tab1" class="nav-link active" data-toggle="tab"> I. Personal Information</a></li>
+										<li class="nav-item"><a href="#vertical-left-tab2" class="nav-link" data-toggle="tab">II. Family Background</a></li>
+										
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="vertical-left-tab1">
+                                            <div class="col-xl-12">
+                                                <div class="card" style="width: 100%;">
+                                                
+
+                                                    <div class="card-body" >
+                                                        <div class="d-md-flex" >
+                                                        
+                                                            dsd
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+										<div class="tab-pane fade" id="vertical-left-tab2">
+											Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
+										</div>
+
+										<div class="tab-pane fade" id="vertical-left-tab3">
+											DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg whatever.
+										</div>
+
+										<div class="tab-pane fade" id="vertical-left-tab4">
+											Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthet.
+										</div>
+									</div>
 								</div>
 							</div>
 
