@@ -1,3 +1,17 @@
+<?php 
+session_start();
+if(!isset($_SESSION['id']))
+{
+
+	header('location:../auth/login.php');
+}
+else
+{
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
@@ -58,7 +72,7 @@
 							<span>Victoria</span>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+							<a href="../auth/logout.php" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
 						</div>
 					</li>
 				</ul>

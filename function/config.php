@@ -4,6 +4,6 @@
 $server     = 'localhost';
 $root       = 'root';
 $password   = '';
-$db         = 'pdsgenerator_db';
+$db         = 'php-crud-tutorial';
 
 $con        =   mysqli_connect($server, $root, $password, $db);

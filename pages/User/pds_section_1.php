@@ -2,6 +2,17 @@
 
 include('../../function/function.php');
 
+session_start();
+if(!isset($_SESSION['id']))
+{
+
+	header('location:../auth/login.php');
+}
+else
+{
+
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -130,228 +141,42 @@ include('../../function/function.php');
 					<div class="col-xl-12">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Traffic sources</h6>
 								
 							</div>
 
 							<div class="card-body">
 								<div class="d-md-flex">
 									<ul class="nav nav-tabs nav-tabs-vertical flex-column mr-md-3 wmin-md-200 mb-md-0 border-bottom-0">
-										<li class="nav-item"><a href="#vertical-left-tab1" class="nav-link active" data-toggle="tab"> I. Personal Information</a></li>
-										<li class="nav-item"><a href="#vertical-left-tab2" class="nav-link" data-toggle="tab">II. Family Background</a></li>
+										<li class="nav-item"><a href="pds_section_1.php" class="nav-link active" > I. Personal Information</a></li>
+										<li class="nav-item"><a href="pds_section_2.php" class="nav-link" >II. Family Background</a></li>
+										<li class="nav-item"><a href="pds_section_3.php" class="nav-link" >III. Educational Background</a></li>
+										<li class="nav-item"><a href="pds_section_4.php" class="nav-link" >IV. Civil Service Eligibilty</a></li>
+										<li class="nav-item"><a href="pds_section_5.php" class="nav-link" >V. Work Experience</a></li>
+										<li class="nav-item"><a href="pds_section_6.php" class="nav-link" >VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENT / PEOPLE / VOLUNTARY ORGANIZATION/S</a></li>
+										<li class="nav-item"><a href="pds_section_7.php" class="nav-link" >VII. LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS ATTENDED</a></li>
+										<li class="nav-item"><a href="pds_section_8.php" class="nav-link" >VIII. OTHER INFORMATION</a></li>
+										<li class="nav-item"><a href="pds_section_9.php" class="nav-link" >Last Part</a></li>
+
+																				
+
+
+
 									</ul>
 
 									<div class="tab-content" style="font-size:12px;">
-										<div class="tab-pane fade show active" id="vertical-left-tab1">
+										<div class="tab-pane fade show active" >
                                                 <div class="card">
                                                     <div class="card-body"  style="font-size:10px !important;" >
 
 
-														<form method="POST">
-															<?php echo add_pds_section_1() ?>
-															<div class="d-md-flex">
-																<div class="row">
-															<legend>PERSONAL DETAILS</legend>
-																	<div class="col-md-3">
-																		<div class="form-group">
-																			<label>Surname</label>
-																			<input type="text" style="font-size:10px !important;" name="surname" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-3">
-																		<div class="form-group">
-																			<label>Firstname</label>
-																			<input type="text" style="font-size:10px !important;"  name="firstname" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-3">
-																		<div class="form-group">
-																			<label>Middlename</label>
-																			<input type="text" style="font-size:10px !important;"  name="middlename" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-3">
-																		<div class="form-group">
-																			<label>Name Extension (JR, SR)</label>
-																			<input type="text" style="font-size:10px !important;"  name="name_extension" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-2">
-																		<div class="form-group">
-																			<label>Date of Birth</label>
-																			<input type="text" style="font-size:10px !important;"  name="date_of_birth" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-2">
-																		<div class="form-group">
-																			<label>Place of Birth</label>
-																			<input type="text" style="font-size:10px !important;"  name="place_of_birth" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-2">
-																		<div class="form-group">
-																			<label>Sex</label>
-																			<input type="text" style="font-size:10px !important;"  name="sex" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-3">
-																		<div class="form-group">
-																			<label>Civil status</label>
-																			<input type="text" style="font-size:10px !important;"  name="civil_status" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-3">
-																		<div class="form-group">
-																			<label>Citizenship</label>
-																			<input type="text" style="font-size:10px !important;"  name="citizenship" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-2">
-																		<div class="form-group">
-																			<label>Height (m)</label>
-																			<input type="text" style="font-size:10px !important;"  name="height" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-2">
-																		<div class="form-group">
-																			<label>Weight (kg)</label>
-																			<input type="text" style="font-size:10px !important;"  name="weight" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-2">
-																		<div class="form-group">
-																			<label>Blood Type</label>
-																			<input type="text" style="font-size:10px !important;"  name="blood_type" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	
-
-															<legend>ISSUED ID</legend>
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>GSIS NO</label>
-																			<input type="text" style="font-size:10px !important;"  name="gsis_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>PAG-IBIG NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="pag_ibig_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>PHILHEALTH NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="philhealth_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>SSS NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="sss_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>TIN NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="tin_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>AGENCY EMPLOYEE NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="agency_employee_number" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-
-																	<legend>CONTACT INFORMATION</legend>
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>TELEPHONE NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="telephone_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>MOBILE NO.</label>
-																			<input type="text" style="font-size:10px !important;"  name="mobile_no" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-
-																	<div class="col-md-4">
-																		<div class="form-group">
-																			<label>EMAIL ADDRESS (if any)</label>
-																			<input type="text" style="font-size:10px !important;"  name="email_address" class="form-control" placeholder="">
-																		</div>
-																	</div>
-
-																	<div class="col-md-12 ">
-																		<div class=" pull right">
-																		<button type="submit" name="add_pds_section_1_button" class="btn btn-primary">Save Changes</button>
-																		</div>
-																	</div>
-
-																	
-
-
-																</div>
-															</div>			
-														</form>
+														<?php echo pds_section1_update() ?>
 
 
                                                     </div>
                                                 </div>
                                             </div>
 
-										<div class="tab-pane fade" id="vertical-left-tab2">
-											Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
-										</div>
-
-										<div class="tab-pane fade" id="vertical-left-tab3">
-											DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg whatever.
-										</div>
-
-										<div class="tab-pane fade" id="vertical-left-tab4">
-											Aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthet.
-										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -367,7 +192,7 @@ include('../../function/function.php');
 					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
 						<i class="icon-unfold mr-2"></i>
 						Footer
-					</button>sd
+					</button>
 				</div>
 
 				<div class="navbar-collapse collapse" id="navbar-footer">
