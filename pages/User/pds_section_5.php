@@ -12,6 +12,8 @@ else
 {
 
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,9 +34,47 @@ else
 	<script src="../../vendor/template/global_assets/js/main/jquery.min.js"></script>
 	<script src="../../vendor/template/global_assets/js/main/bootstrap.bundle.min.js"></script>
 	<script src="../../vendor/template/global_assets/js/plugins/loaders/blockui.min.js"></script>
-	<script src="../../vendor/template/layout_1/assets/js/app.js"></script>
-	<script src="../../vendor/template/global_assets/js/demo_pages/dashboard.js"></script>
 
+    <script src="../../vendor/template/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="../../vendor/template/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>  
+	<script src="../../vendor/template/global_assets/js/plugins/tables/datatables/extensions/responsive.min.js"></script>
+	<script src="../../vendor/template/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script src="../../vendor/template/global_assets/js/demo_pages/datatables_responsive.js"></script>
+
+	<script src="../../vendor/template/layout_1/assets/js/app.js"></script>
+
+    <script src="../../vendor/template/global_assets/js/demo_pages/table_responsive.js"></script>
+    <style>
+        .wrappers {
+  overflow-x: scroll;
+}
+
+.wrappers table {
+  white-space: nowrap;
+}
+
+/** Only for demo */
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid #777;
+}
+
+th {
+  padding: 5px;
+  background: #ddd;
+}
+
+td {
+  padding: 5px 10px;
+}
+.form-control{
+    padding:5px;
+    margin:0px;
+}
+    </style>
 </head>
 
 <body>
@@ -143,17 +183,17 @@ else
 							</div>
 
 							<div class="card-body">
-								<div class="d-md-flex">
 									<ul class="nav nav-tabs nav-tabs-vertical flex-column mr-md-3 wmin-md-200 mb-md-0 border-bottom-0">
-										<li class="nav-item"><a href="pds_section_1.php" class="nav-link active" > I. Personal Information</a></li>
-										<li class="nav-item"><a href="pds_section_2.php" class="nav-link" >II. Family Background</a></li>
-										<li class="nav-item"><a href="pds_section_3.php" class="nav-link" >III. Educational Background</a></li>
-										<li class="nav-item"><a href="pds_section_4.php" class="nav-link" >IV. Civil Service Eligibilty</a></li>
-										<li class="nav-item"><a href="pds_section_5.php" class="nav-link" >V. Work Experience</a></li>
+                                        <li class="nav-item"><a href="pds_section_1.php" class="nav-link " > I. Personal Information</a></li>
+										<li class="nav-item"><a href="pds_section_2.php" class="nav-link " >II. Family Background</a></li>
+										<li class="nav-item"><a href="pds_section_3.php" class="nav-link " >III. Educational Background</a></li>
+										<li class="nav-item"><a href="pds_section_4.php" class="nav-link " >IV. Civil Service Eligibilty</a></li>
+										<li class="nav-item"><a href="pds_section_5.php" class="nav-link active" >V. Work Experience</a></li>
 										<li class="nav-item"><a href="pds_section_6.php" class="nav-link" >VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENT / PEOPLE / VOLUNTARY ORGANIZATION/S</a></li>
 										<li class="nav-item"><a href="pds_section_7.php" class="nav-link" >VII. LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS ATTENDED</a></li>
 										<li class="nav-item"><a href="pds_section_8.php" class="nav-link" >VIII. OTHER INFORMATION</a></li>
 										<li class="nav-item"><a href="pds_section_9.php" class="nav-link" >Last Part</a></li>
+
 
 																				
 
@@ -162,25 +202,18 @@ else
 									</ul>
 
 									<div class="tab-content" style="font-size:12px;">
-										<div class="tab-pane fade show active" >
-                                                <div class="card">
-                                                    <div class="card-body"  style="font-size:10px !important;" >
+										<div class="tab-pane fade show active" id="vertical-left-tab2">
 
 
-														<?php echo pds_section1_update() ?>
+														<?php echo pds_section5_update() ?>
 
 
-                                                    </div>
-                                                </div>
+                                            </div>
                                             </div>
 
 										
 									</div>
-								</div>
 							</div>
-
-							<div class="chart position-relative" id="traffic-sources"></div>
-						</div>
 					</div>
 				</div>
 
@@ -204,3 +237,8 @@ else
 	</div>
 </body>
 </html>
+
+
+<script>
+		$('.datatable-responsive').dataTable();
+	</script>
