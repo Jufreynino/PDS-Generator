@@ -2543,7 +2543,7 @@ function pds_section7_update()
 
     $id     =    $_SESSION['id'];
 
-    $sql = mysqli_query($con, "SELECT * FROM voluntary_work_tbl WHERE pds_id='$id'");
+    $sql = mysqli_query($con, "SELECT * FROM learning_tbl WHERE pds_id='$id'");
     $row = mysqli_fetch_assoc($sql);
     ?>
             <form method="POST">
@@ -2670,7 +2670,7 @@ function pds_section7_10_update()
 
     $id     =    $_SESSION['id'];
 
-    $sql = mysqli_query($con, "SELECT * FROM voluntary_work_tbl WHERE pds_id='$id'");
+    $sql = mysqli_query($con, "SELECT * FROM learning20_tbl WHERE pds_id='$id'");
     $row = mysqli_fetch_assoc($sql);
     ?>
            
@@ -2678,98 +2678,108 @@ function pds_section7_10_update()
 
 
            <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_1" value="<?= $row['learning_development_title_1']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_1" value="<?= $row['learning_development_from_1']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_1" value="<?= $row['learning_development_to_1']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_1" value="<?= $row['learning_development_number_of_hours_1']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_1" value="<?= $row['learning_development_type_of_ld_1']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_1" value="<?= $row['learning_development_conducted_by_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_11" value="<?= $row['learning_development_title_11']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_11" value="<?= $row['learning_development_from_11']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_11" value="<?= $row['learning_development_to_11']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_11" value="<?= $row['learning_development_number_of_hours_11']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_11" value="<?= $row['learning_development_type_of_ld_11']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_11" value="<?= $row['learning_development_conducted_by_11']?>"></td>
                 </tr>
 
                 <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_2" value="<?= $row['learning_development_title_2']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_2" value="<?= $row['learning_development_from_2']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_2" value="<?= $row['learning_development_to_2']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_2" value="<?= $row['learning_development_number_of_hours_2']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_2" value="<?= $row['learning_development_type_of_ld_2']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_2" value="<?= $row['learning_development_conducted_by_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_12" value="<?= $row['learning_development_title_12']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_12" value="<?= $row['learning_development_from_12']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_12" value="<?= $row['learning_development_to_12']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_12" value="<?= $row['learning_development_number_of_hours_12']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_12" value="<?= $row['learning_development_type_of_ld_12']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_12" value="<?= $row['learning_development_conducted_by_12']?>"></td>
                 </tr>
 
                 <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_3" value="<?= $row['learning_development_title_3']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_3" value="<?= $row['learning_development_from_3']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_3" value="<?= $row['learning_development_to_3']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_3" value="<?= $row['learning_development_number_of_hours_3']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_3" value="<?= $row['learning_development_type_of_ld_3']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_3" value="<?= $row['learning_development_conducted_by_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_13" value="<?= $row['learning_development_title_13']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_13" value="<?= $row['learning_development_from_13']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_13" value="<?= $row['learning_development_to_13']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_13" value="<?= $row['learning_development_number_of_hours_13']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_13" value="<?= $row['learning_development_type_of_ld_13']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_13" value="<?= $row['learning_development_conducted_by_13']?>"></td>
                 </tr>
 
 
                 <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_4" value="<?= $row['learning_development_title_4']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_4" value="<?= $row['learning_development_from_4']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_4" value="<?= $row['learning_development_to_4']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_4" value="<?= $row['learning_development_number_of_hours_4']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_4" value="<?= $row['learning_development_type_of_ld_4']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_4" value="<?= $row['learning_development_conducted_by_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_14" value="<?= $row['learning_development_title_14']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_14" value="<?= $row['learning_development_from_14']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_14" value="<?= $row['learning_development_to_14']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_14" value="<?= $row['learning_development_number_of_hours_14']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_14" value="<?= $row['learning_development_type_of_ld_14']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_14" value="<?= $row['learning_development_conducted_by_14']?>"></td>
                 </tr>
 
 
                    <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_5" value="<?= $row['learning_development_title_5']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_5" value="<?= $row['learning_development_from_5']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_5" value="<?= $row['learning_development_to_5']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_5" value="<?= $row['learning_development_number_of_hours_5']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_5" value="<?= $row['learning_development_type_of_ld_5']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_5" value="<?= $row['learning_development_conducted_by_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_15" value="<?= $row['learning_development_title_15']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_15" value="<?= $row['learning_development_from_15']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_15" value="<?= $row['learning_development_to_15']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_15" value="<?= $row['learning_development_number_of_hours_15']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_15" value="<?= $row['learning_development_type_of_ld_15']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_15" value="<?= $row['learning_development_conducted_by_15']?>"></td>
                 </tr>
 
                 <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_6" value="<?= $row['learning_development_title_6']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_6" value="<?= $row['learning_development_from_6']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_6" value="<?= $row['learning_development_to_6']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_6" value="<?= $row['learning_development_number_of_hours_6']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_6" value="<?= $row['learning_development_type_of_ld_6']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_6" value="<?= $row['learning_development_conducted_by_6']?>"></td>
-                </tr>
-
-
-                <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_7" value="<?= $row['learning_development_title_7']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_7" value="<?= $row['learning_development_from_7']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_7" value="<?= $row['learning_development_to_7']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_7" value="<?= $row['learning_development_number_of_hours_7']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_7" value="<?= $row['learning_development_type_of_ld_7']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_7" value="<?= $row['learning_development_conducted_by_7']?>"></td>
-                </tr>
-
-                <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_8" value="<?= $row['learning_development_title_8']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_8" value="<?= $row['learning_development_from_8']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_8" value="<?= $row['learning_development_to_8']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_8" value="<?= $row['learning_development_number_of_hours_8']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_8" value="<?= $row['learning_development_type_of_ld_8']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_8" value="<?= $row['learning_development_conducted_by_8']?>"></td>
-                </tr>
-
-                <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_9" value="<?= $row['learning_development_title_9']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_9" value="<?= $row['learning_development_from_9']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_9" value="<?= $row['learning_development_to_9']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_9" value="<?= $row['learning_development_number_of_hours_9']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_9" value="<?= $row['learning_development_type_of_ld_9']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_9" value="<?= $row['learning_development_conducted_by_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_16" value="<?= $row['learning_development_title_16']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_16" value="<?= $row['learning_development_from_16']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_16" value="<?= $row['learning_development_to_16']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_16" value="<?= $row['learning_development_number_of_hours_16']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_16" value="<?= $row['learning_development_type_of_ld_16']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_16" value="<?= $row['learning_development_conducted_by_16']?>"></td>
                 </tr>
 
 
                 <tr>
-                    <td><input type="text" class="form-control" name="learning_development_title_10" value="<?= $row['learning_development_title_10']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_from_10" value="<?= $row['learning_development_from_10']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_to_10" value="<?= $row['learning_development_to_10']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_10" value="<?= $row['learning_development_number_of_hours_10']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_10" value="<?= $row['learning_development_type_of_ld_10']?>"></td>
-                    <td><input type="text" class="form-control" name="learning_development_conducted_by_10" value="<?= $row['learning_development_conducted_by_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_title_17" value="<?= $row['learning_development_title_17']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_17" value="<?= $row['learning_development_from_17']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_17" value="<?= $row['learning_development_to_17']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_17" value="<?= $row['learning_development_number_of_hours_17']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_17" value="<?= $row['learning_development_type_of_ld_17']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_17" value="<?= $row['learning_development_conducted_by_17']?>"></td>
                 </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_18" value="<?= $row['learning_development_title_18']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_18" value="<?= $row['learning_development_from_18']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_18" value="<?= $row['learning_development_to_18']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_18" value="<?= $row['learning_development_number_of_hours_18']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_18" value="<?= $row['learning_development_type_of_ld_18']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_18" value="<?= $row['learning_development_conducted_by_18']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_19" value="<?= $row['learning_development_title_19']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_19" value="<?= $row['learning_development_from_19']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_19" value="<?= $row['learning_development_to_19']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_19" value="<?= $row['learning_development_number_of_hours_19']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_19" value="<?= $row['learning_development_type_of_ld_19']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_19" value="<?= $row['learning_development_conducted_by_19']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_20" value="<?= $row['learning_development_title_20']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_20" value="<?= $row['learning_development_from_20']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_20" value="<?= $row['learning_development_to_20']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_20" value="<?= $row['learning_development_number_of_hours_20']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_20" value="<?= $row['learning_development_type_of_ld_20']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_20" value="<?= $row['learning_development_conducted_by_20']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_21" value="<?= $row['learning_development_title_21']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_21" value="<?= $row['learning_development_from_21']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_21" value="<?= $row['learning_development_to_21']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_21" value="<?= $row['learning_development_number_of_hours_21']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_21" value="<?= $row['learning_development_type_of_ld_21']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_21" value="<?= $row['learning_development_conducted_by_21']?>"></td>
+                </tr>
+
 
 
                 
@@ -2781,7 +2791,7 @@ function pds_section7_10_update()
                 <br>
                     <div class="col-md-12 ">
                         <div class=" pull right">
-                        <button type="submit" name="update_pds_section_6_button" class="btn btn-primary">Save Changes</button>
+                        <button type="submit" name="update_pds_section_7_button" class="btn btn-primary">Save Changes</button>
                         </div>
                     </div>
 
@@ -2791,96 +2801,325 @@ function pds_section7_10_update()
                
     <?php
 
-        if(isset($_POST['update_pds_section_6_button']))
+        if(isset($_POST['update_pds_section_7_button']))
         {
 
             $pds_id = $_SESSION['id'];
-            $voluntary_work_name_address_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_1']);
-            $voluntary_work_from_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_1']);
-            $voluntary_work_to_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_1']);
-            $voluntary_work_hours_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_1']);
-            $voluntary_work_position_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_1']);
+            $learning_development_title_1  = mysqli_real_escape_string($con, $_POST['learning_development_title_1']);
+            $learning_development_from_1  = mysqli_real_escape_string($con, $_POST['learning_development_from_1']);
+            $learning_development_to_1  = mysqli_real_escape_string($con, $_POST['learning_development_to_1']);
+            $learning_development_number_of_hours_1  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_1']);
+            $learning_development_type_of_ld_1  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_1']);
+            $learning_development_conducted_by_1  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_1']);
 
-            $voluntary_work_name_address_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_2']);
-            $voluntary_work_from_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_2']);
-            $voluntary_work_to_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_2']);
-            $voluntary_work_hours_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_2']);
-            $voluntary_work_position_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_2']);
+            $learning_development_title_2  = mysqli_real_escape_string($con, $_POST['learning_development_title_2']);
+            $learning_development_from_2  = mysqli_real_escape_string($con, $_POST['learning_development_from_2']);
+            $learning_development_to_2  = mysqli_real_escape_string($con, $_POST['learning_development_to_2']);
+            $learning_development_number_of_hours_2  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_2']);
+            $learning_development_type_of_ld_2  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_2']);
+            $learning_development_conducted_by_2  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_2']);
+         
 
-            $voluntary_work_name_address_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_3']);
-            $voluntary_work_from_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_3']);
-            $voluntary_work_to_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_3']);
-            $voluntary_work_hours_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_3']);
-            $voluntary_work_position_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_3']);
+            $learning_development_title_3  = mysqli_real_escape_string($con, $_POST['learning_development_title_3']);
+            $learning_development_from_3  = mysqli_real_escape_string($con, $_POST['learning_development_from_3']);
+            $learning_development_to_3  = mysqli_real_escape_string($con, $_POST['learning_development_to_3']);
+            $learning_development_number_of_hours_3  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_3']);
+            $learning_development_type_of_ld_3  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_3']);
+            $learning_development_conducted_by_3  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_3']);
+         
 
+            $learning_development_title_4  = mysqli_real_escape_string($con, $_POST['learning_development_title_4']);
+            $learning_development_from_4  = mysqli_real_escape_string($con, $_POST['learning_development_from_4']);
+            $learning_development_to_4  = mysqli_real_escape_string($con, $_POST['learning_development_to_4']);
+            $learning_development_number_of_hours_4  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_4']);
+            $learning_development_type_of_ld_4  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_4']);
+            $learning_development_conducted_by_4  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_4']);
+         
 
-            $voluntary_work_name_address_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_4']);
-            $voluntary_work_from_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_4']);
-            $voluntary_work_to_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_4']);
-            $voluntary_work_hours_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_4']);
-            $voluntary_work_position_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_4']);
-
-            $voluntary_work_name_address_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_5']);
-            $voluntary_work_from_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_5']);
-            $voluntary_work_to_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_5']);
-            $voluntary_work_hours_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_5']);
-            $voluntary_work_position_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_5']);
-
-
-            $voluntary_work_name_address_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_6']);
-            $voluntary_work_from_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_6']);
-            $voluntary_work_to_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_6']);
-            $voluntary_work_hours_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_6']);
-            $voluntary_work_position_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_6']);
-
-            $voluntary_work_name_address_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_7']);
-            $voluntary_work_from_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_7']);
-            $voluntary_work_to_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_7']);
-            $voluntary_work_hours_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_7']);
-            $voluntary_work_position_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_7']);
+            $learning_development_title_5  = mysqli_real_escape_string($con, $_POST['learning_development_title_5']);
+            $learning_development_from_5  = mysqli_real_escape_string($con, $_POST['learning_development_from_5']);
+            $learning_development_to_5  = mysqli_real_escape_string($con, $_POST['learning_development_to_5']);
+            $learning_development_number_of_hours_5  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_5']);
+            $learning_development_type_of_ld_5  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_5']);
+            $learning_development_conducted_by_5  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_5']);
+         
 
 
+            $learning_development_title_6  = mysqli_real_escape_string($con, $_POST['learning_development_title_6']);
+            $learning_development_from_6  = mysqli_real_escape_string($con, $_POST['learning_development_from_6']);
+            $learning_development_to_6  = mysqli_real_escape_string($con, $_POST['learning_development_to_6']);
+            $learning_development_number_of_hours_6  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_6']);
+            $learning_development_type_of_ld_6  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_6']);
+            $learning_development_conducted_by_6  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_6']);
+         
 
 
+            $learning_development_title_7  = mysqli_real_escape_string($con, $_POST['learning_development_title_7']);
+            $learning_development_from_7  = mysqli_real_escape_string($con, $_POST['learning_development_from_7']);
+            $learning_development_to_7  = mysqli_real_escape_string($con, $_POST['learning_development_to_7']);
+            $learning_development_number_of_hours_7  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_7']);
+            $learning_development_type_of_ld_7  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_7']);
+            $learning_development_conducted_by_7  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_7']);
+         
 
-            $sql = mysqli_query($con, "UPDATE voluntary_work_tbl SET  voluntary_work_name_address_1='$voluntary_work_name_address_1',
-            voluntary_work_from_1='$voluntary_work_from_1',
-            voluntary_work_to_1='$voluntary_work_to_1',
-            voluntary_work_hours_1='$voluntary_work_hours_1',
-            voluntary_work_position_1='$voluntary_work_position_1',
-            voluntary_work_name_address_2='$voluntary_work_name_address_2',
-            voluntary_work_from_2='$voluntary_work_from_2',
-            voluntary_work_to_2='$voluntary_work_to_2',
-            voluntary_work_hours_2='$voluntary_work_hours_2',
-            voluntary_work_position_2='$voluntary_work_position_2',
-            voluntary_work_name_address_3='$voluntary_work_name_address_3',
-            voluntary_work_from_3='$voluntary_work_from_3',
-            voluntary_work_to_3='$voluntary_work_to_3',
-            voluntary_work_hours_3='$voluntary_work_hours_3',
-            voluntary_work_position_3='$voluntary_work_position_3',
-            voluntary_work_name_address_4='$voluntary_work_name_address_4',
-            voluntary_work_from_4='$voluntary_work_from_4',
-            voluntary_work_to_4='$voluntary_work_to_4',
-            voluntary_work_hours_4='$voluntary_work_hours_4',
-            voluntary_work_position_4='$voluntary_work_position_4',
-            voluntary_work_name_address_5='$voluntary_work_name_address_5',
-            voluntary_work_from_5='$voluntary_work_from_5',
-            voluntary_work_to_5='$voluntary_work_to_5',
-            voluntary_work_hours_5='$voluntary_work_hours_5',
-            voluntary_work_position_5='$voluntary_work_position_5',
-            voluntary_work_name_address_6='$voluntary_work_name_address_6',
-            voluntary_work_from_6='$voluntary_work_from_6',
-            voluntary_work_to_6='$voluntary_work_to_6',
-            voluntary_work_hours_6='$voluntary_work_hours_6',
-            voluntary_work_position_6='$voluntary_work_position_6',
-            voluntary_work_name_address_7='$voluntary_work_name_address_7',
-            voluntary_work_from_7='$voluntary_work_from_7',
-            voluntary_work_to_7='$voluntary_work_to_7',
-            voluntary_work_hours_7='$voluntary_work_hours_7',
-            voluntary_work_position_7='$voluntary_work_position_7'
+
+            $learning_development_title_8  = mysqli_real_escape_string($con, $_POST['learning_development_title_8']);
+            $learning_development_from_8  = mysqli_real_escape_string($con, $_POST['learning_development_from_8']);
+            $learning_development_to_8  = mysqli_real_escape_string($con, $_POST['learning_development_to_8']);
+            $learning_development_number_of_hours_8  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_8']);
+            $learning_development_type_of_ld_8  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_8']);
+            $learning_development_conducted_by_8  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_8']);
+         
+
+            $learning_development_title_9  = mysqli_real_escape_string($con, $_POST['learning_development_title_9']);
+            $learning_development_from_9  = mysqli_real_escape_string($con, $_POST['learning_development_from_9']);
+            $learning_development_to_9  = mysqli_real_escape_string($con, $_POST['learning_development_to_9']);
+            $learning_development_number_of_hours_9  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_9']);
+            $learning_development_type_of_ld_9  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_9']);
+            $learning_development_conducted_by_9  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_9']);
+         
+
+            $learning_development_title_10  = mysqli_real_escape_string($con, $_POST['learning_development_title_10']);
+            $learning_development_from_10  = mysqli_real_escape_string($con, $_POST['learning_development_from_10']);
+            $learning_development_to_10  = mysqli_real_escape_string($con, $_POST['learning_development_to_10']);
+            $learning_development_number_of_hours_10  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_10']);
+            $learning_development_type_of_ld_10  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_10']);
+            $learning_development_conducted_by_10  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_10']);
+         
+
+            $learning_development_title_11  = mysqli_real_escape_string($con, $_POST['learning_development_title_11']);
+            $learning_development_from_11  = mysqli_real_escape_string($con, $_POST['learning_development_from_11']);
+            $learning_development_to_11  = mysqli_real_escape_string($con, $_POST['learning_development_to_11']);
+            $learning_development_number_of_hours_11  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_11']);
+            $learning_development_type_of_ld_11  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_11']);
+            $learning_development_conducted_by_11  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_11']);
+         
+
+            $learning_development_title_12  = mysqli_real_escape_string($con, $_POST['learning_development_title_12']);
+            $learning_development_from_12  = mysqli_real_escape_string($con, $_POST['learning_development_from_12']);
+            $learning_development_to_12  = mysqli_real_escape_string($con, $_POST['learning_development_to_12']);
+            $learning_development_number_of_hours_12  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_12']);
+            $learning_development_type_of_ld_12  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_12']);
+            $learning_development_conducted_by_12  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_12']);
+         
+
+
+            $learning_development_title_13  = mysqli_real_escape_string($con, $_POST['learning_development_title_13']);
+            $learning_development_from_13  = mysqli_real_escape_string($con, $_POST['learning_development_from_13']);
+            $learning_development_to_13  = mysqli_real_escape_string($con, $_POST['learning_development_to_13']);
+            $learning_development_number_of_hours_13  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_13']);
+            $learning_development_type_of_ld_13  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_13']);
+            $learning_development_conducted_by_13  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_13']);
+         
+
+            $learning_development_title_14  = mysqli_real_escape_string($con, $_POST['learning_development_title_14']);
+            $learning_development_from_14  = mysqli_real_escape_string($con, $_POST['learning_development_from_14']);
+            $learning_development_to_14  = mysqli_real_escape_string($con, $_POST['learning_development_to_14']);
+            $learning_development_number_of_hours_14  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_14']);
+            $learning_development_type_of_ld_14  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_14']);
+            $learning_development_conducted_by_14  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_14']);
+         
+
+            $learning_development_title_15  = mysqli_real_escape_string($con, $_POST['learning_development_title_15']);
+            $learning_development_from_15  = mysqli_real_escape_string($con, $_POST['learning_development_from_15']);
+            $learning_development_to_15  = mysqli_real_escape_string($con, $_POST['learning_development_to_15']);
+            $learning_development_number_of_hours_15  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_15']);
+            $learning_development_type_of_ld_15  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_15']);
+            $learning_development_conducted_by_15  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_15']);
+         
+
+            $learning_development_title_16  = mysqli_real_escape_string($con, $_POST['learning_development_title_16']);
+            $learning_development_from_16  = mysqli_real_escape_string($con, $_POST['learning_development_from_16']);
+            $learning_development_to_16  = mysqli_real_escape_string($con, $_POST['learning_development_to_16']);
+            $learning_development_number_of_hours_16  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_16']);
+            $learning_development_type_of_ld_16  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_16']);
+            $learning_development_conducted_by_16  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_16']);
+         
+
+            $learning_development_title_17  = mysqli_real_escape_string($con, $_POST['learning_development_title_17']);
+            $learning_development_from_17  = mysqli_real_escape_string($con, $_POST['learning_development_from_17']);
+            $learning_development_to_17  = mysqli_real_escape_string($con, $_POST['learning_development_to_17']);
+            $learning_development_number_of_hours_17  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_17']);
+            $learning_development_type_of_ld_17  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_17']);
+            $learning_development_conducted_by_17  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_17']);
+         
+
+            $learning_development_title_18  = mysqli_real_escape_string($con, $_POST['learning_development_title_18']);
+            $learning_development_from_18  = mysqli_real_escape_string($con, $_POST['learning_development_from_18']);
+            $learning_development_to_18  = mysqli_real_escape_string($con, $_POST['learning_development_to_18']);
+            $learning_development_number_of_hours_18  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_18']);
+            $learning_development_type_of_ld_18  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_18']);
+            $learning_development_conducted_by_18  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_18']);
+         
+
+            $learning_development_title_19  = mysqli_real_escape_string($con, $_POST['learning_development_title_19']);
+            $learning_development_from_19  = mysqli_real_escape_string($con, $_POST['learning_development_from_19']);
+            $learning_development_to_19  = mysqli_real_escape_string($con, $_POST['learning_development_to_19']);
+            $learning_development_number_of_hours_19  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_19']);
+            $learning_development_type_of_ld_19  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_19']);
+            $learning_development_conducted_by_19  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_19']);
+         
+
+            $learning_development_title_20  = mysqli_real_escape_string($con, $_POST['learning_development_title_20']);
+            $learning_development_from_20  = mysqli_real_escape_string($con, $_POST['learning_development_from_20']);
+            $learning_development_to_20  = mysqli_real_escape_string($con, $_POST['learning_development_to_20']);
+            $learning_development_number_of_hours_20  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_20']);
+            $learning_development_type_of_ld_20  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_20']);
+            $learning_development_conducted_by_20  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_20']);
+
+            $learning_development_title_21  = mysqli_real_escape_string($con, $_POST['learning_development_title_21']);
+            $learning_development_from_21  = mysqli_real_escape_string($con, $_POST['learning_development_from_21']);
+            $learning_development_to_21  = mysqli_real_escape_string($con, $_POST['learning_development_to_21']);
+            $learning_development_number_of_hours_21  = mysqli_real_escape_string($con, $_POST['learning_development_number_of_hours_21']);
+            $learning_development_type_of_ld_21  = mysqli_real_escape_string($con, $_POST['learning_development_type_of_ld_21']);
+            $learning_development_conducted_by_21  = mysqli_real_escape_string($con, $_POST['learning_development_conducted_by_21']);
+         
+         
+
+
+         
+        
+
+
+            $sql = mysqli_query($con, "UPDATE learning_tbl SET
+            learning_development_title_1='$learning_development_title_1',
+            learning_development_from_1='$learning_development_from_1',
+            learning_development_to_1='$learning_development_to_1',
+            learning_development_number_of_hours_1='$learning_development_number_of_hours_1',
+            learning_development_type_of_ld_1='$learning_development_type_of_ld_1',
+            learning_development_conducted_by_1='$learning_development_conducted_by_1',
+            learning_development_title_2='$learning_development_title_2',
+            learning_development_from_2='$learning_development_from_2',
+            learning_development_to_2='$learning_development_to_2',
+            learning_development_number_of_hours_2='$learning_development_number_of_hours_2',
+            learning_development_type_of_ld_2='$learning_development_type_of_ld_2',
+            learning_development_conducted_by_2='$learning_development_conducted_by_2',
+            learning_development_title_3='$learning_development_title_3',
+            learning_development_from_3='$learning_development_from_3',
+            learning_development_to_3='$learning_development_to_3',
+            learning_development_number_of_hours_3='$learning_development_number_of_hours_3',
+            learning_development_type_of_ld_3='$learning_development_type_of_ld_3',
+            learning_development_conducted_by_3='$learning_development_conducted_by_3',
+            learning_development_title_4='$learning_development_title_4',
+            learning_development_from_4='$learning_development_from_4',
+            learning_development_to_4='$learning_development_to_4',
+            learning_development_number_of_hours_4='$learning_development_number_of_hours_4',
+            learning_development_type_of_ld_4='$learning_development_type_of_ld_4',
+            learning_development_conducted_by_4='$learning_development_conducted_by_4',
+            learning_development_title_5='$learning_development_title_5',
+            learning_development_from_5='$learning_development_from_5',
+            learning_development_to_5='$learning_development_to_5',
+            learning_development_number_of_hours_5='$learning_development_number_of_hours_5',
+            learning_development_type_of_ld_5='$learning_development_type_of_ld_5',
+            learning_development_conducted_by_5='$learning_development_conducted_by_5',
+            learning_development_title_6='$learning_development_title_6',
+            learning_development_from_6='$learning_development_from_6',
+            learning_development_to_6='$learning_development_to_6',
+            learning_development_number_of_hours_6='$learning_development_number_of_hours_6',
+            learning_development_type_of_ld_6='$learning_development_type_of_ld_6',
+            learning_development_conducted_by_6='$learning_development_conducted_by_6',
+            learning_development_title_7='$learning_development_title_7',
+            learning_development_from_7='$learning_development_from_7',
+            learning_development_to_7='$learning_development_to_7',
+            learning_development_number_of_hours_7='$learning_development_number_of_hours_7',
+            learning_development_type_of_ld_7='$learning_development_type_of_ld_7',
+            learning_development_conducted_by_7='$learning_development_conducted_by_7',
+            learning_development_title_8='$learning_development_title_8',
+            learning_development_from_8='$learning_development_from_8',
+            learning_development_to_8='$learning_development_to_8',
+            learning_development_number_of_hours_8='$learning_development_number_of_hours_8',
+            learning_development_type_of_ld_8='$learning_development_type_of_ld_8',
+            learning_development_conducted_by_8='$learning_development_conducted_by_8',
+            learning_development_title_9='$learning_development_title_9',
+            learning_development_from_9='$learning_development_from_9',
+            learning_development_to_9='$learning_development_to_9',
+            learning_development_number_of_hours_9='$learning_development_number_of_hours_9',
+            learning_development_type_of_ld_9='$learning_development_type_of_ld_9',
+            learning_development_conducted_by_9='$learning_development_conducted_by_9',
+            learning_development_title_10='$learning_development_title_10',
+            learning_development_from_10='$learning_development_from_10',
+            learning_development_to_10='$learning_development_to_10',
+            learning_development_number_of_hours_10='$learning_development_number_of_hours_10',
+            learning_development_type_of_ld_10='$learning_development_type_of_ld_10',
+            learning_development_conducted_by_10='$learning_development_conducted_by_10' 
+ 
+
             WHERE pds_id='$pds_id'
             ");
 
+
+
+        $sql = mysqli_query($con, "UPDATE learning20_tbl SET
+            learning_development_title_11='$learning_development_title_11',
+            learning_development_from_11='$learning_development_from_11',
+            learning_development_to_11='$learning_development_to_11',
+            learning_development_number_of_hours_11='$learning_development_number_of_hours_11',
+            learning_development_type_of_ld_11='$learning_development_type_of_ld_11',
+            learning_development_conducted_by_11='$learning_development_conducted_by_11',
+            learning_development_title_12='$learning_development_title_12',
+            learning_development_from_12='$learning_development_from_12',
+            learning_development_to_12='$learning_development_to_12',
+            learning_development_number_of_hours_12='$learning_development_number_of_hours_12',
+            learning_development_type_of_ld_12='$learning_development_type_of_ld_12',
+            learning_development_conducted_by_12='$learning_development_conducted_by_12',
+            learning_development_title_13='$learning_development_title_13',
+            learning_development_from_13='$learning_development_from_13',
+            learning_development_to_13='$learning_development_to_13',
+            learning_development_number_of_hours_13='$learning_development_number_of_hours_13',
+            learning_development_type_of_ld_13='$learning_development_type_of_ld_13',
+            learning_development_conducted_by_13='$learning_development_conducted_by_13',
+            learning_development_title_14='$learning_development_title_14',
+            learning_development_from_14='$learning_development_from_14',
+            learning_development_to_14='$learning_development_to_14',
+            learning_development_number_of_hours_14='$learning_development_number_of_hours_14',
+            learning_development_type_of_ld_14='$learning_development_type_of_ld_14',
+            learning_development_conducted_by_14='$learning_development_conducted_by_14',
+            learning_development_title_15='$learning_development_title_15',
+            learning_development_from_15='$learning_development_from_15',
+            learning_development_to_15='$learning_development_to_15',
+            learning_development_number_of_hours_15='$learning_development_number_of_hours_15',
+            learning_development_type_of_ld_15='$learning_development_type_of_ld_15',
+            learning_development_conducted_by_15='$learning_development_conducted_by_15',
+            learning_development_title_16='$learning_development_title_16',
+            learning_development_from_16='$learning_development_from_16',
+            learning_development_to_16='$learning_development_to_16',
+            learning_development_number_of_hours_16='$learning_development_number_of_hours_16',
+            learning_development_type_of_ld_16='$learning_development_type_of_ld_16',
+            learning_development_conducted_by_16='$learning_development_conducted_by_16',
+            learning_development_title_17='$learning_development_title_17',
+            learning_development_from_17='$learning_development_from_17',
+            learning_development_to_17='$learning_development_to_17',
+            learning_development_number_of_hours_17='$learning_development_number_of_hours_17',
+            learning_development_type_of_ld_17='$learning_development_type_of_ld_17',
+            learning_development_conducted_by_17='$learning_development_conducted_by_17',
+            learning_development_title_18='$learning_development_title_18',
+            learning_development_from_18='$learning_development_from_18',
+            learning_development_to_18='$learning_development_to_18',
+            learning_development_number_of_hours_18='$learning_development_number_of_hours_18',
+            learning_development_type_of_ld_18='$learning_development_type_of_ld_18',
+            learning_development_conducted_by_18='$learning_development_conducted_by_18',
+            learning_development_title_19='$learning_development_title_19',
+            learning_development_from_19='$learning_development_from_19',
+            learning_development_to_19='$learning_development_to_19',
+            learning_development_number_of_hours_19='$learning_development_number_of_hours_19',
+            learning_development_type_of_ld_19='$learning_development_type_of_ld_19',
+            learning_development_conducted_by_19='$learning_development_conducted_by_19',
+            learning_development_title_20='$learning_development_title_20',
+            learning_development_from_20='$learning_development_from_20',
+            learning_development_to_20='$learning_development_to_20',
+            learning_development_number_of_hours_20='$learning_development_number_of_hours_20',
+            learning_development_type_of_ld_20='$learning_development_type_of_ld_20',
+            learning_development_conducted_by_20='$learning_development_conducted_by_20',
+            learning_development_title_21='$learning_development_title_21',
+            learning_development_from_21='$learning_development_from_21',
+            learning_development_to_21='$learning_development_to_21',
+            learning_development_number_of_hours_21='$learning_development_number_of_hours_21',
+            learning_development_type_of_ld_21='$learning_development_type_of_ld_21',
+            learning_development_conducted_by_21='$learning_development_conducted_by_21' 
+ 
+
+            WHERE pds_id='$pds_id'
+            ");
                 ?>
                 <script>
                     alert('ok');
@@ -2899,6 +3138,176 @@ function pds_section7_10_update()
 
 
 
+
+
+function pds_section8_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM other_information_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+            <form method="POST">
+                
+                <tr>
+                    <th style="width:200px;">SPECIAL SKILLS and HOBBIES</th>
+                    <th style="width:400px;">NON-ACADEMIC DISTINCTIONS / RECOGNITION (Write in full)</th>
+                    <th style="width:100px;">MEMBERSHIP IN ASSOCIATION/ORGANIZATION   (Write in full) </th>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill1" value="<?= $row['skill1']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition1" value="<?= $row['recognition1']?>"></td>
+                    <td><input type="text" class="form-control" name="organization1" value="<?= $row['organization1']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill2" value="<?= $row['skill2']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition2" value="<?= $row['recognition2']?>"></td>
+                    <td><input type="text" class="form-control" name="organization2" value="<?= $row['organization2']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill3" value="<?= $row['skill3']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition3" value="<?= $row['recognition3']?>"></td>
+                    <td><input type="text" class="form-control" name="organization3" value="<?= $row['organization3']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill4" value="<?= $row['skill4']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition4" value="<?= $row['recognition4']?>"></td>
+                    <td><input type="text" class="form-control" name="organization4" value="<?= $row['organization4']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill5" value="<?= $row['skill5']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition5" value="<?= $row['recognition5']?>"></td>
+                    <td><input type="text" class="form-control" name="organization5" value="<?= $row['organization5']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill6" value="<?= $row['skill6']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition6" value="<?= $row['recognition6']?>"></td>
+                    <td><input type="text" class="form-control" name="organization6" value="<?= $row['organization6']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="skill7" value="<?= $row['skill7']?>"></td>
+                    <td><input type="text" class="form-control" name="recognition7" value="<?= $row['recognition7']?>"></td>
+                    <td><input type="text" class="form-control" name="organization7" value="<?= $row['organization7']?>"></td>
+                </tr>
+                </table>
+
+        <br>
+                    <div class="col-md-12 ">
+                        <div class=" pull right">
+                        <button type="submit" name="update_pds_section_8_button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+
+                    </div>	
+                            </div>		
+</form>
+
+<?php
+
+if(isset($_POST['update_pds_section_8_button']))
+{
+
+$pds_id = $_SESSION['id'];
+$skill1  = mysqli_real_escape_string($con, $_POST['skill1']);
+$recognition1  = mysqli_real_escape_string($con, $_POST['recognition1']);
+$organization1  = mysqli_real_escape_string($con, $_POST['organization1']);
+
+$skill2  = mysqli_real_escape_string($con, $_POST['skill2']);
+$recognition2  = mysqli_real_escape_string($con, $_POST['recognition2']);
+$organization2  = mysqli_real_escape_string($con, $_POST['organization2']);
+
+
+$skill3  = mysqli_real_escape_string($con, $_POST['skill3']);
+$recognition3  = mysqli_real_escape_string($con, $_POST['recognition3']);
+$organization3  = mysqli_real_escape_string($con, $_POST['organization3']);
+
+
+$skill4  = mysqli_real_escape_string($con, $_POST['skill4']);
+$recognition4  = mysqli_real_escape_string($con, $_POST['recognition4']);
+$organization4  = mysqli_real_escape_string($con, $_POST['organization4']);
+
+
+$skill5  = mysqli_real_escape_string($con, $_POST['skill5']);
+$recognition5  = mysqli_real_escape_string($con, $_POST['recognition5']);
+$organization5  = mysqli_real_escape_string($con, $_POST['organization5']);
+
+
+$skill6  = mysqli_real_escape_string($con, $_POST['skill6']);
+$recognition6  = mysqli_real_escape_string($con, $_POST['recognition6']);
+$organization6  = mysqli_real_escape_string($con, $_POST['organization6']);
+
+
+$skill7  = mysqli_real_escape_string($con, $_POST['skill7']);
+$recognition7  = mysqli_real_escape_string($con, $_POST['recognition7']);
+$organization7  = mysqli_real_escape_string($con, $_POST['organization7']);
+
+
+
+
+
+
+$sql = mysqli_query($con, "UPDATE other_information_tbl SET 
+skill1='$skill1',
+skill2='$skill2',
+skill3='$skill3',
+skill4='$skill4',
+skill5='$skill5',
+skill6='$skill6',
+skill7='$skill7',
+recognition1='$recognition1',
+recognition2='$recognition2',
+recognition3='$recognition3',
+recognition4='$recognition4',
+recognition5='$recognition5',
+recognition6='$recognition6',
+recognition7='$recognition7',
+organization1='$organization1',
+organization2='$organization2',
+organization3='$organization3',
+organization4='$organization4',
+organization5='$organization5',
+organization6='$organization6',
+organization7='$organization7'
+
+WHERE pds_id='$pds_id'
+");
+
+
+
+?>
+<script>
+    alert('ok');
+</script>
+
+
+
+
+
+
+<?php
+
+
+}
+    
+}
 
 
 
