@@ -1289,197 +1289,1034 @@ function pds_section4_update()
 
 
 
-function pds_section5_update()
+function pds_section5_we5_update()
 {
     global $con;
 
     $id     =    $_SESSION['id'];
 
-    $sql = mysqli_query($con, "SELECT * FROM civil_service_tbl WHERE pds_id='$id'");
+    $sql = mysqli_query($con, "SELECT * FROM work_experience5_tbl WHERE pds_id='$id'");
     $row = mysqli_fetch_assoc($sql);
     ?>
             <form method="POST">
-                <div style="overflow-x:auto; " >
-                   <table style=" width:100%;">
-                        <tr>
+               
 
 
 
-                        
- 
-                            <th colspan="2">INCLUSIVE DATES (mm/dd/yyyy)</th>
-                            <th rowspan="2" style="width:200px;">POSITION TITLE (Write in full/Do not abbreviate)</th>
-                            <th rowspan="2" style="width:400px;">DEPARTMENT / AGENCY / OFFICE / COMPANY (Write in full/Do not abbreviate)</th>
-                            <th rowspan="2" style="width:100px;">MONTHLY SALARY</th>
-                            <th rowspan="2" style="width:100px;">SALARY/ JOB/ PAY GRADE (if applicable)& STEP  (Format "00-0")/ INCREMENT</th>
-                            <th rowspan="2" style="width:100px;">STATUS OF APPOINTMENT</th>
-                            <th rowspan="2" style="width:50px;">GOV'T SERVICE (Y/ N)</th>
-                        </tr>
-                        <tr>
-                            <th style="width:100px;">From</th>
-                            <th style="width:100px;">To</th>
-                        </tr>
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_1" value="<?= $row['career_1']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_1" value="<?= $row['rating_1']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_1" value="<?= $row['date_of_examination_1']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_1" value="<?= $row['place_of_examination_1']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_1" value="<?= $row['license_number_1']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_1" value="<?= $row['license_validity_1']?>"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_2" value="<?= $row['career_2']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_2" value="<?= $row['rating_2']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_2" value="<?= $row['date_of_examination_2']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_2" value="<?= $row['place_of_examination_2']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_2" value="<?= $row['license_number_2']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_2" value="<?= $row['license_validity_2']?>"></td>
-                        </tr>
+                
+                <tr>
+                    <th colspan="2">INCLUSIVE DATES (mm/dd/yyyy)</th>
+                    <th rowspan="2" style="width:200px;">POSITION TITLE (Write in full/Do not abbreviate)</th>
+                    <th rowspan="2" style="width:400px;">DEPARTMENT / AGENCY / OFFICE / COMPANY (Write in full/Do not abbreviate)</th>
+                    <th rowspan="2" style="width:100px;">MONTHLY SALARY</th>
+                    <th rowspan="2" style="width:100px;">SALARY/ JOB/ PAY GRADE (if applicable)& STEP  (Format "00-0")/ INCREMENT</th>
+                    <th rowspan="2" style="width:100px;">STATUS OF APPOINTMENT</th>
+                    <th rowspan="2" style="width:50px;">GOV'T SERVICE (Y/ N)</th>
+                </tr>
+                <tr>
+                    <th style="width:100px;">From</th>
+                    <th style="width:100px;">To</th>
+                </tr>
 
 
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_3" value="<?= $row['career_3']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_3" value="<?= $row['rating_3']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_3" value="<?= $row['date_of_examination_3']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_3" value="<?= $row['place_of_examination_3']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_3" value="<?= $row['license_number_3']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_3" value="<?= $row['license_validity_3']?>"></td>
-                        </tr>
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_1" value="<?= $row['inclusive_dates_from_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_1" value="<?= $row['inclusive_dates_to_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_1" value="<?= $row['inclusive_dates_position_title_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_1" value="<?= $row['inclusive_dates_department_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_1" value="<?= $row['inclusive_dates_monthly_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_1" value="<?= $row['inclusive_dates_salary_job_paygrade_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_1" value="<?= $row['inclusive_dates_status_of_appointment_1']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_1" value="<?= $row['inclusive_dates_government_service_1']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_2" value="<?= $row['inclusive_dates_from_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_2" value="<?= $row['inclusive_dates_to_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_2" value="<?= $row['inclusive_dates_position_title_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_2" value="<?= $row['inclusive_dates_department_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_2" value="<?= $row['inclusive_dates_monthly_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_2" value="<?= $row['inclusive_dates_salary_job_paygrade_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_2" value="<?= $row['inclusive_dates_status_of_appointment_2']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_2" value="<?= $row['inclusive_dates_government_service_2']?>"></td>
+                </tr>
 
 
 
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_4" value="<?= $row['career_4']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_4" value="<?= $row['rating_4']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_4" value="<?= $row['date_of_examination_4']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_4" value="<?= $row['place_of_examination_4']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_4" value="<?= $row['license_number_4']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_4" value="<?= $row['license_number_4']?>"></td>
-                        </tr>
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_3" value="<?= $row['inclusive_dates_from_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_3" value="<?= $row['inclusive_dates_to_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_3" value="<?= $row['inclusive_dates_position_title_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_3" value="<?= $row['inclusive_dates_department_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_3" value="<?= $row['inclusive_dates_monthly_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_3" value="<?= $row['inclusive_dates_salary_job_paygrade_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_3" value="<?= $row['inclusive_dates_status_of_appointment_3']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_3" value="<?= $row['inclusive_dates_government_service_3']?>"></td>
+                </tr>
 
 
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_5" value="<?= $row['career_5']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_5" value="<?= $row['rating_5']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_5" value="<?= $row['date_of_examination_5']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_5" value="<?= $row['place_of_examination_5']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_5" value="<?= $row['license_number_5']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_5" value="<?= $row['license_validity_5']?>"></td>
-                        </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_4" value="<?= $row['inclusive_dates_from_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_4" value="<?= $row['inclusive_dates_to_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_4" value="<?= $row['inclusive_dates_position_title_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_4" value="<?= $row['inclusive_dates_department_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_4" value="<?= $row['inclusive_dates_monthly_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_4" value="<?= $row['inclusive_dates_salary_job_paygrade_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_4" value="<?= $row['inclusive_dates_status_of_appointment_4']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_4" value="<?= $row['inclusive_dates_government_service_4']?>"></td>
+                </tr>
 
 
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_6" value="<?= $row['career_6']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_6" value="<?= $row['rating_6']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_6" value="<?= $row['date_of_examination_6']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_6" value="<?= $row['place_of_examination_6']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_6" value="<?= $row['license_number_6']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_6" value="<?= $row['license_validity_6']?>"></td>
-                        </tr>
-
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_7" value="<?= $row['career_7']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_7" value="<?= $row['rating_7']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_7" value="<?= $row['date_of_examination_7']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_7" value="<?= $row['place_of_examination_7']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_7" value="<?= $row['license_number_7']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_7" value="<?= $row['license_validity_7']?>"></td>
-                        </tr>
-
-                    
-                    </table>
-                    
-</div>	
-        </div>		
-        </div>		
-
-</form>
-
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_5" value="<?= $row['inclusive_dates_from_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_5" value="<?= $row['inclusive_dates_to_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_5" value="<?= $row['inclusive_dates_position_title_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_5" value="<?= $row['inclusive_dates_department_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_5" value="<?= $row['inclusive_dates_monthly_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_5" value="<?= $row['inclusive_dates_salary_job_paygrade_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_5" value="<?= $row['inclusive_dates_status_of_appointment_5']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_5" value="<?= $row['inclusive_dates_government_service_5']?>"></td>
+                </tr>
            
     <?php
+    
+}
 
 
-    if(isset($_POST['update_pds_section_2_button']))
+
+
+
+function pds_section5_we10_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM work_experience10_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+      
+               
+
+
+
+                
+     
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_6" value="<?= $row['inclusive_dates_from_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_6" value="<?= $row['inclusive_dates_to_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_6" value="<?= $row['inclusive_dates_position_title_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_6" value="<?= $row['inclusive_dates_department_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_6" value="<?= $row['inclusive_dates_monthly_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_6" value="<?= $row['inclusive_dates_salary_job_paygrade_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_6" value="<?= $row['inclusive_dates_status_of_appointment_6']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_6" value="<?= $row['inclusive_dates_government_service_6']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_7" value="<?= $row['inclusive_dates_from_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_7" value="<?= $row['inclusive_dates_to_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_7" value="<?= $row['inclusive_dates_position_title_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_7" value="<?= $row['inclusive_dates_department_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_7" value="<?= $row['inclusive_dates_monthly_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_7" value="<?= $row['inclusive_dates_salary_job_paygrade_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_7" value="<?= $row['inclusive_dates_status_of_appointment_7']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_7" value="<?= $row['inclusive_dates_government_service_7']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_8" value="<?= $row['inclusive_dates_from_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_8" value="<?= $row['inclusive_dates_to_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_8" value="<?= $row['inclusive_dates_position_title_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_8" value="<?= $row['inclusive_dates_department_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_8" value="<?= $row['inclusive_dates_monthly_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_8" value="<?= $row['inclusive_dates_salary_job_paygrade_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_8" value="<?= $row['inclusive_dates_status_of_appointment_8']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_8" value="<?= $row['inclusive_dates_government_service_8']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_9" value="<?= $row['inclusive_dates_from_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_9" value="<?= $row['inclusive_dates_to_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_9" value="<?= $row['inclusive_dates_position_title_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_9" value="<?= $row['inclusive_dates_department_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_9" value="<?= $row['inclusive_dates_monthly_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_9" value="<?= $row['inclusive_dates_salary_job_paygrade_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_9" value="<?= $row['inclusive_dates_status_of_appointment_9']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_9" value="<?= $row['inclusive_dates_government_service_9']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_10" value="<?= $row['inclusive_dates_from_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_10" value="<?= $row['inclusive_dates_to_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_10" value="<?= $row['inclusive_dates_position_title_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_10" value="<?= $row['inclusive_dates_department_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_10" value="<?= $row['inclusive_dates_monthly_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_10" value="<?= $row['inclusive_dates_salary_job_paygrade_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_10" value="<?= $row['inclusive_dates_status_of_appointment_10']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_10" value="<?= $row['inclusive_dates_government_service_10']?>"></td>
+                </tr>
+           
+    <?php
+    
+}
+
+
+
+function pds_section5_we15_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM work_experience15_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+               
+
+
+
+          
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_11" value="<?= $row['inclusive_dates_from_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_11" value="<?= $row['inclusive_dates_to_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_11" value="<?= $row['inclusive_dates_position_title_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_11" value="<?= $row['inclusive_dates_department_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_11" value="<?= $row['inclusive_dates_monthly_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_11" value="<?= $row['inclusive_dates_salary_job_paygrade_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_11" value="<?= $row['inclusive_dates_status_of_appointment_11']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_11" value="<?= $row['inclusive_dates_government_service_11']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_12" value="<?= $row['inclusive_dates_from_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_12" value="<?= $row['inclusive_dates_to_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_12" value="<?= $row['inclusive_dates_position_title_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_12" value="<?= $row['inclusive_dates_department_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_12" value="<?= $row['inclusive_dates_monthly_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_12" value="<?= $row['inclusive_dates_salary_job_paygrade_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_12" value="<?= $row['inclusive_dates_status_of_appointment_12']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_12" value="<?= $row['inclusive_dates_government_service_12']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_13" value="<?= $row['inclusive_dates_from_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_13" value="<?= $row['inclusive_dates_to_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_13" value="<?= $row['inclusive_dates_position_title_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_13" value="<?= $row['inclusive_dates_department_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_13" value="<?= $row['inclusive_dates_monthly_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_13" value="<?= $row['inclusive_dates_salary_job_paygrade_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_13" value="<?= $row['inclusive_dates_status_of_appointment_13']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_13" value="<?= $row['inclusive_dates_government_service_13']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_14" value="<?= $row['inclusive_dates_from_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_14" value="<?= $row['inclusive_dates_to_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_14" value="<?= $row['inclusive_dates_position_title_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_14" value="<?= $row['inclusive_dates_department_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_14" value="<?= $row['inclusive_dates_monthly_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_14" value="<?= $row['inclusive_dates_salary_job_paygrade_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_14" value="<?= $row['inclusive_dates_status_of_appointment_14']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_14" value="<?= $row['inclusive_dates_government_service_14']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_15" value="<?= $row['inclusive_dates_from_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_15" value="<?= $row['inclusive_dates_to_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_15" value="<?= $row['inclusive_dates_position_title_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_15" value="<?= $row['inclusive_dates_department_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_15" value="<?= $row['inclusive_dates_monthly_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_15" value="<?= $row['inclusive_dates_salary_job_paygrade_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_15" value="<?= $row['inclusive_dates_status_of_appointment_15']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_15" value="<?= $row['inclusive_dates_government_service_15']?>"></td>
+                </tr>
+           
+    <?php
+    
+}
+
+
+
+
+
+
+function pds_section5_we20_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM work_experience20_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+               
+
+
+
+          
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_16" value="<?= $row['inclusive_dates_from_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_16" value="<?= $row['inclusive_dates_to_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_16" value="<?= $row['inclusive_dates_position_title_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_16" value="<?= $row['inclusive_dates_department_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_16" value="<?= $row['inclusive_dates_monthly_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_16" value="<?= $row['inclusive_dates_salary_job_paygrade_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_16" value="<?= $row['inclusive_dates_status_of_appointment_16']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_16" value="<?= $row['inclusive_dates_government_service_16']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_17" value="<?= $row['inclusive_dates_from_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_17" value="<?= $row['inclusive_dates_to_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_17" value="<?= $row['inclusive_dates_position_title_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_17" value="<?= $row['inclusive_dates_department_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_17" value="<?= $row['inclusive_dates_monthly_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_17" value="<?= $row['inclusive_dates_salary_job_paygrade_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_17" value="<?= $row['inclusive_dates_status_of_appointment_17']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_17" value="<?= $row['inclusive_dates_government_service_17']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_18" value="<?= $row['inclusive_dates_from_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_18" value="<?= $row['inclusive_dates_to_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_18" value="<?= $row['inclusive_dates_position_title_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_18" value="<?= $row['inclusive_dates_department_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_18" value="<?= $row['inclusive_dates_monthly_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_18" value="<?= $row['inclusive_dates_salary_job_paygrade_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_18" value="<?= $row['inclusive_dates_status_of_appointment_18']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_18" value="<?= $row['inclusive_dates_government_service_18']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_19" value="<?= $row['inclusive_dates_from_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_19" value="<?= $row['inclusive_dates_to_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_19" value="<?= $row['inclusive_dates_position_title_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_19" value="<?= $row['inclusive_dates_department_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_19" value="<?= $row['inclusive_dates_monthly_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_19" value="<?= $row['inclusive_dates_salary_job_paygrade_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_19" value="<?= $row['inclusive_dates_status_of_appointment_19']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_19" value="<?= $row['inclusive_dates_government_service_19']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_20" value="<?= $row['inclusive_dates_from_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_20" value="<?= $row['inclusive_dates_to_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_20" value="<?= $row['inclusive_dates_position_title_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_20" value="<?= $row['inclusive_dates_department_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_20" value="<?= $row['inclusive_dates_monthly_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_20" value="<?= $row['inclusive_dates_salary_job_paygrade_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_20" value="<?= $row['inclusive_dates_status_of_appointment_20']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_20" value="<?= $row['inclusive_dates_government_service_20']?>"></td>
+                </tr>
+           
+    <?php
+    
+}
+
+
+
+
+
+function pds_section5_we25_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM work_experience25_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+               
+          
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_21" value="<?= $row['inclusive_dates_from_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_21" value="<?= $row['inclusive_dates_to_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_21" value="<?= $row['inclusive_dates_position_title_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_21" value="<?= $row['inclusive_dates_department_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_21" value="<?= $row['inclusive_dates_monthly_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_21" value="<?= $row['inclusive_dates_salary_job_paygrade_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_21" value="<?= $row['inclusive_dates_status_of_appointment_21']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_21" value="<?= $row['inclusive_dates_government_service_21']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_22" value="<?= $row['inclusive_dates_from_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_22" value="<?= $row['inclusive_dates_to_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_22" value="<?= $row['inclusive_dates_position_title_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_22" value="<?= $row['inclusive_dates_department_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_22" value="<?= $row['inclusive_dates_monthly_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_22" value="<?= $row['inclusive_dates_salary_job_paygrade_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_22" value="<?= $row['inclusive_dates_status_of_appointment_22']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_22" value="<?= $row['inclusive_dates_government_service_22']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_23" value="<?= $row['inclusive_dates_from_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_23" value="<?= $row['inclusive_dates_to_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_23" value="<?= $row['inclusive_dates_position_title_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_23" value="<?= $row['inclusive_dates_department_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_23" value="<?= $row['inclusive_dates_monthly_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_23" value="<?= $row['inclusive_dates_salary_job_paygrade_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_23" value="<?= $row['inclusive_dates_status_of_appointment_23']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_23" value="<?= $row['inclusive_dates_government_service_23']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_24" value="<?= $row['inclusive_dates_from_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_24" value="<?= $row['inclusive_dates_to_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_24" value="<?= $row['inclusive_dates_position_title_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_24" value="<?= $row['inclusive_dates_department_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_24" value="<?= $row['inclusive_dates_monthly_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_24" value="<?= $row['inclusive_dates_salary_job_paygrade_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_24" value="<?= $row['inclusive_dates_status_of_appointment_24']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_24" value="<?= $row['inclusive_dates_government_service_24']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_25" value="<?= $row['inclusive_dates_from_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_25" value="<?= $row['inclusive_dates_to_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_25" value="<?= $row['inclusive_dates_position_title_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_25" value="<?= $row['inclusive_dates_department_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_25" value="<?= $row['inclusive_dates_monthly_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_25" value="<?= $row['inclusive_dates_salary_job_paygrade_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_25" value="<?= $row['inclusive_dates_status_of_appointment_25']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_25" value="<?= $row['inclusive_dates_government_service_25']?>"></td>
+                </tr>
+									
+    <?php
+    
+}
+
+
+function pds_section5_we30_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM work_experience30_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+               
+          
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_26" value="<?= $row['inclusive_dates_from_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_26" value="<?= $row['inclusive_dates_to_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_26" value="<?= $row['inclusive_dates_position_title_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_26" value="<?= $row['inclusive_dates_department_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_26" value="<?= $row['inclusive_dates_monthly_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_26" value="<?= $row['inclusive_dates_salary_job_paygrade_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_26" value="<?= $row['inclusive_dates_status_of_appointment_26']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_26" value="<?= $row['inclusive_dates_government_service_26']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_27" value="<?= $row['inclusive_dates_from_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_27" value="<?= $row['inclusive_dates_to_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_27" value="<?= $row['inclusive_dates_position_title_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_27" value="<?= $row['inclusive_dates_department_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_27" value="<?= $row['inclusive_dates_monthly_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_27" value="<?= $row['inclusive_dates_salary_job_paygrade_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_27" value="<?= $row['inclusive_dates_status_of_appointment_27']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_27" value="<?= $row['inclusive_dates_government_service_27']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="inclusive_dates_from_28" value="<?= $row['inclusive_dates_from_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_to_28" value="<?= $row['inclusive_dates_to_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_position_title_28" value="<?= $row['inclusive_dates_position_title_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_department_28" value="<?= $row['inclusive_dates_department_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_monthly_28" value="<?= $row['inclusive_dates_monthly_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_salary_job_paygrade_28" value="<?= $row['inclusive_dates_salary_job_paygrade_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_status_of_appointment_28" value="<?= $row['inclusive_dates_status_of_appointment_28']?>"></td>
+                    <td><input type="text" class="form-control" name="inclusive_dates_government_service_28" value="<?= $row['inclusive_dates_government_service_28']?>"></td>
+                </tr>
+
+                </table>
+                <br>
+                    <div class="col-md-12 ">
+                        <div class=" pull right">
+                        <button type="submit" name="update_pds_section_5_button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+              
+    <?php
+    if(isset($_POST['update_pds_section_5_button']))
     {
-        $elementary_name_of_school  = mysqli_real_escape_string($con, $_POST['elementary_name_of_school']);
-        $elementary_basic_education  = mysqli_real_escape_string($con, $_POST['elementary_basic_education']);
-        $elementary_period_attendance_from  = mysqli_real_escape_string($con, $_POST['elementary_period_attendance_from']);
-        $elementary_period_attendance_to  = mysqli_real_escape_string($con, $_POST['elementary_period_attendance_to']);
-        $elementary_highest_level  = mysqli_real_escape_string($con, $_POST['elementary_highest_level']);
-        $elementary_year_graduated  = mysqli_real_escape_string($con, $_POST['elementary_year_graduated']);
-        $elementary_honor_received  = mysqli_real_escape_string($con, $_POST['elementary_honor_received']);
-        $secondary_name_of_school  = mysqli_real_escape_string($con, $_POST['secondary_name_of_school']);
-        $secondary_basic_education  = mysqli_real_escape_string($con, $_POST['secondary_basic_education']);
-        $secondary_period_attendance_from  = mysqli_real_escape_string($con, $_POST['secondary_period_attendance_from']);
-        $secondary_period_attendance_to  = mysqli_real_escape_string($con, $_POST['secondary_period_attendance_to']);
-        $secondary_highest_level  = mysqli_real_escape_string($con, $_POST['secondary_highest_level']);
-        $secondary_year_graduated  = mysqli_real_escape_string($con, $_POST['secondary_year_graduated']);
-        $secondary_honor_received  = mysqli_real_escape_string($con, $_POST['secondary_honor_received']);
-        $vocational_name_of_school  = mysqli_real_escape_string($con, $_POST['vocational_name_of_school']);
-        $vocational_basic_education  = mysqli_real_escape_string($con, $_POST['vocational_basic_education']);
-        $vocational_period_attendance_from  = mysqli_real_escape_string($con, $_POST['vocational_period_attendance_from']);
-        $vocational_period_attendance_to  = mysqli_real_escape_string($con, $_POST['vocational_period_attendance_to']);
-        $vocational_highest_level  = mysqli_real_escape_string($con, $_POST['vocational_highest_level']);
-        $vocational_year_graduated  = mysqli_real_escape_string($con, $_POST['vocational_year_graduated']);
-        $vocational_honor_received  = mysqli_real_escape_string($con, $_POST['vocational_honor_received']);
-        $college_name_of_school  = mysqli_real_escape_string($con, $_POST['college_name_of_school']);
-        $college_basic_education  = mysqli_real_escape_string($con, $_POST['college_basic_education']);
-        $college_period_attendance_from  = mysqli_real_escape_string($con, $_POST['college_period_attendance_from']);
-        $college_period_attendance_to  = mysqli_real_escape_string($con, $_POST['college_period_attendance_to']);
-        $college_highest_level  = mysqli_real_escape_string($con, $_POST['college_highest_level']);
-        $college_year_graduated  = mysqli_real_escape_string($con, $_POST['college_year_graduated']);
-        $college_honor_received  = mysqli_real_escape_string($con, $_POST['college_honor_received']);
-        $graduate_studies_name_of_school  = mysqli_real_escape_string($con, $_POST['graduate_studies_name_of_school']);
-        $graduate_studies_basic_education  = mysqli_real_escape_string($con, $_POST['graduate_studies_basic_education']);
-        $graduate_studies_period_attendance_from  = mysqli_real_escape_string($con, $_POST['graduate_studies_period_attendance_from']);
-        $graduate_studies_period_attendance_to  = mysqli_real_escape_string($con, $_POST['graduate_studies_period_attendance_to']);
-        $graduate_studies_highest_level  = mysqli_real_escape_string($con, $_POST['graduate_studies_highest_level']);
-        $graduate_studies_year_graduated  = mysqli_real_escape_string($con, $_POST['graduate_studies_year_graduated']);
-        $graduate_studies_honor_received  = mysqli_real_escape_string($con, $_POST['graduate_studies_honor_received']);
+        $inclusive_dates_from_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_1']);
+        $inclusive_dates_to_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_1']);
+        $inclusive_dates_position_title_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_1']);
+        $inclusive_dates_department_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_1']);
+        $inclusive_dates_monthly_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_1']);
+        $inclusive_dates_salary_job_paygrade_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_1']);
+        $inclusive_dates_status_of_appointment_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_1']);
+        $inclusive_dates_government_service_1  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_1']);
+
+
+
+        $inclusive_dates_from_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_2']);
+        $inclusive_dates_to_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_2']);
+        $inclusive_dates_position_title_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_2']);
+        $inclusive_dates_department_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_2']);
+        $inclusive_dates_monthly_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_2']);
+        $inclusive_dates_salary_job_paygrade_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_2']);
+        $inclusive_dates_status_of_appointment_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_2']);
+        $inclusive_dates_government_service_2  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_2']);
+
+
+
+        $inclusive_dates_from_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_3']);
+        $inclusive_dates_to_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_3']);
+        $inclusive_dates_position_title_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_3']);
+        $inclusive_dates_department_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_3']);
+        $inclusive_dates_monthly_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_3']);
+        $inclusive_dates_salary_job_paygrade_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_3']);
+        $inclusive_dates_status_of_appointment_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_3']);
+        $inclusive_dates_government_service_3  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_3']);
+
+
+        $inclusive_dates_from_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_4']);
+        $inclusive_dates_to_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_4']);
+        $inclusive_dates_position_title_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_4']);
+        $inclusive_dates_department_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_4']);
+        $inclusive_dates_monthly_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_4']);
+        $inclusive_dates_salary_job_paygrade_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_4']);
+        $inclusive_dates_status_of_appointment_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_4']);
+        $inclusive_dates_government_service_4  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_4']);
+
+
+        $inclusive_dates_from_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_5']);
+        $inclusive_dates_to_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_5']);
+        $inclusive_dates_position_title_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_5']);
+        $inclusive_dates_department_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_5']);
+        $inclusive_dates_monthly_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_5']);
+        $inclusive_dates_salary_job_paygrade_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_5']);
+        $inclusive_dates_status_of_appointment_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_5']);
+        $inclusive_dates_government_service_5  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_5']);
+
+        $inclusive_dates_from_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_6']);
+        $inclusive_dates_to_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_6']);
+        $inclusive_dates_position_title_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_6']);
+        $inclusive_dates_department_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_6']);
+        $inclusive_dates_monthly_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_6']);
+        $inclusive_dates_salary_job_paygrade_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_6']);
+        $inclusive_dates_status_of_appointment_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_6']);
+        $inclusive_dates_government_service_6  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_6']);
+
+
+        $inclusive_dates_from_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_7']);
+        $inclusive_dates_to_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_7']);
+        $inclusive_dates_position_title_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_7']);
+        $inclusive_dates_department_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_7']);
+        $inclusive_dates_monthly_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_7']);
+        $inclusive_dates_salary_job_paygrade_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_7']);
+        $inclusive_dates_status_of_appointment_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_7']);
+        $inclusive_dates_government_service_7  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_7']);
+
+        $inclusive_dates_from_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_8']);
+        $inclusive_dates_to_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_8']);
+        $inclusive_dates_position_title_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_8']);
+        $inclusive_dates_department_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_8']);
+        $inclusive_dates_monthly_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_8']);
+        $inclusive_dates_salary_job_paygrade_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_8']);
+        $inclusive_dates_status_of_appointment_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_8']);
+        $inclusive_dates_government_service_8  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_8']);
+
+
+        $inclusive_dates_from_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_9']);
+        $inclusive_dates_to_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_9']);
+        $inclusive_dates_position_title_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_9']);
+        $inclusive_dates_department_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_9']);
+        $inclusive_dates_monthly_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_9']);
+        $inclusive_dates_salary_job_paygrade_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_9']);
+        $inclusive_dates_status_of_appointment_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_9']);
+        $inclusive_dates_government_service_9  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_9']);
+
+        $inclusive_dates_from_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_10']);
+        $inclusive_dates_to_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_10']);
+        $inclusive_dates_position_title_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_10']);
+        $inclusive_dates_department_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_10']);
+        $inclusive_dates_monthly_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_10']);
+        $inclusive_dates_salary_job_paygrade_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_10']);
+        $inclusive_dates_status_of_appointment_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_10']);
+        $inclusive_dates_government_service_10  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_10']);
+
+        $inclusive_dates_from_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_11']);
+        $inclusive_dates_to_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_11']);
+        $inclusive_dates_position_title_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_11']);
+        $inclusive_dates_department_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_11']);
+        $inclusive_dates_monthly_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_11']);
+        $inclusive_dates_salary_job_paygrade_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_11']);
+        $inclusive_dates_status_of_appointment_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_11']);
+        $inclusive_dates_government_service_11  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_11']);
+
+        $inclusive_dates_from_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_12']);
+        $inclusive_dates_to_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_12']);
+        $inclusive_dates_position_title_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_12']);
+        $inclusive_dates_department_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_12']);
+        $inclusive_dates_monthly_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_12']);
+        $inclusive_dates_salary_job_paygrade_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_12']);
+        $inclusive_dates_status_of_appointment_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_12']);
+        $inclusive_dates_government_service_12  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_12']);
+
+
+
+        $inclusive_dates_from_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_13']);
+        $inclusive_dates_to_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_13']);
+        $inclusive_dates_position_title_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_13']);
+        $inclusive_dates_department_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_13']);
+        $inclusive_dates_monthly_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_13']);
+        $inclusive_dates_salary_job_paygrade_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_13']);
+        $inclusive_dates_status_of_appointment_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_13']);
+        $inclusive_dates_government_service_13  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_13']);
+
+
+        $inclusive_dates_from_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_14']);
+        $inclusive_dates_to_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_14']);
+        $inclusive_dates_position_title_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_14']);
+        $inclusive_dates_department_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_14']);
+        $inclusive_dates_monthly_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_14']);
+        $inclusive_dates_salary_job_paygrade_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_14']);
+        $inclusive_dates_status_of_appointment_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_14']);
+        $inclusive_dates_government_service_14  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_14']);
+
+
+
+        $inclusive_dates_from_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_15']);
+        $inclusive_dates_to_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_15']);
+        $inclusive_dates_position_title_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_15']);
+        $inclusive_dates_department_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_15']);
+        $inclusive_dates_monthly_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_15']);
+        $inclusive_dates_salary_job_paygrade_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_15']);
+        $inclusive_dates_status_of_appointment_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_15']);
+        $inclusive_dates_government_service_15  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_15']);
+
+
+        $inclusive_dates_from_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_16']);
+        $inclusive_dates_to_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_16']);
+        $inclusive_dates_position_title_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_16']);
+        $inclusive_dates_department_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_16']);
+        $inclusive_dates_monthly_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_16']);
+        $inclusive_dates_salary_job_paygrade_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_16']);
+        $inclusive_dates_status_of_appointment_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_16']);
+        $inclusive_dates_government_service_16  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_16']);
+
+
+        $inclusive_dates_from_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_17']);
+        $inclusive_dates_to_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_17']);
+        $inclusive_dates_position_title_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_17']);
+        $inclusive_dates_department_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_17']);
+        $inclusive_dates_monthly_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_17']);
+        $inclusive_dates_salary_job_paygrade_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_17']);
+        $inclusive_dates_status_of_appointment_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_17']);
+        $inclusive_dates_government_service_17  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_17']);
+
+
+        $inclusive_dates_from_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_18']);
+        $inclusive_dates_to_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_18']);
+        $inclusive_dates_position_title_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_18']);
+        $inclusive_dates_department_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_18']);
+        $inclusive_dates_monthly_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_18']);
+        $inclusive_dates_salary_job_paygrade_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_18']);
+        $inclusive_dates_status_of_appointment_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_18']);
+        $inclusive_dates_government_service_18  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_18']);
+
+
+
+        $inclusive_dates_from_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_19']);
+        $inclusive_dates_to_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_19']);
+        $inclusive_dates_position_title_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_19']);
+        $inclusive_dates_department_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_19']);
+        $inclusive_dates_monthly_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_19']);
+        $inclusive_dates_salary_job_paygrade_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_19']);
+        $inclusive_dates_status_of_appointment_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_19']);
+        $inclusive_dates_government_service_19  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_19']);
+
+
+        $inclusive_dates_from_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_20']);
+        $inclusive_dates_to_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_20']);
+        $inclusive_dates_position_title_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_20']);
+        $inclusive_dates_department_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_20']);
+        $inclusive_dates_monthly_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_20']);
+        $inclusive_dates_salary_job_paygrade_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_20']);
+        $inclusive_dates_status_of_appointment_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_20']);
+        $inclusive_dates_government_service_20  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_20']);
+
+
+
+        $inclusive_dates_from_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_21']);
+        $inclusive_dates_to_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_21']);
+        $inclusive_dates_position_title_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_21']);
+        $inclusive_dates_department_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_21']);
+        $inclusive_dates_monthly_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_21']);
+        $inclusive_dates_salary_job_paygrade_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_21']);
+        $inclusive_dates_status_of_appointment_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_21']);
+        $inclusive_dates_government_service_21  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_21']);
+
+
+        $inclusive_dates_from_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_22']);
+        $inclusive_dates_to_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_22']);
+        $inclusive_dates_position_title_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_22']);
+        $inclusive_dates_department_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_22']);
+        $inclusive_dates_monthly_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_22']);
+        $inclusive_dates_salary_job_paygrade_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_22']);
+        $inclusive_dates_status_of_appointment_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_22']);
+        $inclusive_dates_government_service_22  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_22']);
+
+
+
+        $inclusive_dates_from_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_23']);
+        $inclusive_dates_to_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_23']);
+        $inclusive_dates_position_title_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_23']);
+        $inclusive_dates_department_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_23']);
+        $inclusive_dates_monthly_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_23']);
+        $inclusive_dates_salary_job_paygrade_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_23']);
+        $inclusive_dates_status_of_appointment_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_23']);
+        $inclusive_dates_government_service_23  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_23']);
+
+
+        $inclusive_dates_from_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_24']);
+        $inclusive_dates_to_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_24']);
+        $inclusive_dates_position_title_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_24']);
+        $inclusive_dates_department_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_24']);
+        $inclusive_dates_monthly_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_24']);
+        $inclusive_dates_salary_job_paygrade_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_24']);
+        $inclusive_dates_status_of_appointment_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_24']);
+        $inclusive_dates_government_service_24  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_24']);
+
+
+        $inclusive_dates_from_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_25']);
+        $inclusive_dates_to_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_25']);
+        $inclusive_dates_position_title_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_25']);
+        $inclusive_dates_department_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_25']);
+        $inclusive_dates_monthly_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_25']);
+        $inclusive_dates_salary_job_paygrade_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_25']);
+        $inclusive_dates_status_of_appointment_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_25']);
+        $inclusive_dates_government_service_25  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_25']);
+
+
+        $inclusive_dates_from_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_26']);
+        $inclusive_dates_to_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_26']);
+        $inclusive_dates_position_title_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_26']);
+        $inclusive_dates_department_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_26']);
+        $inclusive_dates_monthly_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_26']);
+        $inclusive_dates_salary_job_paygrade_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_26']);
+        $inclusive_dates_status_of_appointment_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_26']);
+        $inclusive_dates_government_service_26  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_26']);
+
+
+        $inclusive_dates_from_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_27']);
+        $inclusive_dates_to_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_27']);
+        $inclusive_dates_position_title_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_27']);
+        $inclusive_dates_department_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_27']);
+        $inclusive_dates_monthly_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_27']);
+        $inclusive_dates_salary_job_paygrade_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_27']);
+        $inclusive_dates_status_of_appointment_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_27']);
+        $inclusive_dates_government_service_27  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_27']);
+
+
+
+        $inclusive_dates_from_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_from_28']);
+        $inclusive_dates_to_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_to_28']);
+        $inclusive_dates_position_title_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_position_title_28']);
+        $inclusive_dates_department_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_department_28']);
+        $inclusive_dates_monthly_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_monthly_28']);
+        $inclusive_dates_salary_job_paygrade_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_salary_job_paygrade_28']);
+        $inclusive_dates_status_of_appointment_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_status_of_appointment_28']);
+        $inclusive_dates_government_service_28  = mysqli_real_escape_string($con, $_POST['inclusive_dates_government_service_28']);
+       
         $pds_id = $_SESSION['id'];
 
-        $sq2l = mysqli_query($con, "UPDATE personal_information_tbl SET 
-       elementary_name_of_school='$elementary_name_of_school',
-       elementary_basic_education='$elementary_basic_education',
-       elementary_period_attendance_from='$elementary_period_attendance_from',
-       elementary_period_attendance_to='$elementary_period_attendance_to',
-       elementary_highest_level='$elementary_highest_level',
-       elementary_year_graduated='$elementary_year_graduated',
-       elementary_honor_received='$elementary_honor_received',
-       secondary_name_of_school='$secondary_name_of_school',
-       secondary_basic_education='$secondary_basic_education',
-       secondary_period_attendance_from='$secondary_period_attendance_from',
-       secondary_period_attendance_to='$secondary_period_attendance_to',
-       secondary_highest_level='$secondary_highest_level',
-       secondary_year_graduated='$secondary_year_graduated',
-       secondary_honor_received='$secondary_honor_received',
-       vocational_name_of_school='$vocational_name_of_school',
-       vocational_basic_education='$vocational_basic_education',
-       vocational_period_attendance_from='$vocational_period_attendance_from',
-       vocational_period_attendance_to='$vocational_period_attendance_to',
-       vocational_highest_level='$vocational_highest_level',
-       vocational_year_graduated='$vocational_year_graduated',
-       vocational_honor_received='$vocational_honor_received',
-       college_name_of_school='$college_name_of_school',
-       college_basic_education='$college_basic_education',
-       college_period_attendance_from='$college_period_attendance_from',
-       college_period_attendance_to='$college_period_attendance_to',
-       college_highest_level='$college_highest_level',
-       college_year_graduated='$college_year_graduated',
-       college_honor_received='$college_honor_received',
-       graduate_studies_name_of_school='$graduate_studies_name_of_school',
-       graduate_studies_basic_education='$graduate_studies_basic_education',
-       graduate_studies_period_attendance_from='$graduate_studies_period_attendance_from',
-       graduate_studies_period_attendance_to='$graduate_studies_period_attendance_to',
-       graduate_studies_highest_level='$graduate_studies_highest_level',
-       graduate_studies_year_graduated='$graduate_studies_year_graduated',
-       graduate_studies_honor_received='$graduate_studies_honor_received' 
+
+
+
+
+
+        $sql_we5 = mysqli_query($con, "UPDATE work_experience5_tbl SET 
+        inclusive_dates_from_1='$inclusive_dates_from_1',
+        inclusive_dates_to_1='$inclusive_dates_to_1',
+        inclusive_dates_position_title_1='$inclusive_dates_position_title_1',
+        inclusive_dates_department_1='$inclusive_dates_department_1',
+        inclusive_dates_monthly_1='$inclusive_dates_monthly_1',
+        inclusive_dates_salary_job_paygrade_1='$inclusive_dates_salary_job_paygrade_1',
+        inclusive_dates_status_of_appointment_1='$inclusive_dates_status_of_appointment_1',
+        inclusive_dates_government_service_1='$inclusive_dates_government_service_1',
+        inclusive_dates_from_2='$inclusive_dates_from_2',
+        inclusive_dates_to_2='$inclusive_dates_to_2',
+        inclusive_dates_position_title_2='$inclusive_dates_position_title_2',
+        inclusive_dates_department_2='$inclusive_dates_department_2',
+        inclusive_dates_monthly_2='$inclusive_dates_monthly_2',
+        inclusive_dates_salary_job_paygrade_2='$inclusive_dates_salary_job_paygrade_2',
+        inclusive_dates_status_of_appointment_2='$inclusive_dates_status_of_appointment_2',
+        inclusive_dates_government_service_2='$inclusive_dates_government_service_2',
+        inclusive_dates_from_3='$inclusive_dates_from_3',
+        inclusive_dates_to_3='$inclusive_dates_to_3',
+        inclusive_dates_position_title_3='$inclusive_dates_position_title_3',
+        inclusive_dates_department_3='$inclusive_dates_department_3',
+        inclusive_dates_monthly_3='$inclusive_dates_monthly_3',
+        inclusive_dates_salary_job_paygrade_3='$inclusive_dates_salary_job_paygrade_3',
+        inclusive_dates_status_of_appointment_3='$inclusive_dates_status_of_appointment_3',
+        inclusive_dates_government_service_3='$inclusive_dates_government_service_3',
+        inclusive_dates_from_4='$inclusive_dates_from_4',
+        inclusive_dates_to_4='$inclusive_dates_to_4',
+        inclusive_dates_position_title_4='$inclusive_dates_position_title_4',
+        inclusive_dates_department_4='$inclusive_dates_department_4',
+        inclusive_dates_monthly_4='$inclusive_dates_monthly_4',
+        inclusive_dates_salary_job_paygrade_4='$inclusive_dates_salary_job_paygrade_4',
+        inclusive_dates_status_of_appointment_4='$inclusive_dates_status_of_appointment_4',
+        inclusive_dates_government_service_4='$inclusive_dates_government_service_4',
+        inclusive_dates_from_5='$inclusive_dates_from_5',
+        inclusive_dates_to_5='$inclusive_dates_to_5',
+        inclusive_dates_position_title_5='$inclusive_dates_position_title_5',
+        inclusive_dates_department_5='$inclusive_dates_department_5',
+        inclusive_dates_monthly_5='$inclusive_dates_monthly_5',
+        inclusive_dates_salary_job_paygrade_5='$inclusive_dates_salary_job_paygrade_5',
+        inclusive_dates_status_of_appointment_5='$inclusive_dates_status_of_appointment_5',
+        inclusive_dates_government_service_5='$inclusive_dates_government_service_5' 
         WHERE pds_id='$pds_id'
-          
           ");
-      
+
+
+        $sql_we10 = mysqli_query($con, "UPDATE work_experience10_tbl SET 
+        inclusive_dates_from_6='$inclusive_dates_from_6',
+        inclusive_dates_to_6='$inclusive_dates_to_6',
+        inclusive_dates_position_title_6='$inclusive_dates_position_title_6',
+        inclusive_dates_department_6='$inclusive_dates_department_6',
+        inclusive_dates_monthly_6='$inclusive_dates_monthly_6',
+        inclusive_dates_salary_job_paygrade_6='$inclusive_dates_salary_job_paygrade_6',
+        inclusive_dates_status_of_appointment_6='$inclusive_dates_status_of_appointment_6',
+        inclusive_dates_government_service_6='$inclusive_dates_government_service_6',
+        inclusive_dates_from_7='$inclusive_dates_from_7',
+        inclusive_dates_to_7='$inclusive_dates_to_7',
+        inclusive_dates_position_title_7='$inclusive_dates_position_title_7',
+        inclusive_dates_department_7='$inclusive_dates_department_7',
+        inclusive_dates_monthly_7='$inclusive_dates_monthly_7',
+        inclusive_dates_salary_job_paygrade_7='$inclusive_dates_salary_job_paygrade_7',
+        inclusive_dates_status_of_appointment_7='$inclusive_dates_status_of_appointment_7',
+        inclusive_dates_government_service_7='$inclusive_dates_government_service_7',
+        inclusive_dates_from_8='$inclusive_dates_from_8',
+        inclusive_dates_to_8='$inclusive_dates_to_8',
+        inclusive_dates_position_title_8='$inclusive_dates_position_title_8',
+        inclusive_dates_department_8='$inclusive_dates_department_8',
+        inclusive_dates_monthly_8='$inclusive_dates_monthly_8',
+        inclusive_dates_salary_job_paygrade_8='$inclusive_dates_salary_job_paygrade_8',
+        inclusive_dates_status_of_appointment_8='$inclusive_dates_status_of_appointment_8',
+        inclusive_dates_government_service_8='$inclusive_dates_government_service_8',
+        inclusive_dates_from_9='$inclusive_dates_from_9',
+        inclusive_dates_to_9='$inclusive_dates_to_9',
+        inclusive_dates_position_title_9='$inclusive_dates_position_title_9',
+        inclusive_dates_department_9='$inclusive_dates_department_9',
+        inclusive_dates_monthly_9='$inclusive_dates_monthly_9',
+        inclusive_dates_salary_job_paygrade_9='$inclusive_dates_salary_job_paygrade_9',
+        inclusive_dates_status_of_appointment_9='$inclusive_dates_status_of_appointment_9',
+        inclusive_dates_government_service_9='$inclusive_dates_government_service_9',
+        inclusive_dates_from_10='$inclusive_dates_from_10',
+        inclusive_dates_to_10='$inclusive_dates_to_10',
+        inclusive_dates_position_title_10='$inclusive_dates_position_title_10',
+        inclusive_dates_department_10='$inclusive_dates_department_10',
+        inclusive_dates_monthly_10='$inclusive_dates_monthly_10',
+        inclusive_dates_salary_job_paygrade_10='$inclusive_dates_salary_job_paygrade_10',
+        inclusive_dates_status_of_appointment_10='$inclusive_dates_status_of_appointment_10',
+        inclusive_dates_government_service_10='$inclusive_dates_government_service_10' 
+        WHERE pds_id='$pds_id'
+        ");
+
+
+        $sql_we15 = mysqli_query($con, "UPDATE work_experience15_tbl SET 
+        inclusive_dates_from_11='$inclusive_dates_from_11',
+        inclusive_dates_to_11='$inclusive_dates_to_11',
+        inclusive_dates_position_title_11='$inclusive_dates_position_title_11',
+        inclusive_dates_department_11='$inclusive_dates_department_11',
+        inclusive_dates_monthly_11='$inclusive_dates_monthly_11',
+        inclusive_dates_salary_job_paygrade_11='$inclusive_dates_salary_job_paygrade_11',
+        inclusive_dates_status_of_appointment_11='$inclusive_dates_status_of_appointment_11',
+        inclusive_dates_government_service_11='$inclusive_dates_government_service_11',
+        inclusive_dates_from_12='$inclusive_dates_from_12',
+        inclusive_dates_to_12='$inclusive_dates_to_12',
+        inclusive_dates_position_title_12='$inclusive_dates_position_title_12',
+        inclusive_dates_department_12='$inclusive_dates_department_12',
+        inclusive_dates_monthly_12='$inclusive_dates_monthly_12',
+        inclusive_dates_salary_job_paygrade_12='$inclusive_dates_salary_job_paygrade_12',
+        inclusive_dates_status_of_appointment_12='$inclusive_dates_status_of_appointment_12',
+        inclusive_dates_government_service_12='$inclusive_dates_government_service_12',
+        inclusive_dates_from_13='$inclusive_dates_from_13',
+        inclusive_dates_to_13='$inclusive_dates_to_13',
+        inclusive_dates_position_title_13='$inclusive_dates_position_title_13',
+        inclusive_dates_department_13='$inclusive_dates_department_13',
+        inclusive_dates_monthly_13='$inclusive_dates_monthly_13',
+        inclusive_dates_salary_job_paygrade_13='$inclusive_dates_salary_job_paygrade_13',
+        inclusive_dates_status_of_appointment_13='$inclusive_dates_status_of_appointment_13',
+        inclusive_dates_government_service_13='$inclusive_dates_government_service_13',
+        inclusive_dates_from_14='$inclusive_dates_from_14',
+        inclusive_dates_to_14='$inclusive_dates_to_14',
+        inclusive_dates_position_title_14='$inclusive_dates_position_title_14',
+        inclusive_dates_department_14='$inclusive_dates_department_14',
+        inclusive_dates_monthly_14='$inclusive_dates_monthly_14',
+        inclusive_dates_salary_job_paygrade_14='$inclusive_dates_salary_job_paygrade_14',
+        inclusive_dates_status_of_appointment_14='$inclusive_dates_status_of_appointment_14',
+        inclusive_dates_government_service_14='$inclusive_dates_government_service_14',
+        inclusive_dates_from_15='$inclusive_dates_from_15',
+        inclusive_dates_to_15='$inclusive_dates_to_15',
+        inclusive_dates_position_title_15='$inclusive_dates_position_title_15',
+        inclusive_dates_department_15='$inclusive_dates_department_15',
+        inclusive_dates_monthly_15='$inclusive_dates_monthly_15',
+        inclusive_dates_salary_job_paygrade_15='$inclusive_dates_salary_job_paygrade_15',
+        inclusive_dates_status_of_appointment_15='$inclusive_dates_status_of_appointment_15',
+        inclusive_dates_government_service_15='$inclusive_dates_government_service_15' 
+        WHERE pds_id='$pds_id'
+        ");
+
+        $sql_we20 = mysqli_query($con, "UPDATE work_experience20_tbl SET 
+        inclusive_dates_from_16='$inclusive_dates_from_16',
+        inclusive_dates_to_16='$inclusive_dates_to_16',
+        inclusive_dates_position_title_16='$inclusive_dates_position_title_16',
+        inclusive_dates_department_16='$inclusive_dates_department_16',
+        inclusive_dates_monthly_16='$inclusive_dates_monthly_16',
+        inclusive_dates_salary_job_paygrade_16='$inclusive_dates_salary_job_paygrade_16',
+        inclusive_dates_status_of_appointment_16='$inclusive_dates_status_of_appointment_16',
+        inclusive_dates_government_service_16='$inclusive_dates_government_service_16',
+        inclusive_dates_from_17='$inclusive_dates_from_17',
+        inclusive_dates_to_17='$inclusive_dates_to_17',
+        inclusive_dates_position_title_17='$inclusive_dates_position_title_17',
+        inclusive_dates_department_17='$inclusive_dates_department_17',
+        inclusive_dates_monthly_17='$inclusive_dates_monthly_17',
+        inclusive_dates_salary_job_paygrade_17='$inclusive_dates_salary_job_paygrade_17',
+        inclusive_dates_status_of_appointment_17='$inclusive_dates_status_of_appointment_17',
+        inclusive_dates_government_service_17='$inclusive_dates_government_service_17',
+        inclusive_dates_from_18='$inclusive_dates_from_18',
+        inclusive_dates_to_18='$inclusive_dates_to_18',
+        inclusive_dates_position_title_18='$inclusive_dates_position_title_18',
+        inclusive_dates_department_18='$inclusive_dates_department_18',
+        inclusive_dates_monthly_18='$inclusive_dates_monthly_18',
+        inclusive_dates_salary_job_paygrade_18='$inclusive_dates_salary_job_paygrade_18',
+        inclusive_dates_status_of_appointment_18='$inclusive_dates_status_of_appointment_18',
+        inclusive_dates_government_service_18='$inclusive_dates_government_service_18',
+        inclusive_dates_from_19='$inclusive_dates_from_19',
+        inclusive_dates_to_19='$inclusive_dates_to_19',
+        inclusive_dates_position_title_19='$inclusive_dates_position_title_19',
+        inclusive_dates_department_19='$inclusive_dates_department_19',
+        inclusive_dates_monthly_19='$inclusive_dates_monthly_19',
+        inclusive_dates_salary_job_paygrade_19='$inclusive_dates_salary_job_paygrade_19',
+        inclusive_dates_status_of_appointment_19='$inclusive_dates_status_of_appointment_19',
+        inclusive_dates_government_service_19='$inclusive_dates_government_service_19',
+        inclusive_dates_from_20='$inclusive_dates_from_20',
+        inclusive_dates_to_20='$inclusive_dates_to_20',
+        inclusive_dates_position_title_20='$inclusive_dates_position_title_20',
+        inclusive_dates_department_20='$inclusive_dates_department_20',
+        inclusive_dates_monthly_20='$inclusive_dates_monthly_20',
+        inclusive_dates_salary_job_paygrade_20='$inclusive_dates_salary_job_paygrade_20',
+        inclusive_dates_status_of_appointment_20='$inclusive_dates_status_of_appointment_20',
+        inclusive_dates_government_service_20='$inclusive_dates_government_service_20' 
+        WHERE pds_id='$pds_id'
+        ");
+
+        $sql_we25 = mysqli_query($con, "UPDATE work_experience25_tbl SET 
+        inclusive_dates_from_21='$inclusive_dates_from_21',
+        inclusive_dates_to_21='$inclusive_dates_to_21',
+        inclusive_dates_position_title_21='$inclusive_dates_position_title_21',
+        inclusive_dates_department_21='$inclusive_dates_department_21',
+        inclusive_dates_monthly_21='$inclusive_dates_monthly_21',
+        inclusive_dates_salary_job_paygrade_21='$inclusive_dates_salary_job_paygrade_21',
+        inclusive_dates_status_of_appointment_21='$inclusive_dates_status_of_appointment_21',
+        inclusive_dates_government_service_21='$inclusive_dates_government_service_21',
+        inclusive_dates_from_22='$inclusive_dates_from_22',
+        inclusive_dates_to_22='$inclusive_dates_to_22',
+        inclusive_dates_position_title_22='$inclusive_dates_position_title_22',
+        inclusive_dates_department_22='$inclusive_dates_department_22',
+        inclusive_dates_monthly_22='$inclusive_dates_monthly_22',
+        inclusive_dates_salary_job_paygrade_22='$inclusive_dates_salary_job_paygrade_22',
+        inclusive_dates_status_of_appointment_22='$inclusive_dates_status_of_appointment_22',
+        inclusive_dates_government_service_22='$inclusive_dates_government_service_22',
+        inclusive_dates_from_23='$inclusive_dates_from_23',
+        inclusive_dates_to_23='$inclusive_dates_to_23',
+        inclusive_dates_position_title_23='$inclusive_dates_position_title_23',
+        inclusive_dates_department_23='$inclusive_dates_department_23',
+        inclusive_dates_monthly_23='$inclusive_dates_monthly_23',
+        inclusive_dates_salary_job_paygrade_23='$inclusive_dates_salary_job_paygrade_23',
+        inclusive_dates_status_of_appointment_23='$inclusive_dates_status_of_appointment_23',
+        inclusive_dates_government_service_23='$inclusive_dates_government_service_23',
+        inclusive_dates_from_24='$inclusive_dates_from_24',
+        inclusive_dates_to_24='$inclusive_dates_to_24',
+        inclusive_dates_position_title_24='$inclusive_dates_position_title_24',
+        inclusive_dates_department_24='$inclusive_dates_department_24',
+        inclusive_dates_monthly_24='$inclusive_dates_monthly_24',
+        inclusive_dates_salary_job_paygrade_24='$inclusive_dates_salary_job_paygrade_24',
+        inclusive_dates_status_of_appointment_24='$inclusive_dates_status_of_appointment_24',
+        inclusive_dates_government_service_24='$inclusive_dates_government_service_24',
+        inclusive_dates_from_25='$inclusive_dates_from_25',
+        inclusive_dates_to_25='$inclusive_dates_to_25',
+        inclusive_dates_position_title_25='$inclusive_dates_position_title_25',
+        inclusive_dates_department_25='$inclusive_dates_department_25',
+        inclusive_dates_monthly_25='$inclusive_dates_monthly_25',
+        inclusive_dates_salary_job_paygrade_25='$inclusive_dates_salary_job_paygrade_25',
+        inclusive_dates_status_of_appointment_25='$inclusive_dates_status_of_appointment_25',
+        inclusive_dates_government_service_25='$inclusive_dates_government_service_25' 
+        WHERE pds_id='$pds_id'
+        ");
+
+
+        $sql_we30 = mysqli_query($con, "UPDATE work_experience30_tbl SET 
+        inclusive_dates_from_26='$inclusive_dates_from_26',
+        inclusive_dates_to_26='$inclusive_dates_to_26',
+        inclusive_dates_position_title_26='$inclusive_dates_position_title_26',
+        inclusive_dates_department_26='$inclusive_dates_department_26',
+        inclusive_dates_monthly_26='$inclusive_dates_monthly_26',
+        inclusive_dates_salary_job_paygrade_26='$inclusive_dates_salary_job_paygrade_26',
+        inclusive_dates_status_of_appointment_26='$inclusive_dates_status_of_appointment_26',
+        inclusive_dates_government_service_26='$inclusive_dates_government_service_26',
+        inclusive_dates_from_27='$inclusive_dates_from_27',
+        inclusive_dates_to_27='$inclusive_dates_to_27',
+        inclusive_dates_position_title_27='$inclusive_dates_position_title_27',
+        inclusive_dates_department_27='$inclusive_dates_department_27',
+        inclusive_dates_monthly_27='$inclusive_dates_monthly_27',
+        inclusive_dates_salary_job_paygrade_27='$inclusive_dates_salary_job_paygrade_27',
+        inclusive_dates_status_of_appointment_27='$inclusive_dates_status_of_appointment_27',
+        inclusive_dates_government_service_27='$inclusive_dates_government_service_27',
+        inclusive_dates_from_28='$inclusive_dates_from_28',
+        inclusive_dates_to_28='$inclusive_dates_to_28',
+        inclusive_dates_position_title_28='$inclusive_dates_position_title_28',
+        inclusive_dates_department_28='$inclusive_dates_department_28',
+        inclusive_dates_monthly_28='$inclusive_dates_monthly_28',
+        inclusive_dates_salary_job_paygrade_28='$inclusive_dates_salary_job_paygrade_28',
+        inclusive_dates_status_of_appointment_28='$inclusive_dates_status_of_appointment_28',
+        inclusive_dates_government_service_28='$inclusive_dates_government_service_28'
+        WHERE pds_id='$pds_id'
+        ");
+
       ?>
         <script>
             alert('ok');
@@ -1490,6 +2327,581 @@ function pds_section5_update()
 
     }
 }
+
+
+
+
+
+function pds_section6_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM voluntary_work_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+            <form method="POST">
+                
+                <tr>
+                    <th rowspan="2" style="width:200px;">NAME & ADDRESS OF ORGANIZATION (Write in full)</th>
+                    <th colspan="2">INCLUSIVE DATES (mm/dd/yyyy)</th>
+                    <th rowspan="2" style="width:400px;">NUMBER OF HOURS</th>
+                    <th rowspan="2" style="width:100px;">POSITION / NATURE OF WORK</th>
+                </tr>
+                <tr>
+                    <th style="width:100px;">From</th>
+                    <th style="width:100px;">To</th>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_1" value="<?= $row['voluntary_work_name_address_1']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_1" value="<?= $row['voluntary_work_from_1']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_1" value="<?= $row['voluntary_work_to_1']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_1" value="<?= $row['voluntary_work_hours_1']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_1" value="<?= $row['voluntary_work_position_1']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_2" value="<?= $row['voluntary_work_name_address_2']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_2" value="<?= $row['voluntary_work_from_2']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_2" value="<?= $row['voluntary_work_to_2']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_2" value="<?= $row['voluntary_work_hours_2']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_2" value="<?= $row['voluntary_work_position_2']?>"></td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_3" value="<?= $row['voluntary_work_name_address_3']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_3" value="<?= $row['voluntary_work_from_3']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_3" value="<?= $row['voluntary_work_to_3']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_3" value="<?= $row['voluntary_work_hours_3']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_3" value="<?= $row['voluntary_work_position_3']?>"></td>
+                </tr>
+
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_4" value="<?= $row['voluntary_work_name_address_4']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_4" value="<?= $row['voluntary_work_from_4']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_4" value="<?= $row['voluntary_work_to_4']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_4" value="<?= $row['voluntary_work_hours_4']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_4" value="<?= $row['voluntary_work_position_4']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_5" value="<?= $row['voluntary_work_name_address_5']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_5" value="<?= $row['voluntary_work_from_5']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_5" value="<?= $row['voluntary_work_to_5']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_5" value="<?= $row['voluntary_work_hours_5']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_5" value="<?= $row['voluntary_work_position_5']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_6" value="<?= $row['voluntary_work_name_address_6']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_6" value="<?= $row['voluntary_work_from_6']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_6" value="<?= $row['voluntary_work_to_6']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_6" value="<?= $row['voluntary_work_hours_6']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_6" value="<?= $row['voluntary_work_position_6']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="voluntary_work_name_address_7" value="<?= $row['voluntary_work_name_address_7']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_from_7" value="<?= $row['voluntary_work_from_7']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_to_7" value="<?= $row['voluntary_work_to_7']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_hours_7" value="<?= $row['voluntary_work_hours_7']?>"></td>
+                    <td><input type="text" class="form-control" name="voluntary_work_position_7" value="<?= $row['voluntary_work_position_7']?>"></td>
+                </tr>
+
+</table>
+                <br>
+                    <div class="col-md-12 ">
+                        <div class=" pull right">
+                        <button type="submit" name="update_pds_section_6_button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+
+                    </div>	
+											</div>		
+        </form>
+               
+    <?php
+
+        if(isset($_POST['update_pds_section_6_button']))
+        {
+
+            $pds_id = $_SESSION['id'];
+            $voluntary_work_name_address_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_1']);
+            $voluntary_work_from_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_1']);
+            $voluntary_work_to_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_1']);
+            $voluntary_work_hours_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_1']);
+            $voluntary_work_position_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_1']);
+
+            $voluntary_work_name_address_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_2']);
+            $voluntary_work_from_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_2']);
+            $voluntary_work_to_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_2']);
+            $voluntary_work_hours_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_2']);
+            $voluntary_work_position_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_2']);
+
+            $voluntary_work_name_address_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_3']);
+            $voluntary_work_from_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_3']);
+            $voluntary_work_to_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_3']);
+            $voluntary_work_hours_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_3']);
+            $voluntary_work_position_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_3']);
+
+
+            $voluntary_work_name_address_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_4']);
+            $voluntary_work_from_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_4']);
+            $voluntary_work_to_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_4']);
+            $voluntary_work_hours_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_4']);
+            $voluntary_work_position_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_4']);
+
+            $voluntary_work_name_address_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_5']);
+            $voluntary_work_from_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_5']);
+            $voluntary_work_to_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_5']);
+            $voluntary_work_hours_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_5']);
+            $voluntary_work_position_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_5']);
+
+
+            $voluntary_work_name_address_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_6']);
+            $voluntary_work_from_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_6']);
+            $voluntary_work_to_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_6']);
+            $voluntary_work_hours_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_6']);
+            $voluntary_work_position_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_6']);
+
+            $voluntary_work_name_address_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_7']);
+            $voluntary_work_from_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_7']);
+            $voluntary_work_to_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_7']);
+            $voluntary_work_hours_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_7']);
+            $voluntary_work_position_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_7']);
+
+
+
+
+
+            $sql = mysqli_query($con, "UPDATE voluntary_work_tbl SET  voluntary_work_name_address_1='$voluntary_work_name_address_1',
+            voluntary_work_from_1='$voluntary_work_from_1',
+            voluntary_work_to_1='$voluntary_work_to_1',
+            voluntary_work_hours_1='$voluntary_work_hours_1',
+            voluntary_work_position_1='$voluntary_work_position_1',
+            voluntary_work_name_address_2='$voluntary_work_name_address_2',
+            voluntary_work_from_2='$voluntary_work_from_2',
+            voluntary_work_to_2='$voluntary_work_to_2',
+            voluntary_work_hours_2='$voluntary_work_hours_2',
+            voluntary_work_position_2='$voluntary_work_position_2',
+            voluntary_work_name_address_3='$voluntary_work_name_address_3',
+            voluntary_work_from_3='$voluntary_work_from_3',
+            voluntary_work_to_3='$voluntary_work_to_3',
+            voluntary_work_hours_3='$voluntary_work_hours_3',
+            voluntary_work_position_3='$voluntary_work_position_3',
+            voluntary_work_name_address_4='$voluntary_work_name_address_4',
+            voluntary_work_from_4='$voluntary_work_from_4',
+            voluntary_work_to_4='$voluntary_work_to_4',
+            voluntary_work_hours_4='$voluntary_work_hours_4',
+            voluntary_work_position_4='$voluntary_work_position_4',
+            voluntary_work_name_address_5='$voluntary_work_name_address_5',
+            voluntary_work_from_5='$voluntary_work_from_5',
+            voluntary_work_to_5='$voluntary_work_to_5',
+            voluntary_work_hours_5='$voluntary_work_hours_5',
+            voluntary_work_position_5='$voluntary_work_position_5',
+            voluntary_work_name_address_6='$voluntary_work_name_address_6',
+            voluntary_work_from_6='$voluntary_work_from_6',
+            voluntary_work_to_6='$voluntary_work_to_6',
+            voluntary_work_hours_6='$voluntary_work_hours_6',
+            voluntary_work_position_6='$voluntary_work_position_6',
+            voluntary_work_name_address_7='$voluntary_work_name_address_7',
+            voluntary_work_from_7='$voluntary_work_from_7',
+            voluntary_work_to_7='$voluntary_work_to_7',
+            voluntary_work_hours_7='$voluntary_work_hours_7',
+            voluntary_work_position_7='$voluntary_work_position_7'
+            WHERE pds_id='$pds_id'
+            ");
+
+                ?>
+                <script>
+                    alert('ok');
+                </script>
+
+
+                <?php
+        }
+    
+}
+
+
+
+
+function pds_section7_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM voluntary_work_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+            <form method="POST">
+                
+                <tr>
+                    <th rowspan="2" style="width:200px;">TITLE OF LEARNING AND DEVELOPMENT INTERVENTIONS/TRAINING PROGRAMS (Write in full)</th>
+                    <th colspan="2">INCLUSIVE DATES (mm/dd/yyyy)</th>
+                    <th rowspan="2" style="width:400px;">NUMBER OF HOURS</th>
+                    <th rowspan="2" style="width:100px;">Type of LD( Managerial/ Supervisory/ Technical/etc) </th>
+                    <th rowspan="2" style="width:100px;"> CONDUCTED/ SPONSORED BY (Write in full)</th>
+                </tr>
+                <tr>
+                    <th style="width:100px;">From</th>
+                    <th style="width:100px;">To</th>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_1" value="<?= $row['learning_development_title_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_1" value="<?= $row['learning_development_from_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_1" value="<?= $row['learning_development_to_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_1" value="<?= $row['learning_development_number_of_hours_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_1" value="<?= $row['learning_development_type_of_ld_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_1" value="<?= $row['learning_development_conducted_by_1']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_2" value="<?= $row['learning_development_title_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_2" value="<?= $row['learning_development_from_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_2" value="<?= $row['learning_development_to_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_2" value="<?= $row['learning_development_number_of_hours_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_2" value="<?= $row['learning_development_type_of_ld_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_2" value="<?= $row['learning_development_conducted_by_2']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_3" value="<?= $row['learning_development_title_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_3" value="<?= $row['learning_development_from_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_3" value="<?= $row['learning_development_to_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_3" value="<?= $row['learning_development_number_of_hours_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_3" value="<?= $row['learning_development_type_of_ld_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_3" value="<?= $row['learning_development_conducted_by_3']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_4" value="<?= $row['learning_development_title_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_4" value="<?= $row['learning_development_from_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_4" value="<?= $row['learning_development_to_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_4" value="<?= $row['learning_development_number_of_hours_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_4" value="<?= $row['learning_development_type_of_ld_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_4" value="<?= $row['learning_development_conducted_by_4']?>"></td>
+                </tr>
+
+
+                   <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_5" value="<?= $row['learning_development_title_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_5" value="<?= $row['learning_development_from_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_5" value="<?= $row['learning_development_to_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_5" value="<?= $row['learning_development_number_of_hours_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_5" value="<?= $row['learning_development_type_of_ld_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_5" value="<?= $row['learning_development_conducted_by_5']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_6" value="<?= $row['learning_development_title_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_6" value="<?= $row['learning_development_from_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_6" value="<?= $row['learning_development_to_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_6" value="<?= $row['learning_development_number_of_hours_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_6" value="<?= $row['learning_development_type_of_ld_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_6" value="<?= $row['learning_development_conducted_by_6']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_7" value="<?= $row['learning_development_title_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_7" value="<?= $row['learning_development_from_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_7" value="<?= $row['learning_development_to_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_7" value="<?= $row['learning_development_number_of_hours_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_7" value="<?= $row['learning_development_type_of_ld_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_7" value="<?= $row['learning_development_conducted_by_7']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_8" value="<?= $row['learning_development_title_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_8" value="<?= $row['learning_development_from_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_8" value="<?= $row['learning_development_to_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_8" value="<?= $row['learning_development_number_of_hours_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_8" value="<?= $row['learning_development_type_of_ld_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_8" value="<?= $row['learning_development_conducted_by_8']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_9" value="<?= $row['learning_development_title_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_9" value="<?= $row['learning_development_from_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_9" value="<?= $row['learning_development_to_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_9" value="<?= $row['learning_development_number_of_hours_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_9" value="<?= $row['learning_development_type_of_ld_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_9" value="<?= $row['learning_development_conducted_by_9']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_10" value="<?= $row['learning_development_title_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_10" value="<?= $row['learning_development_from_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_10" value="<?= $row['learning_development_to_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_10" value="<?= $row['learning_development_number_of_hours_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_10" value="<?= $row['learning_development_type_of_ld_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_10" value="<?= $row['learning_development_conducted_by_10']?>"></td>
+                </tr>
+
+
+                
+
+                <?php
+        
+    
+}
+
+
+function pds_section7_10_update()
+{
+    global $con;
+
+    $id     =    $_SESSION['id'];
+
+    $sql = mysqli_query($con, "SELECT * FROM voluntary_work_tbl WHERE pds_id='$id'");
+    $row = mysqli_fetch_assoc($sql);
+    ?>
+           
+
+
+
+           <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_1" value="<?= $row['learning_development_title_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_1" value="<?= $row['learning_development_from_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_1" value="<?= $row['learning_development_to_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_1" value="<?= $row['learning_development_number_of_hours_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_1" value="<?= $row['learning_development_type_of_ld_1']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_1" value="<?= $row['learning_development_conducted_by_1']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_2" value="<?= $row['learning_development_title_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_2" value="<?= $row['learning_development_from_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_2" value="<?= $row['learning_development_to_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_2" value="<?= $row['learning_development_number_of_hours_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_2" value="<?= $row['learning_development_type_of_ld_2']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_2" value="<?= $row['learning_development_conducted_by_2']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_3" value="<?= $row['learning_development_title_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_3" value="<?= $row['learning_development_from_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_3" value="<?= $row['learning_development_to_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_3" value="<?= $row['learning_development_number_of_hours_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_3" value="<?= $row['learning_development_type_of_ld_3']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_3" value="<?= $row['learning_development_conducted_by_3']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_4" value="<?= $row['learning_development_title_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_4" value="<?= $row['learning_development_from_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_4" value="<?= $row['learning_development_to_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_4" value="<?= $row['learning_development_number_of_hours_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_4" value="<?= $row['learning_development_type_of_ld_4']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_4" value="<?= $row['learning_development_conducted_by_4']?>"></td>
+                </tr>
+
+
+                   <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_5" value="<?= $row['learning_development_title_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_5" value="<?= $row['learning_development_from_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_5" value="<?= $row['learning_development_to_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_5" value="<?= $row['learning_development_number_of_hours_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_5" value="<?= $row['learning_development_type_of_ld_5']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_5" value="<?= $row['learning_development_conducted_by_5']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_6" value="<?= $row['learning_development_title_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_6" value="<?= $row['learning_development_from_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_6" value="<?= $row['learning_development_to_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_6" value="<?= $row['learning_development_number_of_hours_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_6" value="<?= $row['learning_development_type_of_ld_6']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_6" value="<?= $row['learning_development_conducted_by_6']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_7" value="<?= $row['learning_development_title_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_7" value="<?= $row['learning_development_from_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_7" value="<?= $row['learning_development_to_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_7" value="<?= $row['learning_development_number_of_hours_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_7" value="<?= $row['learning_development_type_of_ld_7']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_7" value="<?= $row['learning_development_conducted_by_7']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_8" value="<?= $row['learning_development_title_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_8" value="<?= $row['learning_development_from_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_8" value="<?= $row['learning_development_to_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_8" value="<?= $row['learning_development_number_of_hours_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_8" value="<?= $row['learning_development_type_of_ld_8']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_8" value="<?= $row['learning_development_conducted_by_8']?>"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_9" value="<?= $row['learning_development_title_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_9" value="<?= $row['learning_development_from_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_9" value="<?= $row['learning_development_to_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_9" value="<?= $row['learning_development_number_of_hours_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_9" value="<?= $row['learning_development_type_of_ld_9']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_9" value="<?= $row['learning_development_conducted_by_9']?>"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="text" class="form-control" name="learning_development_title_10" value="<?= $row['learning_development_title_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_from_10" value="<?= $row['learning_development_from_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_to_10" value="<?= $row['learning_development_to_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_number_of_hours_10" value="<?= $row['learning_development_number_of_hours_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_type_of_ld_10" value="<?= $row['learning_development_type_of_ld_10']?>"></td>
+                    <td><input type="text" class="form-control" name="learning_development_conducted_by_10" value="<?= $row['learning_development_conducted_by_10']?>"></td>
+                </tr>
+
+
+                
+
+
+
+
+</table>
+                <br>
+                    <div class="col-md-12 ">
+                        <div class=" pull right">
+                        <button type="submit" name="update_pds_section_6_button" class="btn btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+
+                    </div>	
+											</div>		
+        </form>
+               
+    <?php
+
+        if(isset($_POST['update_pds_section_6_button']))
+        {
+
+            $pds_id = $_SESSION['id'];
+            $voluntary_work_name_address_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_1']);
+            $voluntary_work_from_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_1']);
+            $voluntary_work_to_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_1']);
+            $voluntary_work_hours_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_1']);
+            $voluntary_work_position_1  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_1']);
+
+            $voluntary_work_name_address_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_2']);
+            $voluntary_work_from_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_2']);
+            $voluntary_work_to_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_2']);
+            $voluntary_work_hours_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_2']);
+            $voluntary_work_position_2  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_2']);
+
+            $voluntary_work_name_address_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_3']);
+            $voluntary_work_from_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_3']);
+            $voluntary_work_to_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_3']);
+            $voluntary_work_hours_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_3']);
+            $voluntary_work_position_3  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_3']);
+
+
+            $voluntary_work_name_address_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_4']);
+            $voluntary_work_from_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_4']);
+            $voluntary_work_to_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_4']);
+            $voluntary_work_hours_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_4']);
+            $voluntary_work_position_4  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_4']);
+
+            $voluntary_work_name_address_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_5']);
+            $voluntary_work_from_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_5']);
+            $voluntary_work_to_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_5']);
+            $voluntary_work_hours_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_5']);
+            $voluntary_work_position_5  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_5']);
+
+
+            $voluntary_work_name_address_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_6']);
+            $voluntary_work_from_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_6']);
+            $voluntary_work_to_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_6']);
+            $voluntary_work_hours_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_6']);
+            $voluntary_work_position_6  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_6']);
+
+            $voluntary_work_name_address_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_name_address_7']);
+            $voluntary_work_from_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_from_7']);
+            $voluntary_work_to_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_to_7']);
+            $voluntary_work_hours_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_hours_7']);
+            $voluntary_work_position_7  = mysqli_real_escape_string($con, $_POST['voluntary_work_position_7']);
+
+
+
+
+
+            $sql = mysqli_query($con, "UPDATE voluntary_work_tbl SET  voluntary_work_name_address_1='$voluntary_work_name_address_1',
+            voluntary_work_from_1='$voluntary_work_from_1',
+            voluntary_work_to_1='$voluntary_work_to_1',
+            voluntary_work_hours_1='$voluntary_work_hours_1',
+            voluntary_work_position_1='$voluntary_work_position_1',
+            voluntary_work_name_address_2='$voluntary_work_name_address_2',
+            voluntary_work_from_2='$voluntary_work_from_2',
+            voluntary_work_to_2='$voluntary_work_to_2',
+            voluntary_work_hours_2='$voluntary_work_hours_2',
+            voluntary_work_position_2='$voluntary_work_position_2',
+            voluntary_work_name_address_3='$voluntary_work_name_address_3',
+            voluntary_work_from_3='$voluntary_work_from_3',
+            voluntary_work_to_3='$voluntary_work_to_3',
+            voluntary_work_hours_3='$voluntary_work_hours_3',
+            voluntary_work_position_3='$voluntary_work_position_3',
+            voluntary_work_name_address_4='$voluntary_work_name_address_4',
+            voluntary_work_from_4='$voluntary_work_from_4',
+            voluntary_work_to_4='$voluntary_work_to_4',
+            voluntary_work_hours_4='$voluntary_work_hours_4',
+            voluntary_work_position_4='$voluntary_work_position_4',
+            voluntary_work_name_address_5='$voluntary_work_name_address_5',
+            voluntary_work_from_5='$voluntary_work_from_5',
+            voluntary_work_to_5='$voluntary_work_to_5',
+            voluntary_work_hours_5='$voluntary_work_hours_5',
+            voluntary_work_position_5='$voluntary_work_position_5',
+            voluntary_work_name_address_6='$voluntary_work_name_address_6',
+            voluntary_work_from_6='$voluntary_work_from_6',
+            voluntary_work_to_6='$voluntary_work_to_6',
+            voluntary_work_hours_6='$voluntary_work_hours_6',
+            voluntary_work_position_6='$voluntary_work_position_6',
+            voluntary_work_name_address_7='$voluntary_work_name_address_7',
+            voluntary_work_from_7='$voluntary_work_from_7',
+            voluntary_work_to_7='$voluntary_work_to_7',
+            voluntary_work_hours_7='$voluntary_work_hours_7',
+            voluntary_work_position_7='$voluntary_work_position_7'
+            WHERE pds_id='$pds_id'
+            ");
+
+                ?>
+                <script>
+                    alert('ok');
+                </script>
+
+
+
+
+
+
+                <?php
+        
+    
+    }
+}
+
+
+
+
+
+
 
 
 

@@ -188,8 +188,8 @@ td {
 										<li class="nav-item"><a href="pds_section_2.php" class="nav-link " >II. Family Background</a></li>
 										<li class="nav-item"><a href="pds_section_3.php" class="nav-link " >III. Educational Background</a></li>
 										<li class="nav-item"><a href="pds_section_4.php" class="nav-link " >IV. Civil Service Eligibilty</a></li>
-										<li class="nav-item"><a href="pds_section_5.php" class="nav-link active" >V. Work Experience</a></li>
-										<li class="nav-item"><a href="pds_section_6.php" class="nav-link" >VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENT / PEOPLE / VOLUNTARY ORGANIZATION/S</a></li>
+										<li class="nav-item"><a href="pds_section_5.php" class="nav-link " >V. Work Experience</a></li>
+										<li class="nav-item"><a href="pds_section_6.php" class="nav-link active" >VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENT / PEOPLE / VOLUNTARY ORGANIZATION/S</a></li>
 										<li class="nav-item"><a href="pds_section_7.php" class="nav-link" >VII. LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS ATTENDED</a></li>
 										<li class="nav-item"><a href="pds_section_8.php" class="nav-link" >VIII. OTHER INFORMATION</a></li>
 										<li class="nav-item"><a href="pds_section_9.php" class="nav-link" >Last Part</a></li>
@@ -206,18 +206,8 @@ td {
 
 										<div style="overflow-x:auto; " >
 											<table style=" width:100%;">
-														<?php echo pds_section5_we5_update() ?>
-														<?php echo pds_section5_we10_update() ?>
-														<?php echo pds_section5_we15_update() ?>
-														<?php echo pds_section5_we20_update() ?>
-														<?php echo pds_section5_we25_update() ?>
-														<?php echo pds_section5_we30_update() ?>
-
-
-                       
-                    
-												</div>	
-											</div>		
+														<?php echo pds_section6_update() ?>
+												
 											</div>		
 										</div>
 									</div>
