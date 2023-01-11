@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2023 at 08:20 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 7.4.33
+-- Generation Time: Jan 11, 2023 at 09:51 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `accounts` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `accounts`
@@ -92,14 +92,14 @@ CREATE TABLE `civil_service_tbl` (
   `place_of_examination_7` varchar(255) NOT NULL,
   `license_number_7` varchar(255) NOT NULL,
   `license_validity_7` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `civil_service_tbl`
 --
 
 INSERT INTO `civil_service_tbl` (`cs_id`, `pds_id`, `career_1`, `rating_1`, `date_of_examination_1`, `place_of_examination_1`, `license_number_1`, `license_validity_1`, `career_2`, `rating_2`, `date_of_examination_2`, `place_of_examination_2`, `license_number_2`, `license_validity_2`, `career_3`, `rating_3`, `date_of_examination_3`, `place_of_examination_3`, `license_number_3`, `license_validity_3`, `career_4`, `rating_4`, `date_of_examination_4`, `place_of_examination_4`, `license_number_4`, `license_validity_4`, `career_5`, `rating_5`, `date_of_examination_5`, `place_of_examination_5`, `license_number_5`, `license_validity_5`, `career_6`, `rating_6`, `date_of_examination_6`, `place_of_examination_6`, `license_number_6`, `license_validity_6`, `career_7`, `rating_7`, `date_of_examination_7`, `place_of_examination_7`, `license_number_7`, `license_validity_7`) VALUES
-(1, '7', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '1', '1', 'date_of_examination_3', 'date_of_examination_3', 'license_number_3', 'license_validity_3', 'career_4', 'rating_4', 'date_of_examination_4', 'place_of_examination_4', 'license_number_4', 'license_validity_4', 'career_5', 'rating_5', 'date_of_examination_5', 'place_of_examination_5', 'license_number_5', 'license_validity_5', 'career_6', 'rating_6', 'date_of_examination_6', 'place_of_examination_6', 'license_number_6', 'license_validity_6	', 'career_7', 'rating_7', 'date_of_examination_7', 'place_of_examination_7', 'license_number_7', 'license_validity_7');
+(1, '7', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '1', '1', 'date_of_examination_3', 'date_of_examination_3', 'license_number_3', 'license_validity_3', '23232', 'rating_4', 'date_of_examination_4', 'place_of_examination_4', 'license_number_4', 'license_validity_4', 'career_5', 'rating_5', 'date_of_examination_5', 'place_of_examination_5', 'license_number_5', 'license_validity_5', 'career_6', 'rating_6', 'date_of_examination_6', 'place_of_examination_6', 'license_number_6', 'license_validity_6	', 'career_7', 'rating_7', 'date_of_examination_7', 'place_of_examination_7', 'license_number_7', 'license_validity_7');
 
 -- --------------------------------------------------------
 
@@ -176,7 +176,7 @@ CREATE TABLE `learning20_tbl` (
   `learning_development_number_of_hours_21` text NOT NULL,
   `learning_development_type_of_ld_21` text NOT NULL,
   `learning_development_conducted_by_21` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `learning20_tbl`
@@ -254,14 +254,14 @@ CREATE TABLE `learning_tbl` (
   `learning_development_number_of_hours_10` varchar(255) NOT NULL,
   `learning_development_type_of_ld_10` varchar(255) NOT NULL,
   `learning_development_conducted_by_10` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `learning_tbl`
 --
 
 INSERT INTO `learning_tbl` (`l_id`, `pds_id`, `learning_development_title_1`, `learning_development_from_1`, `learning_development_to_1`, `learning_development_number_of_hours_1`, `learning_development_type_of_ld_1`, `learning_development_conducted_by_1`, `learning_development_title_2`, `learning_development_from_2`, `learning_development_to_2`, `learning_development_number_of_hours_2`, `learning_development_type_of_ld_2`, `learning_development_conducted_by_2`, `learning_development_title_3`, `learning_development_from_3`, `learning_development_to_3`, `learning_development_number_of_hours_3`, `learning_development_type_of_ld_3`, `learning_development_conducted_by_3`, `learning_development_title_4`, `learning_development_from_4`, `learning_development_to_4`, `learning_development_number_of_hours_4`, `learning_development_type_of_ld_4`, `learning_development_conducted_by_4`, `learning_development_title_5`, `learning_development_from_5`, `learning_development_to_5`, `learning_development_number_of_hours_5`, `learning_development_type_of_ld_5`, `learning_development_conducted_by_5`, `learning_development_title_6`, `learning_development_from_6`, `learning_development_to_6`, `learning_development_number_of_hours_6`, `learning_development_type_of_ld_6`, `learning_development_conducted_by_6`, `learning_development_title_7`, `learning_development_from_7`, `learning_development_to_7`, `learning_development_number_of_hours_7`, `learning_development_type_of_ld_7`, `learning_development_conducted_by_7`, `learning_development_title_8`, `learning_development_from_8`, `learning_development_to_8`, `learning_development_number_of_hours_8`, `learning_development_type_of_ld_8`, `learning_development_conducted_by_8`, `learning_development_title_9`, `learning_development_from_9`, `learning_development_to_9`, `learning_development_number_of_hours_9`, `learning_development_type_of_ld_9`, `learning_development_conducted_by_9`, `learning_development_title_10`, `learning_development_from_10`, `learning_development_to_10`, `learning_development_number_of_hours_10`, `learning_development_type_of_ld_10`, `learning_development_conducted_by_10`) VALUES
-(1, '7', 'learning_development_title_1', 'learning_development_from_1', 'learning_development_to_1', 'learning_development_number_of_hours_1', 'learning_development_type_of_ld_1', 'learning_development_conducted_by_1', 'learning_development_title_2', 'learning_development_from_2', 'learning_development_to_2', 'learning_development_number_of_hours_2', 'learning_development_type_of_ld_2', 'learning_development_conducted_by_2', 'learning_development_title_3', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '11', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');
+(1, '7', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '11', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -293,7 +293,7 @@ CREATE TABLE `other_information_tbl` (
   `organization5` varchar(255) NOT NULL,
   `organization6` varchar(255) NOT NULL,
   `organization7` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `other_information_tbl`
@@ -397,7 +397,7 @@ CREATE TABLE `personal_information_tbl` (
   `graduate_studies_highest_level` text NOT NULL,
   `graduate_studies_year_graduated` text NOT NULL,
   `graduate_studies_honor_received` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `personal_information_tbl`
@@ -405,7 +405,7 @@ CREATE TABLE `personal_information_tbl` (
 
 INSERT INTO `personal_information_tbl` (`pds_id`, `surname`, `firstname`, `middlename`, `name_extension`, `date_of_birth`, `place_of_birth`, `sex`, `civil_status`, `height`, `weight`, `blood_type`, `gsis_no`, `pagibig_no`, `philhealth_no`, `sss_no`, `tin_no`, `agency_employee_no`, `citizenship`, `citizenship_country`, `residential_house_block`, `residential_street`, `residential_subdivision_village`, `residential_barangay`, `residential_city_municipality`, `residential_province`, `residential_zipcode`, `permanent_house_block`, `permanent_street`, `permanent_subdivision_village`, `permanent_barangay`, `permanent_city_municipality`, `permanent_province`, `permanent_zipcode`, `telephone_no`, `mobile_no`, `email_address`, `spouse_surname`, `spouse_firstname`, `spouse_middlename`, `spouse_name_extension`, `spouse_occupation`, `spouse_employer`, `spouse_business_address`, `spouse_telephone_no`, `father_surname`, `father_firstname`, `father_middlename`, `father_name_extension`, `mother_maiden_name`, `mother_surname`, `mother_firstname`, `mother_middlename`, `elementary_name_of_school`, `elementary_basic_education`, `elementary_period_attendance_from`, `elementary_period_attendance_to`, `elementary_highest_level`, `elementary_year_graduated`, `elementary_honor_received`, `secondary_name_of_school`, `secondary_basic_education`, `secondary_period_attendance_from`, `secondary_period_attendance_to`, `secondary_highest_level`, `secondary_year_graduated`, `secondary_honor_received`, `vocational_name_of_school`, `vocational_basic_education`, `vocational_period_attendance_from`, `vocational_period_attendance_to`, `vocational_highest_level`, `vocational_year_graduated`, `vocational_honor_received`, `college_name_of_school`, `college_basic_education`, `college_period_attendance_from`, `college_period_attendance_to`, `college_highest_level`, `college_year_graduated`, `college_honor_received`, `graduate_studies_name_of_school`, `graduate_studies_basic_education`, `graduate_studies_period_attendance_from`, `graduate_studies_period_attendance_to`, `graduate_studies_highest_level`, `graduate_studies_year_graduated`, `graduate_studies_honor_received`) VALUES
 (0, 'surnamesadas', 'firstname', 'middlename', 'name_extension', 'date_of_birth', 'place_of_birth', 'sex', 'civil_status', 'height', 'weight', 'blood_type', 'gsis_no', 'pagibig_no', 'philhealth_no', 'sss_no', 'tin_no', 'agency_employee_no', 'citizenship', 'citizenship_country', 'residential_house_block', 'residential_street', 'residential_subdivision_village', 'residential_barangay', 'residential_city_municipality', 'residential_province', 'residential_zipcode', 'permanent_house_block', 'permanent_street', 'permanent_subdivision_village', 'permanent_barangay', 'permanent_city_municipality', 'permanent_province', 'permanent_zipcode', 'telephone_no', 'mobile_no', 'email_address', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(7, 'surnamedasdas', 'firstname', 'middlename', 'JR', 'date_of_birth', 'place_of_birth', 'Female', 'Single', 'height', 'weight', 'blood_type', 'gsis_no	', 'pagibig_no', 'philhealth_no', 'sss_no', 'tin_no	', 'agency_employee_no', 'citizenship', 'citizenship_country', 'residential_house_block', 'residential_street', 'residential_subdivision_village', 'residential_barangay', 'residential_city_municipality', 'residential_province', 'residential_zipcode', 'permanent_house_block', 'permanent_street', 'permanent_subdivision_village', 'permanent_barangay', 'permanent_city_municipality', 'permanent_province', 'permanent_zipcode', 'telephone_no', 'mobile_no', 'email_address', 'Bayog', 'Jufrey', 'Spouse Escober', 'Name Extension (JR, SR)', 'Spouse Occupation', 'Spouse Employer / Business name', 'Spouse Business Address', 'Spouse Telephone number', 'Father Surname', 'Father Firstname', 'Father Middlename', 'Father Name Extension', 'Mother Maiden Name', 'Mother Surname', 'Mother Firstname', 'Mother Middlename', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED');
+(7, 'Bayog', 'firstname', 'middlename', 'JR', 'date_of_birth', 'place_of_birth', 'Female', 'Single', 'height', 'weight', 'blood_type', 'gsis_no	', 'pagibig_no', 'philhealth_no', 'sss_no', 'tin_no	', 'agency_employee_no', 'citizenship', 'citizenship_country', 'residential_house_block', 'residential_street', 'residential_subdivision_village', 'residential_barangay', 'residential_city_municipality', 'residential_province', 'residential_zipcode', 'permanent_house_block', 'permanent_street', 'permanent_subdivision_village', 'permanent_barangay', 'permanent_city_municipality', 'permanent_province', 'permanent_zipcode', 'telephone_no', 'mobile_no', 'email_address', 'Bayog', 'Jufrey', 'Spouse Escober', 'Name Extension (JR, SR)', 'Spouse Occupation', 'Spouse Employer / Business name', 'Spouse Business Address', 'Spouse Telephone number', 'Father Surname', 'Father Firstname', 'Father Middlename', 'Father Name Extension', 'Mother Maiden Name', 'Mother Surname', 'Mother Firstname', 'Mother Middlename', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED', 'NAME OF SCHOOL', 'BASIC EDUCATION/DEGREE/COURSE', 'FROM', 'TO', 'HIGHEST LEVEL/UNITS EARNED(if not graduated)', 'YEAR GRADUATED', 'SCHOLARSHIP/ ACADEMIC HONORS RECEIVED');
 
 -- --------------------------------------------------------
 
@@ -451,14 +451,14 @@ CREATE TABLE `voluntary_work_tbl` (
   `voluntary_work_to_7` varchar(255) NOT NULL,
   `voluntary_work_hours_7` varchar(255) NOT NULL,
   `voluntary_work_position_7` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `voluntary_work_tbl`
 --
 
 INSERT INTO `voluntary_work_tbl` (`vs_id`, `pds_id`, `voluntary_work_name_address_1`, `voluntary_work_from_1`, `voluntary_work_to_1`, `voluntary_work_hours_1`, `voluntary_work_position_1`, `voluntary_work_name_address_2`, `voluntary_work_from_2`, `voluntary_work_to_2`, `voluntary_work_hours_2`, `voluntary_work_position_2`, `voluntary_work_name_address_3`, `voluntary_work_from_3`, `voluntary_work_to_3`, `voluntary_work_hours_3`, `voluntary_work_position_3`, `voluntary_work_name_address_4`, `voluntary_work_from_4`, `voluntary_work_to_4`, `voluntary_work_hours_4`, `voluntary_work_position_4`, `voluntary_work_name_address_5`, `voluntary_work_from_5`, `voluntary_work_to_5`, `voluntary_work_hours_5`, `voluntary_work_position_5`, `voluntary_work_name_address_6`, `voluntary_work_from_6`, `voluntary_work_to_6`, `voluntary_work_hours_6`, `voluntary_work_position_6`, `voluntary_work_name_address_7`, `voluntary_work_from_7`, `voluntary_work_to_7`, `voluntary_work_hours_7`, `voluntary_work_position_7`) VALUES
-(1, '7', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '3', '3', '3', '3', '3', '4', '4', '4', '4', '4', '5', '5', '5', '5', '5', '6', '6', '6', '6', '6', '7', '7', '7', '7', '7');
+(1, '7', '1', '1', '1', '1', '1', '1', '2', '2', '2', '2', '3', '3', '3', '3', '3', '4', '4', '4', '4', '4', '5', '5', '5', '5', '5', '6', '6', '6', '6', '6', '7', '7', '7', '7', '7');
 
 -- --------------------------------------------------------
 
@@ -509,14 +509,14 @@ CREATE TABLE `work_experience5_tbl` (
   `inclusive_dates_salary_job_paygrade_5` varchar(255) NOT NULL,
   `inclusive_dates_status_of_appointment_5` varchar(255) NOT NULL,
   `inclusive_dates_government_service_5` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `work_experience5_tbl`
 --
 
 INSERT INTO `work_experience5_tbl` (`we5_tbl`, `pds_id`, `inclusive_dates_from_1`, `inclusive_dates_to_1`, `inclusive_dates_position_title_1`, `inclusive_dates_department_1`, `inclusive_dates_monthly_1`, `inclusive_dates_salary_job_paygrade_1`, `inclusive_dates_status_of_appointment_1`, `inclusive_dates_government_service_1`, `inclusive_dates_from_2`, `inclusive_dates_to_2`, `inclusive_dates_position_title_2`, `inclusive_dates_department_2`, `inclusive_dates_monthly_2`, `inclusive_dates_salary_job_paygrade_2`, `inclusive_dates_status_of_appointment_2`, `inclusive_dates_government_service_2`, `inclusive_dates_from_3`, `inclusive_dates_to_3`, `inclusive_dates_position_title_3`, `inclusive_dates_department_3`, `inclusive_dates_monthly_3`, `inclusive_dates_salary_job_paygrade_3`, `inclusive_dates_status_of_appointment_3`, `inclusive_dates_government_service_3`, `inclusive_dates_from_4`, `inclusive_dates_to_4`, `inclusive_dates_position_title_4`, `inclusive_dates_department_4`, `inclusive_dates_monthly_4`, `inclusive_dates_salary_job_paygrade_4`, `inclusive_dates_status_of_appointment_4`, `inclusive_dates_government_service_4`, `inclusive_dates_from_5`, `inclusive_dates_to_5`, `inclusive_dates_position_title_5`, `inclusive_dates_department_5`, `inclusive_dates_monthly_5`, `inclusive_dates_salary_job_paygrade_5`, `inclusive_dates_status_of_appointment_5`, `inclusive_dates_government_service_5`) VALUES
-(1, '7', 'inclusive_dates_from_1', 'inclusive_dates_to_1', 'inclusive_dates_position_title_1', 'inclusive_dates_department_1', 'inclusive_dates_monthly_1', 'inclusive_dates_salary_job_paygrade_1', 'inclusive_dates_status_of_appointment_1', 'inclusive_dates_government_service_1', 'inclusive_dates_from_2', 'inclusive_dates_to_2', 'inclusive_dates_position_title_2', 'inclusive_dates_department_2', 'inclusive_dates_monthly_2', 'inclusive_dates_salary_job_paygrade_2', 'inclusive_dates_status_of_appointment_2', 'inclusive_dates_government_service_2', 'inclusive_dates_from_3', 'inclusive_dates_to_3', 'inclusive_dates_position_title_3', 'inclusive_dates_department_3', 'inclusive_dates_monthly_3', 'inclusive_dates_salary_job_paygrade_3', 'inclusive_dates_status_of_appointment_3', 'inclusive_dates_government_service_3', 'inclusive_dates_from_4', 'inclusive_dates_to_4', 'inclusive_dates_position_title_4', 'inclusive_dates_department_4', 'inclusive_dates_monthly_4', 'inclusive_dates_salary_job_paygrade_4', 'inclusive_dates_status_of_appointment_4', 'inclusive_dates_government_service_4', 'inclusive_dates_from_5', 'inclusive_dates_to_5', 'inclusive_dates_position_title_5', 'inclusive_dates_department_5', 'inclusive_dates_monthly_5', 'inclusive_dates_salary_job_paygrade_5', 'inclusive_dates_status_of_appointment_5', 'inclusive_dates_government_service_5');
+(1, '7', '1', 'inclusive_dates_to_1', 'inclusive_dates_position_title_1', 'inclusive_dates_department_1', 'inclusive_dates_monthly_1', 'inclusive_dates_salary_job_paygrade_1', 'inclusive_dates_status_of_appointment_1', 'inclusive_dates_government_service_1', 'inclusive_dates_from_2', 'inclusive_dates_to_2', 'inclusive_dates_position_title_2', 'inclusive_dates_department_2', 'inclusive_dates_monthly_2', 'inclusive_dates_salary_job_paygrade_2', 'inclusive_dates_status_of_appointment_2', 'inclusive_dates_government_service_2', 'inclusive_dates_from_3', 'inclusive_dates_to_3', 'inclusive_dates_position_title_3', 'inclusive_dates_department_3', 'inclusive_dates_monthly_3', 'inclusive_dates_salary_job_paygrade_3', 'inclusive_dates_status_of_appointment_3', 'inclusive_dates_government_service_3', 'inclusive_dates_from_4', 'inclusive_dates_to_4', 'inclusive_dates_position_title_4', 'inclusive_dates_department_4', 'inclusive_dates_monthly_4', 'inclusive_dates_salary_job_paygrade_4', 'inclusive_dates_status_of_appointment_4', 'inclusive_dates_government_service_4', 'inclusive_dates_from_5', 'inclusive_dates_to_5', 'inclusive_dates_position_title_5', 'inclusive_dates_department_5', 'inclusive_dates_monthly_5', 'inclusive_dates_salary_job_paygrade_5', 'inclusive_dates_status_of_appointment_5', 'inclusive_dates_government_service_5');
 
 -- --------------------------------------------------------
 
@@ -567,7 +567,7 @@ CREATE TABLE `work_experience10_tbl` (
   `inclusive_dates_salary_job_paygrade_10` varchar(255) NOT NULL,
   `inclusive_dates_status_of_appointment_10` varchar(255) NOT NULL,
   `inclusive_dates_government_service_10` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `work_experience10_tbl`
@@ -625,7 +625,7 @@ CREATE TABLE `work_experience15_tbl` (
   `inclusive_dates_salary_job_paygrade_15` varchar(255) NOT NULL,
   `inclusive_dates_status_of_appointment_15` varchar(255) NOT NULL,
   `inclusive_dates_government_service_15` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `work_experience15_tbl`
@@ -683,7 +683,7 @@ CREATE TABLE `work_experience20_tbl` (
   `inclusive_dates_salary_job_paygrade_20` varchar(255) NOT NULL,
   `inclusive_dates_status_of_appointment_20` varchar(255) NOT NULL,
   `inclusive_dates_government_service_20` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `work_experience20_tbl`
@@ -741,7 +741,7 @@ CREATE TABLE `work_experience25_tbl` (
   `inclusive_dates_salary_job_paygrade_25` varchar(255) NOT NULL,
   `inclusive_dates_status_of_appointment_25` varchar(255) NOT NULL,
   `inclusive_dates_government_service_25` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `work_experience25_tbl`
@@ -783,7 +783,7 @@ CREATE TABLE `work_experience30_tbl` (
   `inclusive_dates_salary_job_paygrade_28` varchar(255) NOT NULL,
   `inclusive_dates_status_of_appointment_28` varchar(255) NOT NULL,
   `inclusive_dates_government_service_28` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `work_experience30_tbl`
