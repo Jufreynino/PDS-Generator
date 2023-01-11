@@ -1,3 +1,12 @@
+
+@media print 
+{
+    @page {
+      size: Legal; /* DIN A4 standard, Europe */
+      margin-top:50px;
+    }
+    
+}
 .ff0{font-family:sans-serif;visibility:hidden;}
 @font-face{font-family:ff1;src:url(f1.woff)format("woff");}.ff1{font-family:ff1;line-height:0.938477;font-style:normal;font-weight:normal;visibility:visible;}
 @font-face{font-family:ff2;src:url(f2.woff)format("woff");}.ff2{font-family:ff2;line-height:0.740234;font-style:normal;font-weight:normal;visibility:visible;}
@@ -816,43 +825,43 @@
 .x52{left:8.890000px;}
 .x0{left:10.000000px;}
 .x3{left:11.050000px;}
-.x10{left:12.941800px;}
+.x10{left:2px;}
 .x37{left:14.129200px;}
 .x4a{left:15.443700px;}
 .x32{left:17.003000px;}
-.x34{left:18.373500px;}
+.x34{left:2px;}
 .x46{left:19.381200px;}
 .x8{left:21.111600px;}
-.x29{left:22.472200px;}
+.x29{left:2px;}
 .x42{left:23.988900px;}
-.x28{left:25.334600px;}
+.x28{left:22px;}
 .xb{left:26.567000px;}
 .xd{left:28.754000px;}
 .x15{left:30.591700px;}
 .x3d{left:32.070700px;}
 .x17{left:33.468700px;}
 .x43{left:35.718100px;}
-.x13{left:36.880300px;}
+.x13{left:2.880300px;}
 .x31{left:38.514600px;}
 .x20{left:40.798600px;}
 .x19{left:42.077600px;}
 .x22{left:43.947400px;}
-.x11{left:45.595700px;}
-.x6{left:47.889700px;}
+.x11{left:5.595700px;}
+.x6{left:5.889700px;}
 .x21{left:49.274200px;}
 .x16{left:51.068400px;}
 .x26{left:53.378000px;}
 .x12{left:55.035200px;}
-.x14{left:57.494700px;}
+.x14{left:5.494700px;}
 .x25{left:58.704800px;}
 .x1e{left:61.025500px;}
 .x41{left:62.784600px;}
 .x1f{left:64.283700px;}
 .x58{left:66.995400px;}
 .x4d{left:69.736500px;}
-.x3a{left:71.152800px;}
+.x3a{left:2px;}
 .x5a{left:72.297500px;}
-.x39{left:74.581600px;}
+.x39{left:2px;}
 .x59{left:86.936300px;}
 .x1d{left:92.914100px;}
 .x56{left:94.127500px;}
