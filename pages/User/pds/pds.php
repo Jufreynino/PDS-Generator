@@ -35,6 +35,2026 @@ else
             } catch (e) {}
         </script>
         <title></title>
+
+        <style>
+           table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse !important;
+                    padding:0 !important;
+                    width:100%;
+                    }
+        @media print {
+                #pf2 {margin:20px;}
+      }    
+      
+      {mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.xl1511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl6511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:bottom;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl6811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:bottom;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl6911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl7011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.00_\)\;\\\(0\.00\\\)";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.00_\)\;\\\(0\.00\\\)";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0_\)\;\\\(0\.0\\\)";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"0\.0_\)\;\\\(0\.0\\\)";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl7911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl8011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl8111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:left;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl8211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl8311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:bottom;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl8811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl9011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\[ENG\]\[$-409\]mmmm\\ d\\\,\\ yyyy\;\@";
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:nowrap;}
+.xl9111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:middle;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:general;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl9311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl9411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl9811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:right;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:white;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl9911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl10311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl10411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:bottom;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl10511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl10611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl10711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl10811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl10911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl11011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl11111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl11211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl11311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl11411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl11511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl11611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl11711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl11811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl11911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl12011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"mm\/dd\/yyyy";
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl12111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl12211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:6.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl12311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:6.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl12411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl12511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl12611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl12711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl12811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl12911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl13011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl13111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl13211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl13311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"mm\/dd\/yyyy";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl13411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl13511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl13611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl13711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl13811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl13911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl14011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl14111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl14211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl14311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl14411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl14511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl14611111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl14711111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl14811111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:white;
+	font-size:11.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:left;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#969696;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl14911111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:9.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"Short Date";
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:unlocked visible;
+	white-space:normal;}
+.xl15011111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl15111111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl15211111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl15311111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl15411111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+.xl15511111
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:red;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:none;
+	font-family:"Arial Narrow", sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#EAEAEA;
+	mso-pattern:black none;
+	white-space:nowrap;}
+
+    
+        </style>
+        
     </head>
     <body>
         <div id="sidebar">
@@ -47,136 +2067,7 @@ else
                    <?php echo fetch() ?>
                     
                    
-                    <div class="c x45 y128 w39 h55"><div class="t m0 x37 h52 y129 ff4 fsf fc0 sc0 ls0 ws0">From</div></div>
-                    <div class="c x48 y128 w37 h55"><div class="t m0 x32 h52 y129 ff4 fsf fc0 sc0 ls0 ws0">To</div></div>
-                    <div class="c x10 y12a w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Road to Full Stack Developmet</div></div>
-                    <div class="c x45 y12a w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">2/24/2018</div></div>
-                    <div class="c x48 y12a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">2/24/2018</div></div>
-                    <div class="c x47 y12a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y12a w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R9</div></div>
-                    <div class="c x4b y12a w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Mr. El Miguel A. Marcaida</div></div>
-                    <div class="c x10 y12c w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">C# Programming with Database Application</div></div>
-                    <div class="c x45 y12c w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">2/10/2018</div></div>
-                    <div class="c x48 y12c w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">2/10/2018</div></div>
-                    <div class="c x47 y12c w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y12c w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">DICT R9</div></div>
-                    <div class="c x4b y12c w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Mr. Joselito V, San Juan</div></div>
-                    <div class="c x10 y12e w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y12e w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/7/2022</div></div>
-                    <div class="c x48 y12e w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/7/2022</div></div>
-                    <div class="c x47 y12e w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y12e w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">DICT R9</div></div>
-                    <div class="c x4b y12e w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y12f w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y12f w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/8/2022</div></div>
-                    <div class="c x48 y12f w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/8/2022</div></div>
-                    <div class="c x47 y12f w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y12f w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R10</div></div>
-                    <div class="c x4b y12f w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y130 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y130 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/9/2022</div></div>
-                    <div class="c x48 y130 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/9/2022</div></div>
-                    <div class="c x47 y130 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y130 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R11</div></div>
-                    <div class="c x4b y130 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y131 w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y131 w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/10/2022</div></div>
-                    <div class="c x48 y131 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/10/2022</div></div>
-                    <div class="c x47 y131 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y131 w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">DICT R12</div></div>
-                    <div class="c x4b y131 w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y132 w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y132 w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/11/2022</div></div>
-                    <div class="c x48 y132 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/11/2022</div></div>
-                    <div class="c x47 y132 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y132 w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R13</div></div>
-                    <div class="c x4b y132 w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y133 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y133 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/12/2022</div></div>
-                    <div class="c x48 y133 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/12/2022</div></div>
-                    <div class="c x47 y133 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y133 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R14</div></div>
-                    <div class="c x4b y133 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y134 w3a h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y134 w39 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">1/13/2022</div></div>
-                    <div class="c x48 y134 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">1/13/2022</div></div>
-                    <div class="c x47 y134 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y134 w3b h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">DICT R15</div></div>
-                    <div class="c x4b y134 w3c h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y136 w3a h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y136 w39 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">1/14/2022</div></div>
-                    <div class="c x48 y136 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">1/14/2022</div></div>
-                    <div class="c x47 y136 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y136 w3b h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">DICT R16</div></div>
-                    <div class="c x4b y136 w3c h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y137 w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y137 w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/15/2022</div></div>
-                    <div class="c x48 y137 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/15/2022</div></div>
-                    <div class="c x47 y137 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y137 w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">DICT R17</div></div>
-                    <div class="c x4b y137 w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y138 w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y138 w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/16/2022</div></div>
-                    <div class="c x48 y138 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/16/2022</div></div>
-                    <div class="c x47 y138 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y138 w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R18</div></div>
-                    <div class="c x4b y138 w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y139 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y139 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/17/2022</div></div>
-                    <div class="c x48 y139 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/17/2022</div></div>
-                    <div class="c x47 y139 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y139 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R19</div></div>
-                    <div class="c x4b y139 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y13a w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y13a w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/18/2022</div></div>
-                    <div class="c x48 y13a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/18/2022</div></div>
-                    <div class="c x47 y13a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y13a w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R20</div></div>
-                    <div class="c x4b y13a w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y13b w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y13b w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/19/2022</div></div>
-                    <div class="c x48 y13b w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">1/19/2022</div></div>
-                    <div class="c x47 y13b w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y13b w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">DICT R21</div></div>
-                    <div class="c x4b y13b w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y13c w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y13c w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/20/2022</div></div>
-                    <div class="c x48 y13c w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/20/2022</div></div>
-                    <div class="c x47 y13c w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y13c w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R22</div></div>
-                    <div class="c x4b y13c w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y13d w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y13d w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/21/2022</div></div>
-                    <div class="c x48 y13d w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/21/2022</div></div>
-                    <div class="c x47 y13d w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y13d w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R23</div></div>
-                    <div class="c x4b y13d w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y13e w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y13e w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/22/2022</div></div>
-                    <div class="c x48 y13e w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/22/2022</div></div>
-                    <div class="c x47 y13e w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y13e w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R24</div></div>
-                    <div class="c x4b y13e w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y13f w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y13f w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/23/2022</div></div>
-                    <div class="c x48 y13f w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/23/2022</div></div>
-                    <div class="c x47 y13f w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y13f w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R25</div></div>
-                    <div class="c x4b y13f w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y140 w3a h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y140 w39 h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0">1/24/2022</div></div>
-                    <div class="c x48 y140 w37 h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0">1/24/2022</div></div>
-                    <div class="c x47 y140 w37 h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y140 w3b h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0">DICT R26</div></div>
-                    <div class="c x4b y140 w3c h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y142 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Introduction to UI/UX Design</div></div>
-                    <div class="c x45 y142 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/25/2022</div></div>
-                    <div class="c x48 y142 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">1/25/2022</div></div>
-                    <div class="c x47 y142 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">3.0</div></div>
-                    <div class="c x3e y142 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">DICT R27</div></div>
-                    <div class="c x4b y142 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0">Ms. Maria Teresa M. Camba</div></div>
-                    <div class="c x10 y143 w33 h63"><div class="t m0 x49 h5a y10a ff5 fsf fc3 sc0 ls0 ws0">(Continue on separate sheet if necessary)</div></div>
-                    <div class="c x10 y144 w33 h50"><div class="t m0 x2 h39 y104 ff5 fsb fc1 sc0 ls0 ws0">VIII. OTHER INFORMATION</div></div>
+                    
                     <div class="c x10 y145 w34 h64"><div class="t m0 xe h52 y146 ff4 fsf fc0 sc0 ls0 ws0">31.</div></div>
                     <div class="c xb y145 w3d h64"><div class="t m0 x28 h52 y146 ff4 fsf fc0 sc0 ls0 ws0">SPECIAL SKILLS and HOBBIES</div></div>
                     <div class="c x4 y145 w3e h64"><div class="t m0 x7 h52 y146 ff4 fsf fc0 sc0 ls0 ws0">32.</div></div>
@@ -344,35 +2235,29 @@ else
                     <div class="c x53 y1be w4e h87"><div class="t m0 x0 h86 y1bf ffc fs15 fc0 sc0 ls0 ws0">9128389571</div></div>
                     <div class="c x52 y1c0 w48 h88"><div class="t m0 x7 h6c y1c1 ff4 fs14 fc0 sc0 ls0 ws0">42.</div></div>
                     <div class="c x28 y1c2 w59 h89">
+                   <p style="font-size:14px !important; font-family:arial;">I declare under oath  
+                              that I have personally
+                             accomplished this Personal  
+                              Data Sheet which is
+                             a true, correct  
+                              and
+                            complete   statement   pursuant   to
+                               the   provisions   of 
+                             pertinent   laws,   rules     and
+                                 regulations     of     the  
+                              Republic     of     the
+                            Philippines.   I   authorize   the
+                               agency  head/authorized   representative
+                              to  verify/validate    the 
+                            contents    stated  herein.
+                            I   agree   that   any 
+                             misrepresentation   made   in 
+                             this   document   and   its
+                               attachments   shall   cause
+                               the   filing   of
+                        administrative/criminal case/s against me.</p> 
                         <div class="t m0 x2 h6d y1c3 ff4 fs9 fc0 sc0 ls0 ws0">
-                            I<span class="_ _3"></span> <span class="_ _3"></span>declare<span class="_ _3"></span> <span class="_ _3"></span>under<span class="_ _3"></span> <span class="_ _3"></span>oath<span class="_ _3"></span>
-                            <span class="_ _3"></span>that<span class="_ _3"></span> <span class="_ _3"></span>I<span class="_ _3"></span> <span class="_ _3"></span>have<span class="_ _3"></span> <span class="_ _3"></span>personally
-                            <span class="_ _3"></span> <span class="_ _3"></span>accomplished<span class="_ _3"></span> <span class="_ _3"></span>this<span class="_ _3"></span> <span class="_ _3"></span>Personal<span class="_ _3"></span>
-                            <span class="_ _3"></span>Data<span class="_ _3"></span> <span class="_ _3"></span>Sheet<span class="_ _3"></span> <span class="_ _3"></span>which<span class="_ _3"></span> <span class="_ _3"></span>is
-                            <span class="_ _3"></span> <span class="_ _3"></span>a<span class="_ _3"></span> <span class="_ _3"></span>true,<span class="_ _3"></span> <span class="_ _3"></span>correct<span class="_ _3"></span>
-                            <span class="_ _3"></span>and
-                        </div>
-                        <div class="t m0 x2 h6d y17d ff4 fs9 fc0 sc0 ls0 ws0">
-                            complete<span class="_ _4"></span> <span class="_ _4"></span>statement<span class="_ _4"></span> <span class="_ _4"></span>pursuant<span class="_ _4"></span> <span class="_ _4"></span>to
-                            <span class="_ _4"></span> <span class="_ _4"></span>the<span class="_ _4"></span> <span class="_ _4"></span>provisions<span class="_ _4"></span> <span class="_ _4"></span>of<span class="_ _4"></span>
-                            <span class="_ _4"></span>pertinent<span class="_ _4"></span> <span class="_ _4"></span>laws,<span class="_ _4"></span> <span class="_ _3"></span>rules<span class="_ _4"> </span> <span class="_ _4"> </span>and
-                            <span class="_ _4"> </span> <span class="_ _4"> </span>regulations<span class="_ _4"> </span> <span class="_ _4"> </span>of<span class="_ _4"> </span> <span class="_ _4"> </span>the<span class="_ _4"> </span>
-                            <span class="_ _4"> </span>Republic<span class="_ _4"> </span> <span class="_ _4"> </span>of<span class="_ _4"> </span> <span class="_ _4"> </span>the
-                        </div>
-                        <div class="t m0 x2 h6d y17e ff4 fs9 fc0 sc0 ls0 ws0">
-                            Philippines.<span class="_ _3"></span> <span class="_ _4"> </span>I<span class="_ _4"></span> <span class="_ _4"></span>authorize<span class="_ _3"></span> <span class="_ _4"> </span>the
-                            <span class="_ _4"></span> <span class="_ _4"></span>agency<span class="_ _3"></span> <span class="_ _4"></span>head/authorized<span class="_ _4"></span> <span class="_ _4"></span>representative
-                            <span class="_ _3"></span> <span class="_ _4"></span>to<span class="_ _4"></span> <span class="_ _3"></span>verify/validate<span class="_ _4"> </span> <span class="_ _4"></span>the<span class="_ _4"></span>
-                            <span class="_ _3"></span>contents<span class="_ _4"> </span> <span class="_ _4"></span>stated<span class="_ _4"></span> <span class="_ _3"></span>herein.
-                        </div>
-                        <div class="t m0 x2 h6d y1a8 ff4 fs9 fc0 sc0 ls0 ws0">
-                            I<span class="_ _1"> </span> <span class="_ _1"> </span>agree<span class="_ _1"> </span> <span class="_ _1"> </span>that<span class="_ _1"> </span> <span class="_ _5"> </span>any<span class="_ _5"> </span>
-                            <span class="_ _1"> </span>misrepresentation<span class="_ _1"> </span> <span class="_ _1"> </span>made<span class="_ _1"> </span> <span class="_ _1"> </span>in<span class="_ _5"> </span>
-                            <span class="_ _1"> </span>this<span class="_ _1"> </span> <span class="_ _1"> </span>document<span class="_ _1"> </span> <span class="_ _1"> </span>and<span class="_ _5"> </span> <span class="_ _1"> </span>its
-                            <span class="_ _1"> </span> <span class="_ _1"> </span>attachments<span class="_ _1"> </span> <span class="_ _1"> </span>shall<span class="_ _5"> </span> <span class="_ _1"> </span>cause
-                            <span class="_ _1"> </span> <span class="_ _1"> </span>the<span class="_ _1"> </span> <span class="_ _1"> </span>filing<span class="_ _5"> </span> <span class="_ _1"> </span>of
-                        </div>
-                        <div class="t m0 x2 h6d y1c4 ff4 fs9 fc0 sc0 ls0 ws0">administrative/criminal case/s against me.</div>
+                            </div>
                     </div>
                     <div class="c x55 y1c5 w51 h6b"><div class="t m0 x6 h6c y1c6 ff4 fs14 fc4 sc0 ls0 ws0">PHOTO</div></div>
                     <div class="c x32 y1c7 w5a h8a">
@@ -426,4 +2311,8 @@ else
         </div>
         <div class="loading-indicator"></div>
     </body>
+
+    <script>
+        // window.print();
+        </script>
 </html>

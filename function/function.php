@@ -580,14 +580,11 @@ function pds_section2_update()
                     </div>
                 </div>
 
-                
-
                 <div class="col-md-12 ">
                     <div class=" pull right">
                     <button type="submit" name="update_pds_section_2_button" class="btn btn-primary">Save Changes</button>
                     </div>
                 </div>
-
 
 
                 </div>
@@ -3330,6 +3327,18 @@ function register()
         $sql = mysqli_query($con, "INSERT INTO accounts(username, password) VALUES('$user','$pass')");
         $id = $con->insert_id;
         $sq2l = mysqli_query($con, "INSERT INTO personal_information_tbl(pds_id) VALUES('$id')");
+        $sql1 = mysqli_query($con, "INSERT INTO civil_service_tbl(pds_id) VALUES('$id')");
+        $sql2 = mysqli_query($con, "INSERT INTO learning20_tbl(pds_id) VALUES('$id')");
+        $sql3 = mysqli_query($con, "INSERT INTO learning_tbl(pds_id) VALUES('$id')");
+        $sql4 = mysqli_query($con, "INSERT INTO other_information_tbl(pds_id) VALUES('$id')");
+        $sql5 = mysqli_query($con, "INSERT INTO personal_information_tbl	(pds_id) VALUES('$id')");
+        $sql6 = mysqli_query($con, "INSERT INTO voluntary_work_tbl	(pds_id) VALUES('$id')");
+        $sql7 = mysqli_query($con, "INSERT INTO work_experience5_tbl	(pds_id) VALUES('$id')");
+        $sql8 = mysqli_query($con, "INSERT INTO work_experience10_tbl	(pds_id) VALUES('$id')");
+        $sql9 = mysqli_query($con, "INSERT INTO work_experience15_tbl	(pds_id) VALUES('$id')");
+        $sql10 = mysqli_query($con, "INSERT INTO work_experience20_tbl	(pds_id) VALUES('$id')");
+        $sql11 = mysqli_query($con, "INSERT INTO work_experience25_tbl	(pds_id) VALUES('$id')");
+        $sql12 = mysqli_query($con, "INSERT INTO work_experience30_tbl	(pds_id) VALUES('$id')");
         // $row = mysqli_fetch_assoc($sql);
 
 

@@ -139,7 +139,9 @@ else
 					<div class="col-xl-12">
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								
+								<div class=" pull-right">
+									<a class="btn btn-primary" href="pds/pds.php?<?= $_SESSION['id'] ?>">Print PDS</a>
+								</div>						
 							</div>
 
 							<div class="card-body">

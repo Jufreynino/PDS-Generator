@@ -1,5 +1,110 @@
 <?php 
 
+
+function c2_fetch_civil_service()
+{
+    global $con;
+    $id = $_SESSION['id'];
+            
+    $sql = "SELECT * FROM personal_information_tbl INNER JOIN civil_service_tbl ON personal_information_tbl.pds_id = civil_service_tbl.pds_id 
+    INNER JOIN work_experience5_tbl ON personal_information_tbl.pds_id = work_experience5_tbl.pds_id 
+    INNER JOIN work_experience10_tbl ON personal_information_tbl.pds_id = work_experience10_tbl.pds_id 
+    INNER JOIN work_experience15_tbl ON personal_information_tbl.pds_id = work_experience15_tbl.pds_id 
+    INNER JOIN work_experience20_tbl ON personal_information_tbl.pds_id = work_experience20_tbl.pds_id 
+    INNER JOIN work_experience25_tbl ON personal_information_tbl.pds_id = work_experience25_tbl.pds_id 
+    INNER JOIN work_experience30_tbl ON personal_information_tbl.pds_id = work_experience30_tbl.pds_id 
+    
+    
+    
+    
+    ";
+    $result = mysqli_query($con, $sql);
+
+    $row = mysqli_fetch_assoc($result);
+    ?>
+            <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+                <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+                width:194pt'><?= $row['career_1'] ?></td>
+                <td class=xl7711111 width=90 style='border-left:none;width:68pt'><?= $row['rating_1'] ?></td>
+                <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'><?= $row['date_of_examination_1'] ?></td>
+                <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'><?= $row['place_of_examination_1'] ?></td>
+                <td class=xl7011111 width=78 style='border-left:none;width:59pt'><?= $row['license_number_1'] ?></td>
+                <td class=xl7911111 width=56 style='border-left:none;width:42pt'><?= $row['license_validity_1'] ?></td>
+                <td class=xl1511111></td>
+            </tr>
+
+    <?php
+
+}
+
+
+function c3_fetch_voluntary()
+{
+    global $con;
+    $id = $_SESSION['id'];
+            
+    $sql = "SELECT * FROM personal_information_tbl INNER JOIN voluntary_work_tbl ON personal_information_tbl.pds_id = voluntary_work_tbl.pds_id
+    
+    
+    
+    
+    ";
+    $result = mysqli_query($con, $sql);
+
+    $row = mysqli_fetch_assoc($result);
+    ?>
+            
+            <tr height=37 style='mso-height-source:userset;height:27.75pt'>
+                <td colspan=4 height=37 class=xl1248470 width=407 style='border-right:.5pt solid black;
+                height:27.75pt;width:307pt'><?= $row['voluntary_work_name_address_1'] ?></td>
+                <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_from_1'] ?></td>
+                <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_to_1'] ?></td>
+                <td class=xl748470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_hours_1'] ?></td>
+                <td colspan=4 class=xl1288470 style='border-right:1.0pt solid black;
+                border-left:none'>&nbsp;<?= $row['voluntary_work_position_1'] ?></td>
+                <td class=xl158470>
+                <td class=xl158470>
+            </tr>
+
+    <?php
+
+}
+
+function c3_fetch_learning()
+{
+    global $con;
+    $id = $_SESSION['id'];
+            
+    $sql = "SELECT * FROM personal_information_tbl INNER JOIN learning_tbl ON personal_information_tbl.pds_id = learning_tbl.pds_id
+    
+    ";
+    $result = mysqli_query($con, $sql);
+
+    $row = mysqli_fetch_assoc($result);
+    ?>
+        <tr height=33 style='mso-height-source:userset;height:24.75pt'>
+            <td colspan=4 height=33 class=xl828470 width=407 style='border-right:.5pt solid black;
+            height:24.75pt;width:307pt'><?= $row['learning_development_title_1'] ?></td>
+            <td class=xl688470 style='border-top:none;border-left:none'><?= $row['learning_development_from_1'] ?></td>
+            <td class=xl688470 style='border-top:none;border-left:none'><?= $row['learning_development_to_1'] ?></td>
+            <td class=xl708470 style='border-top:none;border-left:none'><?= $row['learning_development_number_of_hours_1'] ?> </td>
+            <td class=xl698470 style='border-top:none;border-left:none'>&nbsp;<?= $row['learning_development_type_of_ld_1'] ?></td>
+            <td colspan=3 class=xl798470 width=236 style='border-right:1.0pt solid black;
+            border-left:none;width:177pt'><?= $row['learning_development_conducted_by_1'] ?></td>
+            <td class=xl158470></td>
+            <td class=xl158470></td>
+        </tr>
+
+    <?php
+
+}
+
+ 
+
+
+
+
+
 function fetch()
 {
     global $con;
@@ -320,352 +425,760 @@ function fetch()
              </div>
           
             <div id="pf2" class="pf w1a h30" data-page-no="2">
-            <div class="pc pc2 w1a h30">
-            <img class="bi x0 y91 w1b h31" alt="" src="bg2.png" />
-                    <div class="c x3 y92 w1c h32"><div class="t m0 x2 h33 y93 ff5 fs9 fc1 sc0 ls0 ws0">IV. CIVIL SERVICE ELIGIBILITY</div></div>
-                    <div class="c x3 y94 w1d h34"><div class="t m0 x2 h35 y95 ff4 fsa fc0 sc0 ls0 ws0">27.</div></div>
-                    <div class="c x28 y96 w1e h36">
-                        <div class="t m0 x0 h35 y97 ff4 fsa fc0 sc0 ls0 ws0">CAREER SERVICE/ RA 1080 (BOARD/ BAR) UNDER</div>
-                        <div class="t m0 x31 h35 y98 ff4 fsa fc0 sc0 ls0 ws0">SPECIAL LAWS/ CES/ CSEE</div>
-                        <div class="t m0 x32 h35 y99 ff4 fsa fc0 sc0 ls0 ws0">BARANGAY ELIGIBILITY / DRIVER&apos;S LICENSE</div>
-                    </div>
-                    <div class="c x33 y96 w1f h36">
-                        <div class="t m0 x32 h35 y9a ff4 fsa fc0 sc0 ls0 ws0">RATING</div>
-                        <div class="t m0 x3 h35 y9b ff4 fsa fc0 sc0 ls0 ws0">(If Applicable)</div>
-                    </div>
-                    <div class="c xa y96 w20 h36">
-                        <div class="t m0 x34 h35 y97 ff4 fsa fc0 sc0 ls0 ws0">DATE OF</div>
-                        <div class="t m0 x0 h35 y98 ff4 fsa fc0 sc0 ls0 ws0">EXAMINATION /</div>
-                        <div class="t m0 x3 h35 y99 ff4 fsa fc0 sc0 ls0 ws0">CONFERMENT</div>
-                    </div>
-                    <div class="c x35 y96 w21 h36"><div class="t m0 x28 h35 y98 ff4 fsa fc0 sc0 ls0 ws0">PLACE OF EXAMINATION / CONFERMENT</div></div>
-                    <div class="c x36 y94 w22 h34"><div class="t m0 x37 h35 y99 ff4 fsa fc0 sc0 ls0 ws0">LICENSE (if applicable)</div></div>
-                    <div class="c x36 y96 w23 h37"><div class="t m0 x10 h35 y9c ff4 fsa fc0 sc0 ls0 ws0">NUMBER</div></div>
-                    <div class="c x38 y96 w24 h37">
-                        <div class="t m0 xc h35 y9d ff4 fsa fc0 sc0 ls0 ws0">Date of</div>
-                        <div class="t m0 xc h35 y95 ff4 fsa fc0 sc0 ls0 ws0">Validity</div>
-                    </div>
-                    <div class="c x3 y9e w25 h38"><div class="t m0 x39 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_1'] ?></div></div>
-                    <div class="c x33 y9e w1f h38"><div class="t m0 x29 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_1'] ?></div></div>
-                    <div class="c xa y9e w20 h38"><div class="t m0 x28 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_1'] ?></div></div>
-                    <div class="c x35 y9e w21 h38"><div class="t m0 x3a h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_1'] ?></div></div>
-                    <div class="c x36 y9e w23 h38"><div class="t m0 x34 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_1'] ?></div></div>
-                    <div class="c x38 y9e w24 h38"><div class="t m0 x10 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_1'] ?></div></div>
-                    <div class="c x3 ya1 w25 h3b"><div class="t m0 x39 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_2'] ?></div></div>
-                    <div class="c x33 ya1 w1f h3b"><div class="t m0 x29 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_2'] ?></div></div>
-                    <div class="c xa ya1 w20 h3b"><div class="t m0 x28 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_2'] ?></div></div>
-                    <div class="c x35 ya1 w21 h3b"><div class="t m0 x3a h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_2'] ?></div></div>
-                    <div class="c x36 ya1 w23 h3b"><div class="t m0 x34 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_2'] ?></div></div>
-                    <div class="c x38 ya1 w24 h3b"><div class="t m0 x10 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_2'] ?></div></div>
-                    <div class="c x3 ya3 w25 h38"><div class="t m0 x39 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_3'] ?></div></div>
-                    <div class="c x33 ya3 w1f h38"><div class="t m0 x29 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_3'] ?></div></div>
-                    <div class="c xa ya3 w20 h38"><div class="t m0 x28 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_3'] ?></div></div>
-                    <div class="c x35 ya3 w21 h38"><div class="t m0 x3a h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_3'] ?></div></div>
-                    <div class="c x36 ya3 w23 h38"><div class="t m0 x34 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_3'] ?></div></div>
-                    <div class="c x38 ya3 w24 h38"><div class="t m0 x10 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_3'] ?></div></div>
-                    <div class="c x3 ya4 w25 h3b"><div class="t m0 x39 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_4'] ?></div></div>
-                    <div class="c x33 ya4 w1f h3b"><div class="t m0 x29 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_4'] ?></div></div>
-                    <div class="c xa ya4 w20 h3b"><div class="t m0 x28 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_4'] ?></div></div>
-                    <div class="c x35 ya4 w21 h3b"><div class="t m0 x3a h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_4'] ?></div></div>
-                    <div class="c x36 ya4 w23 h3b"><div class="t m0 x34 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_4'] ?></div></div>
-                    <div class="c x38 ya4 w24 h3b"><div class="t m0 x10 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_4'] ?></div></div>
-                    <div class="c x3 ya5 w25 h38"><div class="t m0 x39 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_5'] ?></div></div>
-                    <div class="c x33 ya5 w1f h38"><div class="t m0 x29 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_5'] ?></div></div>
-                    <div class="c xa ya5 w20 h38"><div class="t m0 x28 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_5'] ?></div></div>
-                    <div class="c x35 ya5 w21 h38"><div class="t m0 x3a h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_5'] ?></div></div>
-                    <div class="c x36 ya5 w23 h38"><div class="t m0 x34 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_5'] ?></div></div>
-                    <div class="c x38 ya5 w24 h38"><div class="t m0 x10 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_5'] ?></div></div>
-                    <div class="c x3 ya6 w25 h38"><div class="t m0 x39 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_6'] ?></div></div>
-                    <div class="c x33 ya6 w1f h38"><div class="t m0 x29 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_6'] ?></div></div>
-                    <div class="c xa ya6 w20 h38"><div class="t m0 x28 h3a ya7 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_6'] ?></div></div>
-                    <div class="c x35 ya6 w21 h38"><div class="t m0 x3a h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_6'] ?></div></div>
-                    <div class="c x36 ya6 w23 h38"><div class="t m0 x34 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_6'] ?></div></div>
-                    <div class="c x38 ya6 w24 h38"><div class="t m0 x10 h3a ya7 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_6'] ?></div></div>
-                    <div class="c x3 ya8 w25 h3b"><div class="t m0 x39 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['career_7'] ?></div></div>
-                    <div class="c x33 ya8 w1f h3b"><div class="t m0 x29 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['rating_7'] ?></div></div>
-                    <div class="c xa ya8 w20 h3b"><div class="t m0 x28 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['date_of_examination_7'] ?></div></div>
-                    <div class="c x35 ya8 w21 h3b"><div class="t m0 x3a h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['place_of_examination_7'] ?></div></div>
-                    <div class="c x36 ya8 w23 h3b"><div class="t m0 x34 h39 ya2 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['license_number_7'] ?></div></div>
-                    <div class="c x38 ya8 w24 h3b"><div class="t m0 x10 h3a ya0 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['license_validity_7'] ?></div></div>
-                    <div class="c x3 ya9 w1c h3c"><div class="t m0 x3b h3d yaa ff5 fsa fc3 sc0 ls0 ws0">(Continue on separate sheet if necessary)</div></div>
-                    <div class="c x3 yab w1c h32"><div class="t m0 x2 h33 yac ff5 fs9 fc1 sc0 ls0 ws0">V. WORK EXPERIENCE</div></div>
-                    <div class="c x3 yad w26 h3c">
-                        <div class="t m0 x2 h39 yae ff5 fsb fc1 sc0 ls0 ws0">(Include private employment. Start from your recent work) Description of duties should be indicated in the attached Work Experience sheet.</div>
-                    </div>
-                    <div class="c x3 yaf w1d h32"><div class="t m0 x2 h35 y95 ff4 fsa fc0 sc0 ls0 ws0">28.</div></div>
-                    <div class="c x28 yb0 w27 h3e">
-                        <div class="t m0 x3 h35 yb1 ff4 fsa fc0 sc0 ls0 ws0">INCLUSIVE DATES</div>
-                        <div class="t m0 x34 h35 yb2 ff4 fsa fc0 sc0 ls0 ws0">(mm/dd/yyyy)</div>
-                    </div>
-                    <div class="c x3c yb3 w28 h3f">
-                        <div class="t m0 x11 h35 yb4 ff4 fsa fc0 sc0 ls0 ws0">POSITION TITLE</div>
-                        <div class="t m0 x15 h35 yb5 ff4 fsa fc0 sc0 ls0 ws0">(Write in full/Do not abbreviate)</div>
-                    </div>
-                    <div class="c xa yb3 w29 h3f">
-                        <div class="t m0 x0 h35 yb4 ff4 fsa fc0 sc0 ls0 ws0">DEPARTMENT / AGENCY / OFFICE / COMPANY</div>
-                        <div class="t m0 x3d h35 yb5 ff4 fsa fc0 sc0 ls0 ws0">(Write in full/Do not abbreviate)</div>
-                    </div>
-                    <div class="c x3e yb3 w2a h3f">
-                        <div class="t m0 xc h40 yb6 ff4 fsd fc0 sc0 ls0 ws0">MONTHLY</div>
-                        <div class="t m0 x0 h40 yb7 ff4 fsd fc0 sc0 ls0 ws0">SALARY</div>
-                    </div>
-                    <div class="c x3f yb3 w2b h3f">
-                        <div class="t m0 x2 h41 yb8 ff4 fse fc0 sc0 ls0 ws0">SALARY/ JOB/ PAY</div>
-                        <div class="t m0 x0 h41 yb9 ff4 fse fc0 sc0 ls0 ws0">GRADE (if</div>
-                        <div class="t m0 x24 h41 yba ff4 fse fc0 sc0 ls0 ws0">applicable)&amp; STEP</div>
-                        <div class="t m0 xe h41 ybb ff4 fse fc0 sc0 ls0 ws0">(Format &quot;00-0&quot;)/</div>
-                        <div class="t m0 xc h41 ybc ff4 fse fc0 sc0 ls0 ws0">INCREMENT</div>
-                    </div>
-                    <div class="c x36 yb3 w23 h3f">
-                        <div class="t m0 x3 h40 yb6 ff4 fsd fc0 sc0 ls0 ws0">STATUS OF</div>
-                        <div class="t m0 xc h40 yb7 ff4 fsd fc0 sc0 ls0 ws0">APPOINTMENT</div>
-                    </div>
-                    <div class="c x38 yb3 w24 h3f">
-                        <div class="t m0 x0 h40 ybd ff4 fsd fc0 sc0 ls0 ws0">GOV&apos;T</div>
-                        <div class="t m0 xc h40 ybe ff4 fsd fc0 sc0 ls0 ws0">SERVICE</div>
-                        <div class="t m0 x3 h40 ybf ff4 fsd fc0 sc0 ls0 ws0">(Y/ N)</div>
-                    </div>
-                    <div class="c x3 yb3 w2c h42"><div class="t m0 x37 h35 yc0 ff4 fsa fc0 sc0 ls0 ws0">From</div></div>
-                    <div class="c x26 yb3 w2d h42"><div class="t m0 x32 h35 yc0 ff4 fsa fc0 sc0 ls0 ws0">To</div></div>
-                    <div class="c x3 yc1 w2c h43"><div class="t m0 x40 h3a yc2 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_1'] ?></div></div>
-                    <div class="c x26 yc1 w2d h43"><div class="t m0 x40 h3a yc2 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_1'] ?></div></div>
-                    <div class="c x3c yc1 w28 h43"><div class="t m0 xd h39 yc3 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_1'] ?></div></div>
-                    <div class="c xa yc1 w29 h43">
-                        <div class="t m0 xe h39 yc4 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_1'] ?></div>
-                    </div>
-                    <div class="c x3e yc1 w2a h43"><div class="t m0 x40 h3d yc6 ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_1'] ?></div></div>
-                    <div class="c x3f yc1 w2b h43"><div class="t m0 x0 h39 yc3 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_1'] ?></div></div>
-                    <div class="c x36 yc1 w23 h43"><div class="t m0 x32 h39 yc3 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_1'] ?></div></div>
-                    <div class="c x38 yc1 w24 h43"><div class="t m0 x37 h39 yc3 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_1'] ?></div></div>
-                    <div class="c x3 yc7 w2c h44"><div class="t m0 x40 h3a yc8 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_2'] ?></div></div>
-                    <div class="c x26 yc7 w2d h44"><div class="t m0 x40 h3a yc8 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_2'] ?></div></div>
-                    <div class="c x3c yc7 w28 h44"><div class="t m0 xd h39 yc9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_2'] ?></div></div>
-                    <div class="c xa yc7 w29 h44"><div class="t m0 x24 h39 yc9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_2'] ?></div></div>
-                    <div class="c x3e yc7 w2a h44"><div class="t m0 x40 h3d yca ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_2'] ?></div></div>
-                    <div class="c x3f yc7 w2b h44"><div class="t m0 x0 h39 yc9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_2'] ?></div></div>
-                    <div class="c x36 yc7 w23 h44"><div class="t m0 x32 h39 yc9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_2'] ?></div></div>
-                    <div class="c x38 yc7 w24 h44"><div class="t m0 x37 h39 yc9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_2'] ?></div></div>
-                    <div class="c x3 ycb w2c h38"><div class="t m0 x40 h3a ya7 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_3'] ?></div></div>
-                    <div class="c x26 ycb w2d h38"><div class="t m0 x40 h3a ya7 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_3'] ?></div></div>
-                    <div class="c x3c ycb w28 h38"><div class="t m0 xd h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_3'] ?></div></div>
-                    <div class="c xa ycb w29 h38">
-                        <div class="t m0 xe h39 ycc ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_3'] ?></div>
-                    </div>
-                    <div class="c x3e ycb w2a h38"><div class="t m0 x40 h3d yce ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_3'] ?></div></div>
-                    <div class="c x3f ycb w2b h38"><div class="t m0 x0 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_3'] ?></div></div>
-                    <div class="c x36 ycb w23 h38"><div class="t m0 x32 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_3'] ?></div></div>
-                    <div class="c x38 ycb w24 h38"><div class="t m0 x37 h39 y9f ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_3'] ?></div></div>
-                    <div class="c x3 ycf w2c h45"><div class="t m0 x40 h3a yd0 ff1 fsc fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_from_4'] ?></div></div>
-                    <div class="c x26 ycf w2d h45"><div class="t m0 x40 h3a yd0 ff1 fsc fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_to_4'] ?></div></div>
-                    <div class="c x3c ycf w28 h45"><div class="t m0 xd h39 yd1 ff1 fsb fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_position_title_4'] ?></div></div>
-                    <div class="c xa ycf w29 h45">
-                        <div class="t m0 xe h39 yd2 ff1 fsb fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_department_4'] ?></div>
-                    </div>
-                    <div class="c x3e ycf w2a h45"><div class="t m0 x40 h3d yd4 ff1 fsa fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_monthly_4'] ?></div></div>
-                    <div class="c x3f ycf w2b h45"><div class="t m0 x0 h39 yd1 ff1 fsb fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_salary_job_paygrade_4'] ?></div></div>
-                    <div class="c x36 ycf w23 h45"><div class="t m0 x32 h39 yd1 ff1 fsb fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_status_of_appointment_4'] ?></div></div>
-                    <div class="c x38 ycf w24 h45"><div class="t m0 x37 h39 yd1 ff1 fsb fc0 sc0 ls0 ws0"><?php $row['inclusive_dates_government_service_4'] ?></div></div>
-                    <div class="c x3 yd5 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_5'] ?></div></div>
-                    <div class="c x26 yd5 w2d h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_5'] ?></div></div>
-                    <div class="c x3c yd5 w28 h46"><div class="t m0 xd h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_5'] ?></div></div>
-                    <div class="c xa yd5 w29 h46">
-                        <div class="t m0 xe h39 yd8 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_5'] ?></div>
-                    </div>
-                    <div class="c x3e yd5 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_5'] ?></div></div>
-                    <div class="c x3f yd5 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_5'] ?></div></div>
-                    <div class="c x36 yd5 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_5'] ?></div></div>
-                    <div class="c x38 yd5 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_5'] ?></div></div>
-                    <div class="c x3 ydb w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_6'] ?></div></div>
-                    <div class="c x26 ydb w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_6'] ?></div></div>
-                    <div class="c x3c ydb w28 h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_6'] ?></div></div>
-                    <div class="c xa ydb w29 h46"><div class="t m0 x19 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_6'] ?></div></div>
-                    <div class="c x3e ydb w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_6'] ?></div></div>
-                    <div class="c x3f ydb w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_6'] ?></div></div>
-                    <div class="c x36 ydb w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_6'] ?></div></div>
-                    <div class="c x38 ydb w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_6'] ?></div></div>
-                    <div class="c x3 ydc w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_7'] ?></div></div>
-                    <div class="c x26 ydc w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_7'] ?></div></div>
-                    <div class="c x3c ydc w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_7'] ?></div></div>
-                    <div class="c xa ydc w29 h46"><div class="t m0 x42 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_7'] ?></div></div>
-                    <div class="c x3e ydc w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_7'] ?></div></div>
-                    <div class="c x3f ydc w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_7'] ?></div></div>
-                    <div class="c x36 ydc w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_7'] ?></div></div>
-                    <div class="c x38 ydc w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_7'] ?></div></div>
-                    <div class="c x3 ydd w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_8'] ?></div></div>
-                    <div class="c x26 ydd w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_8'] ?></div></div>
-                    <div class="c x3c ydd w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_8'] ?></div></div>
-                    <div class="c xa ydd w29 h46"><div class="t m0 x43 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_8'] ?></div></div>
-                    <div class="c x3e ydd w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_8'] ?></div></div>
-                    <div class="c x3f ydd w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_8'] ?></div></div>
-                    <div class="c x36 ydd w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_8'] ?></div></div>
-                    <div class="c x38 ydd w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_8'] ?></div></div>
-                    <div class="c x3 yde w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_9'] ?></div></div>
-                    <div class="c x26 yde w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_9'] ?></div></div>
-                    <div class="c x3c yde w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_9'] ?></div></div>
-                    <div class="c xa yde w29 h46"><div class="t m0 x20 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_9'] ?></div></div>
-                    <div class="c x3e yde w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_9'] ?></div></div>
-                    <div class="c x3f yde w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_9'] ?></div></div>
-                    <div class="c x36 yde w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_9'] ?></div></div>
-                    <div class="c x38 yde w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_9'] ?></div></div>
-                    <div class="c x3 ydf w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_10'] ?></div></div>
-                    <div class="c x26 ydf w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_10'] ?></div></div>
-                    <div class="c x3c ydf w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_10'] ?></div></div>
-                    <div class="c xa ydf w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_10'] ?></div></div>
-                    <div class="c x3e ydf w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_10'] ?></div></div>
-                    <div class="c x3f ydf w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_10'] ?></div></div>
-                    <div class="c x36 ydf w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_10'] ?></div></div>
-                    <div class="c x38 ydf w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_10'] ?></div></div>
-                    <div class="c x3 ye0 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_11']?></div></div>
-                    <div class="c x26 ye0 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_11']?></div></div>
-                    <div class="c x3c ye0 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_11']?></div></div>
-                    <div class="c xa ye0 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_11']?></div></div>
-                    <div class="c x3e ye0 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_11']?></div></div>
-                    <div class="c x3f ye0 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_11']?></div></div>
-                    <div class="c x36 ye0 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_11']?></div></div>
-                    <div class="c x38 ye0 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_11']?></div></div>
-                    <div class="c x3 ye1 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_12'] ?></div></div>
-                    <div class="c x26 ye1 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_12'] ?></div></div>
-                    <div class="c x3c ye1 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_12'] ?></div></div>
-                    <div class="c xa ye1 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_12'] ?></div></div>
-                    <div class="c x3e ye1 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_12'] ?></div></div>
-                    <div class="c x3f ye1 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_12'] ?></div></div>
-                    <div class="c x36 ye1 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_12'] ?></div></div>
-                    <div class="c x38 ye1 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_12'] ?></div></div>
-                    <div class="c x3 ye2 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_13'] ?></div></div>
-                    <div class="c x26 ye2 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_13'] ?></div></div>
-                    <div class="c x3c ye2 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_13'] ?></div></div>
-                    <div class="c xa ye2 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_13'] ?></div></div>
-                    <div class="c x3e ye2 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_13'] ?></div></div>
-                    <div class="c x3f ye2 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_13'] ?></div></div>
-                    <div class="c x36 ye2 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_13'] ?></div></div>
-                    <div class="c x38 ye2 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_13'] ?></div></div>
-                    <div class="c x3 ye3 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_14']?></div></div>
-                    <div class="c x26 ye3 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_14']?></div></div>
-                    <div class="c x3c ye3 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_14']?></div></div>
-                    <div class="c xa ye3 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_14']?></div></div>
-                    <div class="c x3e ye3 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_14']?></div></div>
-                    <div class="c x3f ye3 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_14']?></div></div>
-                    <div class="c x36 ye3 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_14']?></div></div>
-                    <div class="c x38 ye3 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_14']?></div></div>
-                    <div class="c x3 ye4 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_15'] ?></div></div>
-                    <div class="c x26 ye4 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_15'] ?></div></div>
-                    <div class="c x3c ye4 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_15'] ?></div></div>
-                    <div class="c xa ye4 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_15'] ?></div></div>
-                    <div class="c x3e ye4 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_15'] ?></div></div>
-                    <div class="c x3f ye4 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_15'] ?></div></div>
-                    <div class="c x36 ye4 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_15'] ?></div></div>
-                    <div class="c x38 ye4 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_15'] ?></div></div>
-                    <div class="c x3 ye5 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_16'] ?></div></div>
-                    <div class="c x26 ye5 w2d h46"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_16'] ?></div></div>
-                    <div class="c x3c ye5 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_16'] ?></div></div>
-                    <div class="c xa ye5 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_16'] ?></div></div>
-                    <div class="c x3e ye5 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_16'] ?></div></div>
-                    <div class="c x3f ye5 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_16'] ?></div></div>
-                    <div class="c x36 ye5 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_16'] ?></div></div>
-                    <div class="c x38 ye5 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_16'] ?></div></div>
-                    <div class="c x3 ye6 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_17'] ?></div></div>
-                    <div class="c x26 ye6 w2d h46"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_17'] ?></div></div>
-                    <div class="c x3c ye6 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_17'] ?></div></div>
-                    <div class="c xa ye6 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_17'] ?></div></div>
-                    <div class="c x3e ye6 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_17'] ?></div></div>
-                    <div class="c x3f ye6 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_17'] ?></div></div>
-                    <div class="c x36 ye6 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_17'] ?></div></div>
-                    <div class="c x38 ye6 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_17'] ?></div></div>
-                    <div class="c x3 ye7 w2c h47"><div class="t m0 x40 h3a ye8 ff1 fsc fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_from_18']?></div></div>
-                    <div class="c x26 ye7 w2d h47"><div class="t m0 x0 h3a ye8 ff1 fsc fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_to_18']?></div></div>
-                    <div class="c x3c ye7 w28 h47"><div class="t m0 x32 h39 ye9 ff1 fsb fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_position_title_18']?></div></div>
-                    <div class="c xa ye7 w29 h47"><div class="t m0 x10 h39 ye9 ff1 fsb fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_department_18']?></div></div>
-                    <div class="c x3e ye7 w2a h47"><div class="t m0 x40 h3d yea ff1 fsa fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_monthly_18']?></div></div>
-                    <div class="c x3f ye7 w2b h47"><div class="t m0 x0 h39 ye9 ff1 fsb fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_salary_job_paygrade_18']?></div></div>
-                    <div class="c x36 ye7 w23 h47"><div class="t m0 x32 h39 ye9 ff1 fsb fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_status_of_appointment_18']?></div></div>
-                    <div class="c x38 ye7 w24 h47"><div class="t m0 x37 h39 ye9 ff1 fsb fc0 sc0 ls0 ws0"> <?= $row['inclusive_dates_government_service_18']?></div></div>
-                    <div class="c x3 yeb w2c h48"><div class="t m0 x40 h3a yec ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_19'] ?></div></div>
-                    <div class="c x26 yeb w2d h48"><div class="t m0 x0 h3a yec ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_19'] ?></div></div>
-                    <div class="c x3c yeb w28 h48"><div class="t m0 x32 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_19'] ?></div></div>
-                    <div class="c xa yeb w29 h48"><div class="t m0 x10 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_19'] ?></div></div>
-                    <div class="c x3e yeb w2a h48"><div class="t m0 x40 h3d yee ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_19'] ?></div></div>
-                    <div class="c x3f yeb w2b h48"><div class="t m0 x0 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_19'] ?></div></div>
-                    <div class="c x36 yeb w23 h48"><div class="t m0 x32 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_19'] ?></div></div>
-                    <div class="c x38 yeb w24 h48"><div class="t m0 x37 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_19'] ?></div></div>
-                    <div class="c x3 yef w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_20'] ?></div></div>
-                    <div class="c x26 yef w2d h46"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_20'] ?></div></div>
-                    <div class="c x3c yef w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_20'] ?></div></div>
-                    <div class="c xa yef w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_20'] ?></div></div>
-                    <div class="c x3e yef w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_20'] ?></div></div>
-                    <div class="c x3f yef w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_20'] ?></div></div>
-                    <div class="c x36 yef w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_20'] ?></div></div>
-                    <div class="c x38 yef w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_20'] ?></div></div>
-                    <div class="c x3 yf0 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_21'] ?></div></div>
-                    <div class="c x26 yf0 w2d h46"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_21'] ?></div></div>
-                    <div class="c x3c yf0 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_21'] ?></div></div>
-                    <div class="c xa yf0 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_21'] ?></div></div>
-                    <div class="c x3e yf0 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_21'] ?></div></div>
-                    <div class="c x3f yf0 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_21'] ?></div></div>
-                    <div class="c x36 yf0 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_21'] ?></div></div>
-                    <div class="c x38 yf0 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_21'] ?></div></div>
-                    <div class="c x3 yf1 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_22'] ?></div></div>
-                    <div class="c x26 yf1 w2d h46"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_22'] ?></div></div>
-                    <div class="c x3c yf1 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_22'] ?></div></div>
-                    <div class="c xa yf1 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_22'] ?></div></div>
-                    <div class="c x3e yf1 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_22'] ?></div></div>
-                    <div class="c x3f yf1 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_22'] ?></div></div>
-                    <div class="c x36 yf1 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_22'] ?></div></div>
-                    <div class="c x38 yf1 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_22'] ?></div></div>
-                    <div class="c x3 yf2 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_23'] ?></div></div>
-                    <div class="c x26 yf2 w2d h46"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_23'] ?></div></div>
-                    <div class="c x3c yf2 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_23'] ?></div></div>
-                    <div class="c xa yf2 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_23'] ?></div></div>
-                    <div class="c x3e yf2 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_23'] ?></div></div>
-                    <div class="c x3f yf2 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_23'] ?></div></div>
-                    <div class="c x36 yf2 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_23'] ?></div></div>
-                    <div class="c x38 yf2 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_23'] ?></div></div>
-                    <div class="c x3 yf3 w2c h48"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_24'] ?></div></div>
-                    <div class="c x26 yf3 w2d h48"><div class="t m0 x0 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_24'] ?></div></div>
-                    <div class="c x3c yf3 w28 h48"><div class="t m0 x32 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_24'] ?></div></div>
-                    <div class="c xa yf3 w29 h48"><div class="t m0 x10 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_24'] ?></div></div>
-                    <div class="c x3e yf3 w2a h48"><div class="t m0 x40 h3d yee ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_24'] ?></div></div>
-                    <div class="c x3f yf3 w2b h48"><div class="t m0 x0 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_24'] ?></div></div>
-                    <div class="c x36 yf3 w23 h48"><div class="t m0 x32 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_24'] ?></div></div>
-                    <div class="c x38 yf3 w24 h48"><div class="t m0 x37 h39 yed ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_24'] ?></div></div>
-                    <div class="c x3 yf4 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_25'] ?></div></div>
-                    <div class="c x26 yf4 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_25'] ?></div></div>
-                    <div class="c x3c yf4 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_25'] ?></div></div>
-                    <div class="c xa yf4 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_25'] ?></div></div>
-                    <div class="c x3e yf4 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_25'] ?></div></div>
-                    <div class="c x3f yf4 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_25'] ?></div></div>
-                    <div class="c x36 yf4 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_25'] ?></div></div>
-                    <div class="c x38 yf4 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_25'] ?></div></div>
-                    <div class="c x3 yf5 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_26'] ?></div></div>
-                    <div class="c x26 yf5 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_26'] ?></div></div>
-                    <div class="c x3c yf5 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_26'] ?></div></div>
-                    <div class="c xa yf5 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_26'] ?></div></div>
-                    <div class="c x3e yf5 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_26'] ?></div></div>
-                    <div class="c x3f yf5 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_26'] ?></div></div>
-                    <div class="c x36 yf5 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_26'] ?></div></div>
-                    <div class="c x38 yf5 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_26'] ?></div></div>
-                    <div class="c x3 yf6 w2c h46"><div class="t m0 x40 h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_27'] ?></div></div>
-                    <div class="c x26 yf6 w2d h46"><div class="t m0 xc h3a yd6 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_27'] ?></div></div>
-                    <div class="c x3c yf6 w28 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_27'] ?></div></div>
-                    <div class="c xa yf6 w29 h46"><div class="t m0 x10 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_27'] ?></div></div>
-                    <div class="c x3e yf6 w2a h46"><div class="t m0 x40 h3d yda ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_27'] ?></div></div>
-                    <div class="c x3f yf6 w2b h46"><div class="t m0 x0 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_27'] ?></div></div>
-                    <div class="c x36 yf6 w23 h46"><div class="t m0 x32 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_27'] ?></div></div>
-                    <div class="c x38 yf6 w24 h46"><div class="t m0 x37 h39 yd7 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_27'] ?></div></div>
-                    <div class="c x3 yf7 w2c h49"><div class="t m0 x40 h3a yf8 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_from_28'] ?></div></div>
-                    <div class="c x26 yf7 w2d h49"><div class="t m0 xc h3a yf8 ff1 fsc fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_to_28'] ?></div></div>
-                    <div class="c x3c yf7 w28 h49"><div class="t m0 x32 h39 yf9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_position_title_28'] ?></div></div>
-                    <div class="c xa yf7 w29 h49"><div class="t m0 x10 h39 yf9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_department_28'] ?></div></div>
-                    <div class="c x3e yf7 w2a h49"><div class="t m0 x40 h3d yfa ff1 fsa fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_monthly_28'] ?></div></div>
-                    <div class="c x3f yf7 w2b h49"><div class="t m0 x0 h39 yf9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_salary_job_paygrade_28'] ?></div></div>
-                    <div class="c x36 yf7 w23 h49"><div class="t m0 x32 h39 yf9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_status_of_appointment_28'] ?></div></div>
-                    <div class="c x38 yf7 w24 h49"><div class="t m0 x37 h39 yf9 ff1 fsb fc0 sc0 ls0 ws0"><?= $row['inclusive_dates_government_service_28'] ?></div></div>
-                    <div class="c x3 yfb w1c h4a"><div class="t m0 x3b h3d yfc ff5 fsa fc3 sc0 ls0 ws0">(Continue on separate sheet if necessary)</div></div>
-                    <div class="c x3 yfd w2e h4b"><div class="t m0 x8 h33 yfe ff5 fs9 fc0 sc0 ls0 ws0">SIGNATURE</div></div>
-                    <div class="c x35 yfd w2f h4b"><div class="t m0 xd h33 yfe ff5 fs9 fc0 sc0 ls0 ws0">DATE</div></div>
-                    <div class="c x3f yfd w30 h4b"><div class="t m0 x2 h3d yff ff5 fsa fc0 sc0 ls0 ws0">November 22, 2022</div></div>
-                    <div class="c x3 y100 w1c h4c"><div class="t m0 x44 h4d y101 ff6 fsd fc0 sc0 ls0 ws0">CS FORM 212 (Revised 2017), Page 2 of 4</div></div>
+                <div style=" margin:10px; " >
+
+                  
+<table border=0 cellpadding=0 cellspacing=0  style='border-collapse:
+ collapse;table-layout:fixed;width:100%;'>
+ <col width=23 style='mso-width-source:userset;mso-width-alt:841;width:17pt'>
+ <col width=44 style='mso-width-source:userset;mso-width-alt:1609;width:33pt'>
+ <col width=68 style='mso-width-source:userset;mso-width-alt:2486;width:51pt'>
+ <col width=74 style='mso-width-source:userset;mso-width-alt:2706;width:56pt'>
+ <col width=49 style='mso-width-source:userset;mso-width-alt:1792;width:37pt'>
+ <col width=90 style='mso-width-source:userset;mso-width-alt:3291;width:68pt'>
+ <col width=48 span=2 style='mso-width-source:userset;mso-width-alt:1755;
+ width:36pt'>
+ <col width=123 style='mso-width-source:userset;mso-width-alt:4498;width:92pt'>
+ <col width=59 style='mso-width-source:userset;mso-width-alt:2157;width:44pt'>
+ <col width=65 style='mso-width-source:userset;mso-width-alt:2377;width:49pt'>
+ <col width=78 style='mso-width-source:userset;mso-width-alt:2852;width:59pt'>
+ <col width=56 style='mso-width-source:userset;mso-width-alt:2048;width:42pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=4 style='mso-height-source:userset;height:3.0pt'>
+  <td colspan=13 height=4 class=xl10211111 width=825 style='border-right:1.0pt solid black;
+  height:3.0pt;width:620pt'><a name="RANGE!A1:M49">&nbsp;</a></td>
+  <td class=xl1511111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+  <td colspan=13 height=24 class=xl11511111 style='border-right:1.0pt solid black;
+  height:18.0pt'>IV.<span style='mso-spacerun:yes'> </span>CIVIL SERVICE
+  ELIGIBILITY</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl8411111 style='height:15.0pt;border-top:none'>27.</td>
+  <td colspan=4 rowspan=2 class=xl10511111 width=235 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:177pt'>CAREER SERVICE/ RA 1080 (BOARD/
+  BAR) UNDER SPECIAL LAWS/ CES/ CSEE<span
+  style='mso-spacerun:yes'>���������������������������������������������������
+  </span>BARANGAY ELIGIBILITY / DRIVER'S LICENSE</td>
+  <td rowspan=2 class=xl11311111 width=90 style='border-top:none;width:68pt'>RATING<br>
+    (If Applicable)</td>
+  <td colspan=2 rowspan=2 class=xl10911111 width=96 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:72pt'>DATE OF EXAMINATION / CONFERMENT</td>
+  <td colspan=3 rowspan=2 class=xl10911111 width=247 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:185pt'>PLACE OF EXAMINATION / CONFERMENT</td>
+  <td colspan=2 class=xl11111111 style='border-right:1.0pt solid black;
+  border-left:none'>LICENSE (if applicable)</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=34 style='mso-height-source:userset;height:25.5pt'>
+  <td height=34 class=xl6511111 style='height:25.5pt'>&nbsp;</td>
+  <td class=xl6611111 style='border-top:none;border-left:none'>NUMBER</td>
+  <td class=xl6711111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>Date of<br>
+    Validity</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+  width:194pt'>N/A</td>
+  <td class=xl7711111 width=90 style='border-left:none;width:68pt'>N/A</td>
+  <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'>N/A</td>
+  <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>N/A</td>
+  <td class=xl7011111 width=78 style='border-left:none;width:59pt'>N/A</td>
+  <td class=xl7911111 width=56 style='border-left:none;width:42pt'>N/A</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+  width:194pt'>&nbsp;</td>
+  <td class=xl7711111 width=90 style='border-top:none;border-left:none;
+  width:68pt'>&nbsp;</td>
+  <td colspan=2 class=xl12911111 width=96 style='border-right:.5pt solid black;
+  border-left:none;width:72pt'>&nbsp;</td>
+  <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7911111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+  width:194pt'>&nbsp;</td>
+  <td class=xl7711111 width=90 style='border-top:none;border-left:none;
+  width:68pt'>&nbsp;</td>
+  <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'>&nbsp;</td>
+  <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7911111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+  width:194pt'>&nbsp;</td>
+  <td class=xl7711111 width=90 style='border-top:none;border-left:none;
+  width:68pt'>&nbsp;</td>
+  <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'>&nbsp;</td>
+  <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7911111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+  width:194pt'>&nbsp;</td>
+  <td class=xl7711111 width=90 style='border-top:none;border-left:none;
+  width:68pt'>&nbsp;</td>
+  <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'>&nbsp;</td>
+  <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7911111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+  width:194pt'>&nbsp;</td>
+  <td class=xl7711111 width=90 style='border-top:none;border-left:none;
+  width:68pt'>&nbsp;</td>
+  <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'>&nbsp;</td>
+  <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7911111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=5 height=36 class=xl14211111 width=258 style='height:27.0pt;
+  width:194pt'>&nbsp;</td>
+  <td class=xl7811111 width=90 style='border-top:none;border-left:none;
+  width:68pt'>&nbsp;</td>
+  <td colspan=2 class=xl13211111 width=96 style='border-left:none;width:72pt'>&nbsp;</td>
+  <td colspan=3 class=xl13311111 width=247 style='border-left:none;width:185pt'>&nbsp;</td>
+  <td class=xl7211111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl8011111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td colspan=13 height=16 class=xl14311111 style='border-right:1.0pt solid black;
+  height:12.0pt'>(Continue on separate sheet if necessary)</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+  <td colspan=13 height=24 class=xl14611111 style='border-right:1.0pt solid black;
+  height:18.0pt'>V.<span style='mso-spacerun:yes'>� </span>WORK EXPERIENCE<span
+  style='mso-spacerun:yes'>�</span></td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 class=xl8611111 colspan=12 style='height:12.0pt'>(Include
+  private employment.<span style='mso-spacerun:yes'>� </span>Start from your
+  recent work) Description of duties should be indicated in the attached Work
+  Experience sheet.</td>
+  <td class=xl8511111>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=24 style='mso-height-source:userset;height:18.0pt'>
+  <td height=24 class=xl6511111 style='height:18.0pt'>28.</td>
+  <td colspan=2 rowspan=2 class=xl12711111 width=112 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:84pt'>INCLUSIVE DATES (mm/dd/yyyy)</td>
+  <td colspan=3 rowspan=3 class=xl12611111 width=213 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:161pt'>POSITION TITLE<span
+  style='mso-spacerun:yes'>���������������������������������������������������������������������������������������������������������������������������
+  </span>(Write in full/Do not abbreviate)</td>
+  <td colspan=3 rowspan=3 class=xl12611111 width=219 style='border-right:.5pt solid black;
+  border-bottom:.5pt solid black;width:164pt'>DEPARTMENT / AGENCY / OFFICE /
+  COMPANY<span
+  style='mso-spacerun:yes'>��������������������������������������������������������������������������������������������
+  </span>(Write in full/Do not abbreviate)</td>
+  <td rowspan=3 class=xl13411111 width=59 style='border-bottom:.5pt solid black;
+  width:44pt'>MONTHLY SALARY</td>
+  <td rowspan=3 class=xl12211111 width=65 style='border-bottom:.5pt solid black;
+  width:49pt'>SALARY/ JOB/ PAY GRADE (if applicable)&amp; STEP<span
+  style='mso-spacerun:yes'>� </span>(Format &quot;00-0&quot;)/ INCREMENT</td>
+  <td rowspan=3 class=xl15011111 width=78 style='border-bottom:.5pt solid black;
+  width:59pt'>STATUS OF APPOINTMENT</td>
+  <td rowspan=3 class=xl11811111 width=56 style='border-bottom:.5pt solid black;
+  width:42pt'>GOV'T SERVICE<span
+  style='mso-spacerun:yes'>��������������������������������������������������������������������������������������������������������������������������������������
+  </span>(Y/ N)</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl6811111 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=25 style='mso-height-source:userset;height:18.75pt'>
+  <td colspan=2 height=25 class=xl12411111 style='border-right:.5pt solid black;
+  height:18.75pt'>From</td>
+  <td class=xl6911111 style='border-top:none;border-left:none'>To</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.5pt'>
+  <td colspan=2 height=30 class=xl13711111 style='border-right:.5pt solid black;
+  height:22.5pt'>07/01/2022</td>
+  <td class=xl9411111 style='border-top:none;border-left:none'>11/22/2022</td>
+  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+  border-left:none;width:161pt'>Computer Programmer I</td>
+  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+  border-left:none;width:164pt'>National Meat Inspection Service / PIMD-ICT</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>23978.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>SG 10</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>COS</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>Y</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=38 style='mso-height-source:userset;height:28.5pt'>
+  <td colspan=2 height=38 class=xl13711111 style='border-right:.5pt solid black;
+  height:28.5pt'>01/03/2022</td>
+  <td class=xl9411111 style='border-top:none;border-left:none'>06/30/2022</td>
+  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+  border-left:none;width:161pt'>Computer Programmer I</td>
+  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+  border-left:none;width:164pt'>National Meat Inspection Service / POSMD</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>23978.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>SG 10</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>COS</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>Y</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+  <td colspan=2 height=36 class=xl13711111 style='border-right:.5pt solid black;
+  height:27.0pt'>07/01/2021</td>
+  <td class=xl9411111 style='border-top:none;border-left:none'>12/31/2021</td>
+  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+  border-left:none;width:161pt'>Computer Programmer I</td>
+  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+  border-left:none;width:164pt'>National Meat Inspection Service / PIMD-ICT</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>20978.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>SG 10</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>COS</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>Y</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td colspan=2 height=40 class=xl13611111 width=67 style='border-right:.5pt solid black;
+  height:30.0pt;width:50pt'>08/03/2021</td>
+  <td class=xl9411111 style='border-top:none;border-left:none'>06/30/2021</td>
+  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+  border-left:none;width:161pt'>Computer Programmer I</td>
+  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+  border-left:none;width:164pt'>National Meat Inspection Service / PIMD-ICT</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>20978.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>SG 10</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>COS</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>Y</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13611111 width=67 style='border-right:.5pt solid black;
+  height:24.0pt;width:50pt'>08/03/2021</td>
+  <td class=xl9311111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>06/30/2021</td>
+  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+  border-left:none;width:161pt'>Computer Programmer I</td>
+  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+  border-left:none;width:164pt'>National Meat Inspection Service / PIMD-ICT</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>20978.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>SG 10</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>COS</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>Y</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13611111 width=67 style='border-right:.5pt solid black;
+  height:24.0pt;width:50pt'>18/10/2019</td>
+  <td class=xl9311111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>22/01/2021</td>
+  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+  border-left:none;width:161pt'>Freelance Full stack Web Developer</td>
+  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+  border-left:none;width:164pt'>Bosny Marketing</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>10000.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>N</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>Freelance
+  Wordpress Developer</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>Elopement
+  Wedding Planner</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>10000.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>N</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>Freelance
+  Wordpress Developer</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>United
+  Reality Group</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>10000.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>N</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>Freelance
+  Wordpress Developer</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>Meler
+  production</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>10000.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>N</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>Freelance
+  Wordpress Developer</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>Randell
+  Tiongson Personal Finance</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>10000.00 </td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>N</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=33 style='mso-height-source:userset;height:24.75pt'>
+  <td colspan=2 height=33 class=xl13111111 width=67 style='height:24.75pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td colspan=2 height=32 class=xl13111111 width=67 style='height:24.0pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl7411111 height=29 style='mso-height-source:userset;height:21.75pt'>
+  <td colspan=2 height=29 class=xl13111111 width=67 style='height:21.75pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8111111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7011111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl7411111 width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=13 style='mso-height-source:userset;height:9.75pt'>
+  <td colspan=2 height=13 class=xl14911111 width=67 style='height:9.75pt;
+  width:50pt'>&nbsp;</td>
+  <td class=xl8211111 width=68 style='border-top:none;border-left:none;
+  width:51pt'>&nbsp;</td>
+  <td colspan=3 class=xl7211111 width=213 style='border-left:none;width:161pt'>&nbsp;</td>
+  <td colspan=3 class=xl7211111 width=219 style='border-left:none;width:164pt'>&nbsp;</td>
+  <td class=xl7611111 width=59 style='border-top:none;border-left:none;
+  width:44pt'>&nbsp;</td>
+  <td class=xl7211111 width=65 style='border-top:none;border-left:none;
+  width:49pt'>&nbsp;</td>
+  <td class=xl7211111 width=78 style='border-top:none;border-left:none;
+  width:59pt'>&nbsp;</td>
+  <td class=xl7311111 width=56 style='border-top:none;border-left:none;
+  width:42pt'>&nbsp;</td>
+  <td class=xl1511111></td>
+ </tr>
+ <tr height=37 style='mso-height-source:userset;height:27.75pt'>
+  <td colspan=13 height=37 class=xl15211111 style='border-right:1.0pt solid black;
+  height:27.75pt'>(Continue on separate sheet if necessary)</td>
+  <td class=xl9011111></td>
+ </tr>
+ <tr height=12 style='mso-height-source:userset;height:9.0pt'>
+  <td colspan=3 height=12 class=xl9511111 width=135 style='border-right:1.0pt solid black;
+  height:9.0pt;width:101pt'>SIGNATURE</td>
+  <td colspan=5 class=xl9911111 style='border-right:1.0pt solid black;
+  border-left:none'>&nbsp;</td>
+  <td class=xl8711111 style='border-left:none'>DATE</td>
+  <td class=xl8811111 style='border-left:none'>&nbsp;</td>
+  <td class=xl8911111 colspan=2>December 27, 2022</td>
+  <td class=xl9211111>&nbsp;</td>
+  <td class=xl9111111>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=13 height=17 class=xl9811111 style='height:12.75pt'><span
+  style='mso-spacerun:yes'>������������������������������ </span>CS FORM 212
+  (Revised 2017), Page 2 of 4</td>
+  <td class=xl1511111></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=23 style='width:17pt'></td>
+  <td width=44 style='width:33pt'></td>
+  <td width=68 style='width:51pt'></td>
+  <td width=74 style='width:56pt'></td>
+  <td width=49 style='width:37pt'></td>
+  <td width=90 style='width:68pt'></td>
+  <td width=48 style='width:36pt'></td>
+  <td width=48 style='width:36pt'></td>
+  <td width=123 style='width:92pt'></td>
+  <td width=59 style='width:44pt'></td>
+  <td width=65 style='width:49pt'></td>
+  <td width=78 style='width:59pt'></td>
+  <td width=56 style='width:42pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+
+
+                    
                 </div>
-                <div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div>
             </div>
             
             <div id="pf3" class="pf w31 h4e" data-page-no="3">
@@ -759,7 +1272,181 @@ function fetch()
                     </div>
 
 
+                    <div class="c x45 y128 w39 h55"><div class="t m0 x37 h52 y129 ff4 fsf fc0 sc0 ls0 ws0">From</div></div>
+                    <div class="c x48 y128 w37 h55"><div class="t m0 x32 h52 y129 ff4 fsf fc0 sc0 ls0 ws0">To</div></div>
 
+
+                    <div class="c x10 y12a w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_1'] ?></div></div>
+                    <div class="c x45 y12a w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_1'] ?></div></div>
+                    <div class="c x48 y12a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_1'] ?></div></div>
+                    <div class="c x47 y12a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_1'] ?></div></div>
+                    <div class="c x3e y12a w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_1'] ?></div></div>
+                    <div class="c x4b y12a w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_1'] ?></div></div>
+
+
+                    <div class="c x10 y12c w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_2'] ?></div></div>
+                    <div class="c x45 y12c w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_2'] ?></div></div>
+                    <div class="c x48 y12c w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_2'] ?></div></div>
+                    <div class="c x47 y12c w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_2'] ?></div></div>
+                    <div class="c x3e y12c w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_2'] ?></div></div>
+                    <div class="c x4b y12c w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_2'] ?></div></div>
+
+
+                    <div class="c x10 y12e w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_3'] ?></div></div>
+                    <div class="c x45 y12e w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_3'] ?></div></div>
+                    <div class="c x48 y12e w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_3'] ?></div></div>
+                    <div class="c x47 y12e w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_3'] ?></div></div>
+                    <div class="c x3e y12e w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_3'] ?></div></div>
+                    <div class="c x4b y12e w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_3'] ?></div></div>
+
+
+                    <div class="c x10 y12f w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_4'] ?></div></div>  
+                    <div class="c x45 y12f w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_4'] ?></div></div>
+                    <div class="c x48 y12f w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_4'] ?></div></div>
+                    <div class="c x47 y12f w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_4'] ?></div></div>
+                    <div class="c x3e y12f w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_4'] ?></div></div>
+                    <div class="c x4b y12f w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_4'] ?></div></div>
+
+
+                    <div class="c x10 y130 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_5'] ?></div></div>
+                    <div class="c x45 y130 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_5'] ?></div></div>
+                    <div class="c x48 y130 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_5'] ?></div></div>
+                    <div class="c x47 y130 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_5'] ?></div></div>
+                    <div class="c x3e y130 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_5'] ?></div></div>
+                    <div class="c x4b y130 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_5'] ?></div></div>
+
+
+                    <div class="c x10 y131 w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_6'] ?></div></div>
+                    <div class="c x45 y131 w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_6'] ?></div></div>
+                    <div class="c x48 y131 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_6'] ?></div></div>
+                    <div class="c x47 y131 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_6'] ?></div></div>
+                    <div class="c x3e y131 w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_6'] ?></div></div>
+                    <div class="c x4b y131 w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_6'] ?></div></div>
+
+
+                    <div class="c x10 y132 w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_7'] ?></div></div>
+                    <div class="c x45 y132 w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_7'] ?></div></div>
+                    <div class="c x48 y132 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_7'] ?></div></div>
+                    <div class="c x47 y132 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_7'] ?></div></div>
+                    <div class="c x3e y132 w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_7'] ?></div></div>
+                    <div class="c x4b y132 w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_7'] ?></div></div>
+
+
+                    <div class="c x10 y133 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_8'] ?></div></div>
+                    <div class="c x45 y133 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_8'] ?></div></div>
+                    <div class="c x48 y133 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_8'] ?></div></div>
+                    <div class="c x47 y133 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_8'] ?></div></div>
+                    <div class="c x3e y133 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_8'] ?></div></div>
+                    <div class="c x4b y133 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_8'] ?></div></div>
+
+
+                    <div class="c x10 y134 w3a h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_9'] ?></div></div> 
+                    <div class="c x45 y134 w39 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_9'] ?></div></div>
+                    <div class="c x48 y134 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_9'] ?></div></div>
+                    <div class="c x47 y134 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_9'] ?></div></div>
+                    <div class="c x3e y134 w3b h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_9'] ?></div></div>
+                    <div class="c x4b y134 w3c h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_9'] ?></div></div>
+
+
+                    <div class="c x10 y136 w3a h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_10'] ?></div></div> 
+                    <div class="c x45 y136 w39 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_10'] ?></div></div>
+                    <div class="c x48 y136 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_10'] ?></div></div>
+                    <div class="c x47 y136 w37 h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_10'] ?></div></div>
+                    <div class="c x3e y136 w3b h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_10'] ?></div></div>
+                    <div class="c x4b y136 w3c h62"><div class="t m0 x2 h60 y135 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_10'] ?></div></div>
+
+                    <div class="c x10 y137 w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_11'] ?></div></div>
+                    <div class="c x45 y137 w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_11'] ?></div></div>
+                    <div class="c x48 y137 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_11'] ?></div></div>
+                    <div class="c x47 y137 w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_11'] ?></div></div>
+                    <div class="c x3e y137 w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_11'] ?></div></div>
+                    <div class="c x4b y137 w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_11'] ?></div></div>
+
+
+                    <div class="c x10 y138 w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_12'] ?></div></div>
+                    <div class="c x45 y138 w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_12'] ?></div></div>
+                    <div class="c x48 y138 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_12'] ?></div></div>
+                    <div class="c x47 y138 w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_12'] ?></div></div>
+                    <div class="c x3e y138 w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_12'] ?></div></div>
+                    <div class="c x4b y138 w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_12'] ?></div></div>
+
+
+                    <div class="c x10 y139 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_13'] ?></div></div>
+                    <div class="c x45 y139 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_13'] ?></div></div>
+                    <div class="c x48 y139 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_13'] ?></div></div>
+                    <div class="c x47 y139 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_13'] ?></div></div>
+                    <div class="c x3e y139 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_13'] ?></div></div>
+                    <div class="c x4b y139 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_13'] ?></div></div>
+
+
+
+                    <div class="c x10 y13a w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_14'] ?></div></div>
+                    <div class="c x45 y13a w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_14'] ?></div></div>
+                    <div class="c x48 y13a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_14'] ?></div></div>
+                    <div class="c x47 y13a w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_14'] ?></div></div>
+                    <div class="c x3e y13a w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_14'] ?></div></div>
+                    <div class="c x4b y13a w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_14'] ?></div></div>
+
+
+                    <div class="c x10 y13b w3a h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_15'] ?></div></div>
+                    <div class="c x45 y13b w39 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_15'] ?></div></div>
+                    <div class="c x48 y13b w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_15'] ?></div></div>
+                    <div class="c x47 y13b w37 h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_15'] ?></div></div>
+                    <div class="c x3e y13b w3b h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_15'] ?></div></div>
+                    <div class="c x4b y13b w3c h5f"><div class="t m0 x2 h60 y12d ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_15'] ?></div></div>
+
+
+
+                    <div class="c x10 y13c w3a h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_16'] ?></div></div>
+                    <div class="c x45 y13c w39 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_16'] ?></div></div>
+                    <div class="c x48 y13c w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_16'] ?></div></div>
+                    <div class="c x47 y13c w37 h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_16'] ?></div></div>
+                    <div class="c x3e y13c w3b h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_16'] ?></div></div>
+                    <div class="c x4b y13c w3c h61"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_16'] ?></div></div>
+
+
+                    <div class="c x10 y13d w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_17'] ?></div></div>
+                    <div class="c x45 y13d w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_17'] ?></div></div>
+                    <div class="c x48 y13d w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_17'] ?></div></div>
+                    <div class="c x47 y13d w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_17'] ?></div></div>
+                    <div class="c x3e y13d w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_17'] ?></div></div>
+                    <div class="c x4b y13d w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_17'] ?></div></div>
+
+
+
+                    <div class="c x10 y13e w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_18'] ?></div></div>
+                    <div class="c x45 y13e w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_18'] ?></div></div>
+                    <div class="c x48 y13e w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_18'] ?></div></div>
+                    <div class="c x47 y13e w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_18'] ?></div></div>
+                    <div class="c x3e y13e w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_18'] ?></div></div>
+                    <div class="c x4b y13e w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_18'] ?></div></div>
+
+
+                    <div class="c x10 y13f w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_19'] ?></div></div>
+                    <div class="c x45 y13f w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_19'] ?></div></div>
+                    <div class="c x48 y13f w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_19'] ?></div></div>
+                    <div class="c x47 y13f w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_19'] ?></div></div>
+                    <div class="c x3e y13f w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_19'] ?></div></div>
+                    <div class="c x4b y13f w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_19'] ?></div></div>
+
+
+
+                    <div class="c x10 y140 w3a h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_20'] ?></div></div>
+                     <div class="c x45 y140 w39 h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_20'] ?></div></div>
+                    <div class="c x48 y140 w37 h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_20'] ?></div></div>
+                    <div class="c x47 y140 w37 h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_20'] ?></div></div>
+                    <div class="c x3e y140 w3b h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_20'] ?></div></div>
+                    <div class="c x4b y140 w3c h61"><div class="t m0 x2 h60 y141 ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_20'] ?></div></div>
+
+
+                    <div class="c x10 y142 w3a h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_title_21'] ?></div></div>
+                    <div class="c x45 y142 w39 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_from_21'] ?></div></div>
+                    <div class="c x48 y142 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_to_21'] ?></div></div>
+                    <div class="c x47 y142 w37 h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_number_of_hours_21'] ?></div></div>
+                    <div class="c x3e y142 w3b h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_type_of_ld_21'] ?></div></div>
+                    <div class="c x4b y142 w3c h5f"><div class="t m0 x2 h60 y12b ff1 fs13 fc0 sc0 ls0 ws0"><?= $row['learning_development_conducted_by_21'] ?></div></div>
+                    <div class="c x10 y143 w33 h63"><div class="t m0 x49 h5a y10a ff5 fsf fc3 sc0 ls0 ws0">(Continue on separate sheet if necessary)</div></div>
+                    <div class="c x10 y144 w33 h50"><div class="t m0 x2 h39 y104 ff5 fsb fc1 sc0 ls0 ws0">VIII. OTHER INFORMATION</div></div>
         <?php
   
 
