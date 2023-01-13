@@ -2103,11 +2103,6 @@ tags will be replaced.-->
 
 
 
-
-
-
-
-
  <?php echo c2_fetch_civil_service() ?>
  
  
@@ -2201,30 +2196,7 @@ tags will be replaced.-->
 
 
 
-
-
- 
- 
- <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
-  <td colspan=2 height=32 class=xl13611111 width=67 style='border-right:.5pt solid black;
-  height:24.0pt;width:50pt'>18/10/2019</td>
-  <td class=xl9311111 width=68 style='border-top:none;border-left:none;
-  width:51pt'>22/01/2021</td>
-  <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
-  border-left:none;width:161pt'>Freelance Full stack Web Developer</td>
-  <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
-  border-left:none;width:164pt'>Bosny Marketing</td>
-  <td class=xl7511111 width=59 style='border-top:none;border-left:none;
-  width:44pt'>10000.00 </td>
-  <td class=xl7011111 width=65 style='border-top:none;border-left:none;
-  width:49pt'>&nbsp;</td>
-  <td class=xl7011111 width=78 style='border-top:none;border-left:none;
-  width:59pt'>&nbsp;</td>
-  <td class=xl7111111 width=56 style='border-top:none;border-left:none;
-  width:42pt'>N</td>
-  <td class=xl7411111 width=64 style='width:48pt'></td>
- </tr>
-
+<?php echo c2_fetch_work_experience() ?>
 
 
 

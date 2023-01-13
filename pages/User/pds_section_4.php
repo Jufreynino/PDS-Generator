@@ -42,9 +42,14 @@ else
 
 	<script src="../../vendor/template/global_assets/js/demo_pages/datatables_responsive.js"></script>
 
-	<script src="../../vendor/template/layout_1/assets/js/app.js"></script>
 
     <script src="../../vendor/template/global_assets/js/demo_pages/table_responsive.js"></script>
+
+<script src="../../vendor/template/global_assets/js/plugins/notifications/pnotify.min.js"></script>
+
+	<script src="../../vendor/template/layout_1/assets/js/app.js"></script>
+<script src="../../vendor/template/global_assets/js/demo_pages/extra_pnotify.js"></script>
+
     <style>
         .wrappers {
   overflow-x: scroll;
@@ -242,3 +247,9 @@ td {
 <script>
 		$('.datatable-responsive').dataTable();
 	</script>
+	   <script>
+
+		
+
+         
+        </script>

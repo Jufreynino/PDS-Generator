@@ -5,101 +5,340 @@ function c2_fetch_civil_service()
 {
     global $con;
     $id = $_SESSION['id'];
-            
-    $sql = "SELECT * FROM personal_information_tbl INNER JOIN civil_service_tbl ON personal_information_tbl.pds_id = civil_service_tbl.pds_id 
-    INNER JOIN work_experience5_tbl ON personal_information_tbl.pds_id = work_experience5_tbl.pds_id 
-    INNER JOIN work_experience10_tbl ON personal_information_tbl.pds_id = work_experience10_tbl.pds_id 
-    INNER JOIN work_experience15_tbl ON personal_information_tbl.pds_id = work_experience15_tbl.pds_id 
-    INNER JOIN work_experience20_tbl ON personal_information_tbl.pds_id = work_experience20_tbl.pds_id 
-    INNER JOIN work_experience25_tbl ON personal_information_tbl.pds_id = work_experience25_tbl.pds_id 
-    INNER JOIN work_experience30_tbl ON personal_information_tbl.pds_id = work_experience30_tbl.pds_id 
-    
-    
-    
-    
-    ";
-    $result = mysqli_query($con, $sql);
+    $result = $con->query("select * from civil_service_tbl WHERE pds_id='$id'");
+    $count=$result->num_rows;
 
-    $row = mysqli_fetch_assoc($result);
-    ?>
-            <tr height=36 style='mso-height-source:userset;height:27.0pt'>
-                <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
-                width:194pt'><?= $row['career_1'] ?></td>
-                <td class=xl7711111 width=90 style='border-left:none;width:68pt'><?= $row['rating_1'] ?></td>
-                <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'><?= $row['date_of_examination_1'] ?></td>
-                <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'><?= $row['place_of_examination_1'] ?></td>
-                <td class=xl7011111 width=78 style='border-left:none;width:59pt'><?= $row['license_number_1'] ?></td>
-                <td class=xl7911111 width=56 style='border-left:none;width:42pt'><?= $row['license_validity_1'] ?></td>
-                <td class=xl1511111></td>
-            </tr>
+    if($count < 7)
+    {
+        $result = mysqli_query($con, "SELECT *  FROM `civil_service_tbl` WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+                    <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+                    width:194pt'><?= $row['career_1'] ?></td>
+                    <td class=xl7711111 width=90 style='border-left:none;width:68pt'><?= $row['rating_1'] ?></td>
+                    <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'><?= $row['date_of_examination_1'] ?></td>
+                    <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'><?= $row['place_of_examination_1'] ?></td>
+                    <td class=xl7011111 width=78 style='border-left:none;width:59pt'><?= $row['license_number_1'] ?></td>
+                    <td class=xl7911111 width=56 style='border-left:none;width:42pt'><?= $row['license_validity_1'] ?></td>
+                    <td class=xl1511111></td>
+                </tr>
 
-    <?php
+                <?php
+        }
+         $sum = 7 - $count;
+      
+        for ($count = 1; $count <= $sum; $count++) {
+            ?>
+                <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+                    <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+                    width:194pt'>N/A</td>
+                    <td class=xl7711111 width=90 style='border-left:none;width:68pt'>N/A</td>
+                    <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'>N/A</td>
+                    <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'>N/A</td>
+                    <td class=xl7011111 width=78 style='border-left:none;width:59pt'>N/A</td>
+                    <td class=xl7911111 width=56 style='border-left:none;width:42pt'>N/A</td>
+                    <td class=xl1511111></td>
+                </tr>
+               
+
+           <?php
+          }
+    }
+    else 
+    {
+
+
+           
+          
+      
+
+        $result = mysqli_query($con, "SELECT *  FROM `civil_service_tbl`WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+                    <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+                    width:194pt'><?= $row['career_1'] ?></td>
+                    <td class=xl7711111 width=90 style='border-left:none;width:68pt'><?= $row['rating_1'] ?></td>
+                    <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'><?= $row['date_of_examination_1'] ?></td>
+                    <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'><?= $row['place_of_examination_1'] ?></td>
+                    <td class=xl7011111 width=78 style='border-left:none;width:59pt'><?= $row['license_number_1'] ?></td>
+                    <td class=xl7911111 width=56 style='border-left:none;width:42pt'><?= $row['license_validity_1'] ?></td>
+                    <td class=xl1511111></td>
+                </tr>
+
+                <?php
+        }
+    
+          
+    }
+
+    // $result = mysqli_query($con, "SELECT *  FROM `civil_service_tbl` WHERE pds_id='$id'");
+    // while($row = mysqli_fetch_assoc($result)){
+        // echo count($row);
+        // echo $count;
+       
+    // }
+
+//    echo  $j = count($array);
+//         for($i = 0; $i < $j ; $i++) {
+//             // do something
+//         }
 
 }
+
+
+
+function c2_fetch_work_experience()
+{
+    global $con;
+    $id = $_SESSION['id'];
+    $result = $con->query("select * from work_experience5_tbl WHERE pds_id='$id'");
+    $count=$result->num_rows;
+
+    if($count < 21)
+    {
+        $result = mysqli_query($con, "SELECT *  FROM `work_experience5_tbl` WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                    <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+                        <td colspan=2 height=32 class=xl13611111 width=67 style='border-right:.5pt solid black;
+                        height:24.0pt;width:50pt'><?= $row['inclusive_dates_from_1'] ?></td>
+                        <td class=xl9311111 width=68 style='border-top:none;border-left:none;
+                        width:51pt'><?= $row['inclusive_dates_to_1'] ?></td>
+                        <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+                        border-left:none;width:161pt'><?= $row['inclusive_dates_position_title_1'] ?></td>
+                        <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+                        border-left:none;width:164pt'><?= $row['inclusive_dates_department_1'] ?></td>
+                        <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+                        width:44pt'><?= $row['inclusive_dates_monthly_1'] ?></td>
+                        <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+                        width:49pt'>&nbsp;<?= $row['inclusive_dates_salary_job_paygrade_1'] ?></td>
+                        <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+                        width:59pt'>&nbsp;<?= $row['inclusive_dates_status_of_appointment_1'] ?></td>
+                        <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+                        width:42pt'><?= $row['inclusive_dates_government_service_1'] ?></td>
+                        <td class=xl7411111 width=64 style='width:48pt'></td>
+                    </tr>
+
+
+                <?php
+        }
+         $sum = 21 - $count;
+      
+        for ($count = 1; $count <= $sum; $count++) {
+            ?>
+            
+                    <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+                        <td colspan=2 height=32 class=xl13611111 width=67 style='border-right:.5pt solid black;
+                        height:24.0pt;width:50pt'>N/A</td>
+                        <td class=xl9311111 width=68 style='border-top:none;border-left:none;
+                        width:51pt'>N/A</td>
+                        <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+                        border-left:none;width:161pt'>N/A</td>
+                        <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+                        border-left:none;width:164pt'>N/A</td>
+                        <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+                        width:44pt'>N/A</td>
+                        <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+                        width:49pt'>&nbsp;N/A</td>
+                        <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+                        width:59pt'>&nbsp;N/A</td>
+                        <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+                        width:42pt'>N/A</td>
+                        <td class=xl7411111 width=64 style='width:48pt'></td>
+                    </tr>
+           <?php
+          }
+    }
+    else 
+    {
+
+
+           
+          
+      
+
+        $result = mysqli_query($con, "SELECT *  FROM `work_experience5_tbl`WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                <tr class=xl7411111 height=32 style='mso-height-source:userset;height:24.0pt'>
+                        <td colspan=2 height=32 class=xl13611111 width=67 style='border-right:.5pt solid black;
+                        height:24.0pt;width:50pt'><?= $row['inclusive_dates_from_1'] ?></td>
+                        <td class=xl9311111 width=68 style='border-top:none;border-left:none;
+                        width:51pt'><?= $row['inclusive_dates_to_1'] ?></td>
+                        <td colspan=3 class=xl13911111 width=213 style='border-right:.5pt solid black;
+                        border-left:none;width:161pt'><?= $row['inclusive_dates_position_title_1'] ?></td>
+                        <td colspan=3 class=xl13911111 width=219 style='border-right:.5pt solid black;
+                        border-left:none;width:164pt'><?= $row['inclusive_dates_department_1'] ?></td>
+                        <td class=xl7511111 width=59 style='border-top:none;border-left:none;
+                        width:44pt'><?= $row['inclusive_dates_monthly_1'] ?></td>
+                        <td class=xl7011111 width=65 style='border-top:none;border-left:none;
+                        width:49pt'>&nbsp;<?= $row['inclusive_dates_salary_job_paygrade_1'] ?></td>
+                        <td class=xl7011111 width=78 style='border-top:none;border-left:none;
+                        width:59pt'>&nbsp;<?= $row['inclusive_dates_status_of_appointment_1'] ?></td>
+                        <td class=xl7111111 width=56 style='border-top:none;border-left:none;
+                        width:42pt'><?= $row['inclusive_dates_government_service_1'] ?></td>
+                        <td class=xl7411111 width=64 style='width:48pt'></td>
+                    </tr>
+                <?php
+        }
+    
+          
+    }
+
+    
+
+}
+
+
 
 
 function c3_fetch_voluntary()
 {
     global $con;
     $id = $_SESSION['id'];
-            
-    $sql = "SELECT * FROM personal_information_tbl INNER JOIN voluntary_work_tbl ON personal_information_tbl.pds_id = voluntary_work_tbl.pds_id
-    
-    
-    
-    
-    ";
-    $result = mysqli_query($con, $sql);
 
-    $row = mysqli_fetch_assoc($result);
-    ?>
-            
-            <tr height=37 style='mso-height-source:userset;height:27.75pt'>
-                <td colspan=4 height=37 class=xl1248470 width=407 style='border-right:.5pt solid black;
-                height:27.75pt;width:307pt'><?= $row['voluntary_work_name_address_1'] ?></td>
-                <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_from_1'] ?></td>
-                <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_to_1'] ?></td>
-                <td class=xl748470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_hours_1'] ?></td>
-                <td colspan=4 class=xl1288470 style='border-right:1.0pt solid black;
-                border-left:none'>&nbsp;<?= $row['voluntary_work_position_1'] ?></td>
-                <td class=xl158470>
-                <td class=xl158470>
-            </tr>
+    $result = $con->query("select * from voluntary_work_tbl WHERE pds_id='$id'");
+    $count=$result->num_rows;
 
-    <?php
+    if($count < 7)
+    {
+        $result = mysqli_query($con, "SELECT *  FROM `voluntary_work_tbl` WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                   <tr height=37 style='mso-height-source:userset;height:27.75pt'>
+                        <td colspan=4 height=37 class=xl1248470 width=407 style='border-right:.5pt solid black;
+                        height:27.75pt;width:307pt'><?= $row['voluntary_work_name_address_1'] ?></td>
+                        <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_from_1'] ?></td>
+                        <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_to_1'] ?></td>
+                        <td class=xl748470 style='border-top:none;border-left:none'>&nbsp;<?= $row['voluntary_work_hours_1'] ?></td>
+                        <td colspan=4 class=xl1288470 style='border-right:1.0pt solid black;
+                        border-left:none'>&nbsp;<?= $row['voluntary_work_position_1'] ?></td>
+                        <td class=xl158470>
+                        <td class=xl158470>
+                    </tr>
 
+                <?php
+        }
+         $sum = 7 - $count;
+      
+        for ($count = 1; $count <= $sum; $count++) {
+            ?>
+                   <tr height=37 style='mso-height-source:userset;height:27.75pt'>
+                        <td colspan=4 height=37 class=xl1248470 width=407 style='border-right:.5pt solid black;
+                        height:27.75pt;width:307pt'>N/A</td>
+                        <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;N/A</td>
+                        <td class=xl738470 style='border-top:none;border-left:none'>&nbsp;N/A</td>
+                        <td class=xl748470 style='border-top:none;border-left:none'>&nbsp;N/A</td>
+                        <td colspan=4 class=xl1288470 style='border-right:1.0pt solid black;
+                        border-left:none'>&nbsp;N/A</td>
+                        <td class=xl158470>
+                        <td class=xl158470>
+                    </tr>
+               
+
+           <?php
+          }
+    }
+    else 
+    {
+          
+      
+
+        $result = mysqli_query($con, "SELECT *  FROM `voluntary_work_tbl`WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+                    <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+                    width:194pt'><?= $row['career_1'] ?></td>
+                    <td class=xl7711111 width=90 style='border-left:none;width:68pt'><?= $row['rating_1'] ?></td>
+                    <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'><?= $row['date_of_examination_1'] ?></td>
+                    <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'><?= $row['place_of_examination_1'] ?></td>
+                    <td class=xl7011111 width=78 style='border-left:none;width:59pt'><?= $row['license_number_1'] ?></td>
+                    <td class=xl7911111 width=56 style='border-left:none;width:42pt'><?= $row['license_validity_1'] ?></td>
+                    <td class=xl1511111></td>
+                </tr>
+
+                <?php
+        }
+    }
 }
 
 function c3_fetch_learning()
 {
     global $con;
     $id = $_SESSION['id'];
-            
-    $sql = "SELECT * FROM personal_information_tbl INNER JOIN learning_tbl ON personal_information_tbl.pds_id = learning_tbl.pds_id
+    $result = $con->query("select * from learning_tbl WHERE pds_id='$id'");
+    $count=$result->num_rows;
+
+    if($count < 21)
+    {
+        $result = mysqli_query($con, "SELECT *  FROM `learning_tbl` WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
     
-    ";
-    $result = mysqli_query($con, $sql);
+                ?>
+                   <tr height=33 style='mso-height-source:userset;height:24.75pt'>
+                        <td colspan=4 height=33 class=xl828470 width=407 style='border-right:.5pt solid black;
+                        height:24.75pt;width:307pt'>Road to Full Stack Developmet</td>
+                        <td class=xl688470 style='border-top:none;border-left:none'>24/02/2018</td>
+                        <td class=xl688470 style='border-top:none;border-left:none'>24/02/2018</td>
+                        <td class=xl708470 style='border-top:none;border-left:none'>3.0 </td>
+                        <td class=xl698470 style='border-top:none;border-left:none'>&nbsp;</td>
+                        <td colspan=3 class=xl798470 width=236 style='border-right:1.0pt solid black;
+                        border-left:none;width:177pt'>Mr. El Miguel A. Marcaida</td>
+                        <td class=xl158470></td>
+                        <td class=xl158470></td>
+                        </tr>
 
-    $row = mysqli_fetch_assoc($result);
-    ?>
-        <tr height=33 style='mso-height-source:userset;height:24.75pt'>
-            <td colspan=4 height=33 class=xl828470 width=407 style='border-right:.5pt solid black;
-            height:24.75pt;width:307pt'><?= $row['learning_development_title_1'] ?></td>
-            <td class=xl688470 style='border-top:none;border-left:none'><?= $row['learning_development_from_1'] ?></td>
-            <td class=xl688470 style='border-top:none;border-left:none'><?= $row['learning_development_to_1'] ?></td>
-            <td class=xl708470 style='border-top:none;border-left:none'><?= $row['learning_development_number_of_hours_1'] ?> </td>
-            <td class=xl698470 style='border-top:none;border-left:none'>&nbsp;<?= $row['learning_development_type_of_ld_1'] ?></td>
-            <td colspan=3 class=xl798470 width=236 style='border-right:1.0pt solid black;
-            border-left:none;width:177pt'><?= $row['learning_development_conducted_by_1'] ?></td>
-            <td class=xl158470></td>
-            <td class=xl158470></td>
-        </tr>
-
-    <?php
-
+                <?php
+        }
+         $sum = 21 - $count;
+      
+        for ($count = 1; $count <= $sum; $count++) {
+            ?>
+                  <tr height=33 style='mso-height-source:userset;height:24.75pt'>
+                    <td colspan=4 height=33 class=xl828470 width=407 style='border-right:.5pt solid black;
+                    height:24.75pt;width:307pt'>N/A</td>
+                    <td class=xl688470 style='border-top:none;border-left:none'>N/A</td>
+                    <td class=xl688470 style='border-top:none;border-left:none'>N/A</td>
+                    <td class=xl708470 style='border-top:none;border-left:none'>N/A</td>
+                    <td class=xl698470 style='border-top:none;border-left:none'>&nbsp;N/A</td>
+                    <td colspan=3 class=xl798470 width=236 style='border-right:1.0pt solid black;
+                    border-left:none;width:177pt'>N/A</td>
+                    <td class=xl158470></td>
+                    <td class=xl158470></td>
+                    </tr>
+           <?php
+          }
+    }
+    else 
+    {
+        $result = mysqli_query($con, "SELECT *  FROM `learning_tbl`WHERE pds_id='$id'");
+        while($row = mysqli_fetch_assoc($result)){
+    
+                ?>
+                <tr height=36 style='mso-height-source:userset;height:27.0pt'>
+                    <td colspan=5 height=36 class=xl12111111 width=258 style='height:27.0pt;
+                    width:194pt'><?= $row['career_1'] ?></td>
+                    <td class=xl7711111 width=90 style='border-left:none;width:68pt'><?= $row['rating_1'] ?></td>
+                    <td colspan=2 class=xl9311111 width=96 style='border-left:none;width:72pt'><?= $row['date_of_examination_1'] ?></td>
+                    <td colspan=3 class=xl12011111 width=247 style='border-left:none;width:185pt'><?= $row['place_of_examination_1'] ?></td>
+                    <td class=xl7011111 width=78 style='border-left:none;width:59pt'><?= $row['license_number_1'] ?></td>
+                    <td class=xl7911111 width=56 style='border-left:none;width:42pt'><?= $row['license_validity_1'] ?></td>
+                    <td class=xl1511111></td>
+                </tr>
+                <?php
+        }
+    }
 }
 
- 
 
 
 

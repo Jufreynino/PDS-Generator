@@ -1087,98 +1087,89 @@ function pds_section4_update()
     $sql = mysqli_query($con, "SELECT * FROM civil_service_tbl WHERE pds_id='$id'");
     $row = mysqli_fetch_assoc($sql);
     ?>
-            <form method="POST">
                 <div style="overflow-x:auto;">
-                   <table >
+                   <table class="table">
                         <tr>
                             <th rowspan="2">CAREER SERVICE/ RA 1080 (BOARD/ BAR) UNDER SPECIAL LAWS/ CES/ CSEE / BARANGAY ELIGIBILITY / DRIVER'S LICENSE</th>
-                            <th rowspan="2" style="width:100px;">RATING <br>(If Applicable</th>
-                            <th rowspan="2" style="width:100px;">DATE OF EXAMINATION / CONFERMENT</th>
-                            <th rowspan="2" style="width:200px;">PLACE OF EXAMINATION / CONFERMENT</th>
+                            <th rowspan="2" style="width:50px;">RATING <br>(If Applicable</th>
+                            <th rowspan="2" style="width:50px;">DATE OF EXAMINATION / CONFERMENT</th>
+                            <th rowspan="2" style="width:500px;">PLACE OF EXAMINATION / CONFERMENT</th>
                             <th colspan="2">LICENSE (if applicable)</th>
+                            <th rowspan="2"  style="width:170px;">Action</th>
                         </tr>
                         <tr>
                             <th>NUMBER</th>
                             <th>Date of Validity</th>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="career_1" value="<?= $row['career_1']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_1" value="<?= $row['rating_1']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_1" value="<?= $row['date_of_examination_1']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_1" value="<?= $row['place_of_examination_1']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_1" value="<?= $row['license_number_1']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_1" value="<?= $row['license_validity_1']?>"></td>
+                            <td><?= $row['career_1']?></td>
+                            <td><?= $row['rating_1']?></td>
+                            <td><?= $row['date_of_examination_1']?></td>
+                            <td><?= $row['place_of_examination_1']?></td>
+                            <td><?= $row['license_number_1']?></td>
+                            <td><?= $row['license_validity_1']?></td>
+                            <td>
+                                <button type="button" class="btn bg-info" data-toggle="modal" data-target="#edit">Edit </button>
+                                <button type="button" class="btn bg-danger" data-toggle="modal" data-target="#delete">Delete </button>
+                            
+                            </td>
+                            
                         </tr>
 
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_2" value="<?= $row['career_2']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_2" value="<?= $row['rating_2']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_2" value="<?= $row['date_of_examination_2']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_2" value="<?= $row['place_of_examination_2']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_2" value="<?= $row['license_number_2']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_2" value="<?= $row['license_validity_2']?>"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_3" value="<?= $row['career_3']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_3" value="<?= $row['rating_3']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_3" value="<?= $row['date_of_examination_3']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_3" value="<?= $row['place_of_examination_3']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_3" value="<?= $row['license_number_3']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_3" value="<?= $row['license_validity_3']?>"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_4" value="<?= $row['career_4']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_4" value="<?= $row['rating_4']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_4" value="<?= $row['date_of_examination_4']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_4" value="<?= $row['place_of_examination_4']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_4" value="<?= $row['license_number_4']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_4" value="<?= $row['license_validity_4']?>"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_5" value="<?= $row['career_5']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_5" value="<?= $row['rating_5']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_5" value="<?= $row['date_of_examination_5']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_5" value="<?= $row['place_of_examination_5']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_5" value="<?= $row['license_number_5']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_5" value="<?= $row['license_validity_5']?>"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_6" value="<?= $row['career_6']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_6" value="<?= $row['rating_6']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_6" value="<?= $row['date_of_examination_6']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_6" value="<?= $row['place_of_examination_6']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_6" value="<?= $row['license_number_6']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_6" value="<?= $row['license_validity_6']?>"></td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="text" class="form-control" name="career_7" value="<?= $row['career_7']?>"></td>
-                            <td><input type="text" class="form-control" name="rating_7" value="<?= $row['rating_7']?>"></td>
-                            <td><input type="text" class="form-control" name="date_of_examination_7" value="<?= $row['date_of_examination_7']?>"></td>
-                            <td><input type="text" class="form-control" name="place_of_examination_7" value="<?= $row['place_of_examination_7']?>"></td>
-                            <td><input type="text" class="form-control" name="license_number_7" value="<?= $row['license_number_7']?>"></td>
-                            <td><input type="text" class="form-control" name="license_validity_7" value="<?= $row['license_validity_7']?>"></td>
-                        </tr>
-
+                      
                     
                     </table>
                 </div>	
             </div>		
         </div>		
         <br>
-                <div class="col-md-12 ">
-                    <div class=" pull right">
-                    <button type="submit" name="update_pds_section_4_button" class="btn btn-primary">Save Changes</button>
-                    </div>
-                </div>
-        </form>
+
+                <div id="edit" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header bg-info">
+								<h6 class="modal-title">Edit Details</h6>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+<form method="POST">
+                                    <div class="form-group">
+										<label>CAREER SERVICE/ RA 1080 (BOARD/ BAR) UNDER SPECIAL LAWS/ CES/ CSEE / BARANGAY ELIGIBILITY / DRIVER'S LICENSE</label>
+										<input type="text" class="form-control" name="career_1" value="<?= $row['career_1']?>">
+									</div>
+
+									<div class="form-group">
+										<label>RATING (If Applicable)</label>
+										<input type="text" class="form-control" name="rating_1" value="<?= $row['rating_1']?>">
+									</div>
+
+                                    <div class="form-group">
+										<label>DATE OF EXAMINATION / CONFERMENT</label>
+										<input type="text" class="form-control" name="date_of_examination_1" value="<?= $row['date_of_examination_1']?>">
+									</div>
+                                    <div class="form-group">
+										<label>PLACE OF EXAMINATION / CONFERMENT</label>
+										<input type="text" class="form-control" name="place_of_examination_1" value="<?= $row['place_of_examination_1']?>">
+									</div>
+                                    <div class="form-group">
+										<label>LICENSE NUMBER</label>
+										<input type="text" class="form-control" name="license_number_1" value="<?= $row['license_number_1']?>">
+									</div>
+                                    <div class="form-group">
+										<label>LICENSE Date of Validity</label>
+										<input type="text" class="form-control" name="license_validity_1" value="<?= $row['license_validity_1']?>">
+									</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                                <button type="submit" name="update_pds_section_4_button" class="btn bg-primary">Save Changes</button>
+							</div>
+						</div>
+</form>
+					</div>
+				</div>
     <?php
-
-
     if(isset($_POST['update_pds_section_4_button']))
     {
         $career_1  = mysqli_real_escape_string($con, $_POST['career_1']);
@@ -1187,42 +1178,7 @@ function pds_section4_update()
         $place_of_examination_1  = mysqli_real_escape_string($con, $_POST['place_of_examination_1']);
         $license_number_1  = mysqli_real_escape_string($con, $_POST['license_number_1']);
         $license_validity_1  = mysqli_real_escape_string($con, $_POST['license_validity_1']);
-        $career_2  = mysqli_real_escape_string($con, $_POST['career_2']);
-        $rating_2  = mysqli_real_escape_string($con, $_POST['rating_2']);
-        $date_of_examination_2  = mysqli_real_escape_string($con, $_POST['date_of_examination_2']);
-        $place_of_examination_2  = mysqli_real_escape_string($con, $_POST['place_of_examination_2']);
-        $license_number_2  = mysqli_real_escape_string($con, $_POST['license_number_2']);
-        $license_validity_2  = mysqli_real_escape_string($con, $_POST['license_validity_2']);
-        $career_3  = mysqli_real_escape_string($con, $_POST['career_3']);
-        $rating_3  = mysqli_real_escape_string($con, $_POST['rating_3']);
-        $date_of_examination_3  = mysqli_real_escape_string($con, $_POST['date_of_examination_3']);
-        $place_of_examination_3  = mysqli_real_escape_string($con, $_POST['date_of_examination_3']);
-        $license_number_3  = mysqli_real_escape_string($con, $_POST['license_number_3']);
-        $license_validity_3  = mysqli_real_escape_string($con, $_POST['license_validity_3']);
-        $career_4  = mysqli_real_escape_string($con, $_POST['career_4']);
-        $rating_4  = mysqli_real_escape_string($con, $_POST['rating_4']);
-        $date_of_examination_4  = mysqli_real_escape_string($con, $_POST['date_of_examination_4']);
-        $place_of_examination_4  = mysqli_real_escape_string($con, $_POST['place_of_examination_4']);
-        $license_number_4  = mysqli_real_escape_string($con, $_POST['license_number_4']);
-        $license_validity_4  = mysqli_real_escape_string($con, $_POST['license_validity_4']);
-        $career_5  = mysqli_real_escape_string($con, $_POST['career_5']);
-        $rating_5  = mysqli_real_escape_string($con, $_POST['rating_5']);
-        $date_of_examination_5  = mysqli_real_escape_string($con, $_POST['date_of_examination_5']);
-        $place_of_examination_5  = mysqli_real_escape_string($con, $_POST['place_of_examination_5']);
-        $license_number_5  = mysqli_real_escape_string($con, $_POST['license_number_5']);
-        $license_validity_5  = mysqli_real_escape_string($con, $_POST['license_validity_5']);
-        $career_6  = mysqli_real_escape_string($con, $_POST['career_6']);
-        $rating_6  = mysqli_real_escape_string($con, $_POST['rating_6']);
-        $date_of_examination_6  = mysqli_real_escape_string($con, $_POST['date_of_examination_6']);
-        $place_of_examination_6  = mysqli_real_escape_string($con, $_POST['place_of_examination_6']);
-        $license_number_6  = mysqli_real_escape_string($con, $_POST['license_number_6']);
-        $license_validity_6  = mysqli_real_escape_string($con, $_POST['license_validity_6']);
-        $career_7  = mysqli_real_escape_string($con, $_POST['career_7']);
-        $rating_7  = mysqli_real_escape_string($con, $_POST['rating_7']);
-        $date_of_examination_7  = mysqli_real_escape_string($con, $_POST['date_of_examination_7']);
-        $place_of_examination_7  = mysqli_real_escape_string($con, $_POST['place_of_examination_7']);
-        $license_number_7  = mysqli_real_escape_string($con, $_POST['license_number_7']);
-        $license_validity_7  = mysqli_real_escape_string($con, $_POST['license_validity_7']);
+       
         
         $pds_id = $_SESSION['id'];
 
@@ -1232,55 +1188,26 @@ function pds_section4_update()
         date_of_examination_1='$date_of_examination_1',
         place_of_examination_1='$place_of_examination_1',
         license_number_1='$license_number_1',
-        license_validity_1='$license_validity_1',
-        career_2='$career_2',
-        rating_2='$rating_2',
-        date_of_examination_2='$date_of_examination_2',
-        place_of_examination_2='$place_of_examination_2',
-        license_number_2='$license_number_2',
-        license_validity_2='$license_validity_2',
-        career_3='$career_3',
-        rating_3='$rating_3',
-        date_of_examination_3='$date_of_examination_3',
-        place_of_examination_3='$place_of_examination_3',
-        license_number_3='$license_number_3',
-        license_validity_3='$license_validity_3',
-        career_4='$career_4',
-        rating_4='$rating_4',
-        date_of_examination_4='$date_of_examination_4',
-        place_of_examination_4='$place_of_examination_4',
-        license_number_4='$license_number_4',
-        license_validity_4='$license_validity_4',
-        career_5='$career_5',
-        rating_5='$rating_5',
-        date_of_examination_5='$date_of_examination_5',
-        place_of_examination_5='$place_of_examination_5',
-        license_number_5='$license_number_5',
-        license_validity_5='$license_validity_5',
-        career_6='$career_6',
-        rating_6='$rating_6',
-        date_of_examination_6='$date_of_examination_6',
-        place_of_examination_6='$place_of_examination_6',
-        license_number_6='$license_number_6',
-        license_validity_6='$license_validity_6',
-        career_7='$career_7',
-        rating_7='$rating_7',
-        date_of_examination_7='$date_of_examination_7',
-        place_of_examination_7='$place_of_examination_7',
-        license_number_7='$license_number_7',
-        license_validity_7='$license_validity_7'
+        license_validity_1='$license_validity_1'
         WHERE pds_id='$pds_id'
           
           ");
       
       ?>
-        <script>
-            alert('ok');
-        </script>
-
-
+     <script>
+        $( document ).ready(function() {
+            new PNotify({
+            title: 'Successfully Update',
+            text: 'Close this tab',
+            addclass: 'bg-primary border-primary',
+            delay: 1000 ,
+            after_close: function() {
+        window.location.href = 'http://localhost/PDS%20Generator/pages/user/pds_section_4.php';
+    }
+            });
+        });
+     </script>
      <?php
-
     }
 }
 
